@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02A1B22D0D9941C9A52D246C /* libPods-iMealModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB544EFBEEE406BB80181D7 /* libPods-iMealModel.a */; };
+		48A81AE419801796007CE410 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A81AE319801796007CE410 /* Foundation.framework */; };
+		48A81B0E198018F4007CE410 /* IMMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81B0B198018F4007CE410 /* IMMember.m */; };
+		48A81B0F198018F4007CE410 /* IMTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81B0D198018F4007CE410 /* IMTeam.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		48A81ADE19801796007CE410 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2FB544EFBEEE406BB80181D7 /* libPods-iMealModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMealModel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48A81AE019801796007CE410 /* libiMealModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiMealModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		48A81AE319801796007CE410 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		48A81AE719801796007CE410 /* iMealModel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iMealModel-Prefix.pch"; sourceTree = "<group>"; };
+		48A81AF119801796007CE410 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		48A81AF419801796007CE410 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		48A81B0A198018F4007CE410 /* IMMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMember.h; sourceTree = "<group>"; };
+		48A81B0B198018F4007CE410 /* IMMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMMember.m; sourceTree = "<group>"; };
+		48A81B0C198018F4007CE410 /* IMTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTeam.h; sourceTree = "<group>"; };
+		48A81B0D198018F4007CE410 /* IMTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTeam.m; sourceTree = "<group>"; };
+		8284D1FDFEE645E1AFC944F0 /* Pods-iMealModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMealModel.xcconfig"; path = "../Pods/Pods-iMealModel.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48A81ADD19801796007CE410 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A81AE419801796007CE410 /* Foundation.framework in Frameworks */,
+				02A1B22D0D9941C9A52D246C /* libPods-iMealModel.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48A81AD719801796007CE410 = {
+			isa = PBXGroup;
+			children = (
+				48A81AE519801796007CE410 /* iMealModel */,
+				48A81AE219801796007CE410 /* Frameworks */,
+				48A81AE119801796007CE410 /* Products */,
+				8284D1FDFEE645E1AFC944F0 /* Pods-iMealModel.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		48A81AE119801796007CE410 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48A81AE019801796007CE410 /* libiMealModel.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48A81AE219801796007CE410 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48A81AE319801796007CE410 /* Foundation.framework */,
+				48A81AF119801796007CE410 /* XCTest.framework */,
+				48A81AF419801796007CE410 /* UIKit.framework */,
+				2FB544EFBEEE406BB80181D7 /* libPods-iMealModel.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48A81AE519801796007CE410 /* iMealModel */ = {
+			isa = PBXGroup;
+			children = (
+				48A81B09198018F4007CE410 /* Objects */,
+				48A81AE619801796007CE410 /* Supporting Files */,
+			);
+			path = iMealModel;
+			sourceTree = "<group>";
+		};
+		48A81AE619801796007CE410 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				48A81AE719801796007CE410 /* iMealModel-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		48A81B09198018F4007CE410 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				48A81B0A198018F4007CE410 /* IMMember.h */,
+				48A81B0B198018F4007CE410 /* IMMember.m */,
+				48A81B0C198018F4007CE410 /* IMTeam.h */,
+				48A81B0D198018F4007CE410 /* IMTeam.m */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48A81ADF19801796007CE410 /* iMealModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48A81B0319801796007CE410 /* Build configuration list for PBXNativeTarget "iMealModel" */;
+			buildPhases = (
+				C65A215AD49B4DA98ED2EE18 /* Check Pods Manifest.lock */,
+				48A81ADC19801796007CE410 /* Sources */,
+				48A81ADD19801796007CE410 /* Frameworks */,
+				48A81ADE19801796007CE410 /* CopyFiles */,
+				9BCA39B7C239455E9AC02B0B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iMealModel;
+			productName = iMealModel;
+			productReference = 48A81AE019801796007CE410 /* libiMealModel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48A81AD819801796007CE410 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 48A81ADB19801796007CE410 /* Build configuration list for PBXProject "iMealModel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 48A81AD719801796007CE410;
+			productRefGroup = 48A81AE119801796007CE410 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48A81ADF19801796007CE410 /* iMealModel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9BCA39B7C239455E9AC02B0B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-iMealModel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C65A215AD49B4DA98ED2EE18 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48A81ADC19801796007CE410 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A81B0E198018F4007CE410 /* IMMember.m in Sources */,
+				48A81B0F198018F4007CE410 /* IMTeam.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		48A81B0119801796007CE410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		48A81B0219801796007CE410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48A81B0419801796007CE410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8284D1FDFEE645E1AFC944F0 /* Pods-iMealModel.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/iMealModel.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iMealModel/iMealModel-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		48A81B0519801796007CE410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8284D1FDFEE645E1AFC944F0 /* Pods-iMealModel.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/iMealModel.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iMealModel/iMealModel-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48A81ADB19801796007CE410 /* Build configuration list for PBXProject "iMealModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48A81B0119801796007CE410 /* Debug */,
+				48A81B0219801796007CE410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48A81B0319801796007CE410 /* Build configuration list for PBXNativeTarget "iMealModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48A81B0419801796007CE410 /* Debug */,
+				48A81B0519801796007CE410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48A81AD819801796007CE410 /* Project object */;
+}

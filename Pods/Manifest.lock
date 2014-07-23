@@ -1,0 +1,19 @@
+PODS:
+  - AVOSCloud (2.5.8.1)
+  - ReactiveCocoa (2.3.1):
+    - ReactiveCocoa/UI
+  - ReactiveCocoa/Core (2.3.1):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.3.1)
+  - ReactiveCocoa/UI (2.3.1):
+    - ReactiveCocoa/Core
+
+DEPENDENCIES:
+  - AVOSCloud (~> 2.5.8.1)
+  - ReactiveCocoa (~> 2.3.1)
+
+SPEC CHECKSUMS:
+  AVOSCloud: 23a54f17ed9886972b5ca35532fb1e5d7212f931
+  ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
+
+COCOAPODS: 0.33.1

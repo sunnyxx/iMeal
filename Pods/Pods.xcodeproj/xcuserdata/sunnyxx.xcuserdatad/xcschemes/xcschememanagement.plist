@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-iMeal-ReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-iMeal.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-iMealModel-AVOSCloud.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-iMealModel-ReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-iMealModel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>382E3573D4064D7793E57691</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>385EF2B58A2B433C8B0C0FE0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5CFEA8FB224443F8812348BE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A7BDB7D3ECBB451BAADA73B5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA3B5C1D22CB444EAC9FB3C8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
