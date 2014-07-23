@@ -11,6 +11,8 @@
 		48A81AE419801796007CE410 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A81AE319801796007CE410 /* Foundation.framework */; };
 		48A81B0E198018F4007CE410 /* IMMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81B0B198018F4007CE410 /* IMMember.m */; };
 		48A81B0F198018F4007CE410 /* IMTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81B0D198018F4007CE410 /* IMTeam.m */; };
+		48A81B1319801D4F007CE410 /* IMServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81B1219801D4F007CE410 /* IMServer.m */; };
+		48A81B1C198023BF007CE410 /* IMAdministrator.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81B1B198023BF007CE410 /* IMAdministrator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,12 +32,16 @@
 		48A81AE019801796007CE410 /* libiMealModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiMealModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A81AE319801796007CE410 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		48A81AE719801796007CE410 /* iMealModel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iMealModel-Prefix.pch"; sourceTree = "<group>"; };
-		48A81AF119801796007CE410 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		48A81AF419801796007CE410 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		48A81B0A198018F4007CE410 /* IMMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMember.h; sourceTree = "<group>"; };
 		48A81B0B198018F4007CE410 /* IMMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMMember.m; sourceTree = "<group>"; };
 		48A81B0C198018F4007CE410 /* IMTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTeam.h; sourceTree = "<group>"; };
 		48A81B0D198018F4007CE410 /* IMTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTeam.m; sourceTree = "<group>"; };
+		48A81B1119801D4F007CE410 /* IMServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMServer.h; sourceTree = "<group>"; };
+		48A81B1219801D4F007CE410 /* IMServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMServer.m; sourceTree = "<group>"; };
+		48A81B1419801E5A007CE410 /* IMModelObjects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMModelObjects.h; sourceTree = "<group>"; };
+		48A81B1A198023BF007CE410 /* IMAdministrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAdministrator.h; sourceTree = "<group>"; };
+		48A81B1B198023BF007CE410 /* IMAdministrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMAdministrator.m; sourceTree = "<group>"; };
 		8284D1FDFEE645E1AFC944F0 /* Pods-iMealModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMealModel.xcconfig"; path = "../Pods/Pods-iMealModel.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				48A81AE319801796007CE410 /* Foundation.framework */,
-				48A81AF119801796007CE410 /* XCTest.framework */,
 				48A81AF419801796007CE410 /* UIKit.framework */,
 				2FB544EFBEEE406BB80181D7 /* libPods-iMealModel.a */,
 			);
@@ -84,6 +89,7 @@
 		48A81AE519801796007CE410 /* iMealModel */ = {
 			isa = PBXGroup;
 			children = (
+				48A81B1019801D2C007CE410 /* Server */,
 				48A81B09198018F4007CE410 /* Objects */,
 				48A81AE619801796007CE410 /* Supporting Files */,
 			);
@@ -101,12 +107,24 @@
 		48A81B09198018F4007CE410 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				48A81B1419801E5A007CE410 /* IMModelObjects.h */,
 				48A81B0A198018F4007CE410 /* IMMember.h */,
 				48A81B0B198018F4007CE410 /* IMMember.m */,
 				48A81B0C198018F4007CE410 /* IMTeam.h */,
 				48A81B0D198018F4007CE410 /* IMTeam.m */,
+				48A81B1A198023BF007CE410 /* IMAdministrator.h */,
+				48A81B1B198023BF007CE410 /* IMAdministrator.m */,
 			);
 			path = Objects;
+			sourceTree = "<group>";
+		};
+		48A81B1019801D2C007CE410 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				48A81B1119801D4F007CE410 /* IMServer.h */,
+				48A81B1219801D4F007CE410 /* IMServer.m */,
+			);
+			path = Server;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +214,8 @@
 			files = (
 				48A81B0E198018F4007CE410 /* IMMember.m in Sources */,
 				48A81B0F198018F4007CE410 /* IMTeam.m in Sources */,
+				48A81B1319801D4F007CE410 /* IMServer.m in Sources */,
+				48A81B1C198023BF007CE410 /* IMAdministrator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
