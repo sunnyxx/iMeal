@@ -7,7 +7,7 @@
 //
 
 #import "IMViewController.h"
-
+#import <ReactiveCocoa/ReactiveCocoa.h>
 @interface IMViewController ()
 
 @end

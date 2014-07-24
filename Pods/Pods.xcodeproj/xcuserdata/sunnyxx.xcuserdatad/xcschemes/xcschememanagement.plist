@@ -4,16 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-iMeal-ReactiveCocoa.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-iMeal.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-iMealModel-AVOSCloud.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>382E3573D4064D7793E57691</key>
+		<key>2380057005D145A787AAB19B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>385EF2B58A2B433C8B0C0FE0</key>
+		<key>251B09BE71E244D1ACB2F10E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5CFEA8FB224443F8812348BE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A7BDB7D3ECBB451BAADA73B5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EA3B5C1D22CB444EAC9FB3C8</key>
+		<key>2BCDD535F7EA4010A3B6F826</key>
 		<dict>
 			<key>primary</key>
 			<true/>
