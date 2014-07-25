@@ -6,3 +6,13 @@
 #
 # Pods/
 
+
+iMealModel/iMealModel.xcodeproj/xcuserdata/sagles.xcuserdatad/xcschemes/xcschememanagement.plist
+
+iMeal.xcodeproj/xcuserdata/sagles.xcuserdatad/xcschemes/xcschememanagement.plist
+
+iMeal.xcworkspace/xcuserdata/sagles.xcuserdatad/UserInterfaceState.xcuserstate
+
+*.xcscheme
+
+Pods/Pods.xcodeproj/xcuserdata/sagles.xcuserdatad/xcschemes/xcschememanagement.plist
