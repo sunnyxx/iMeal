@@ -10,6 +10,6 @@ target 'iMealModel' do
 end
 
 # UI第三方依赖
-target 'iMeal' do
-	pod 'ReactiveCocoa', '~> 2.3.1'
-end
+#target 'iMeal' do
+#	pod 'ReactiveCocoa', '~> 2.3.1'
+#end
