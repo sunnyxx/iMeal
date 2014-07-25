@@ -8,3 +8,4 @@
 
 #import "IMTeam.h"
 #import "IMMember.h"
+#import "IMAdministrator.h"

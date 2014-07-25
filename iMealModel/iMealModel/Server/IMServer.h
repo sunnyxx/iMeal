@@ -16,6 +16,6 @@
 
 @interface IMServer (IMApiRequest)
 
-+ (RACSignal *)requestCreateTeam:(IMTeam *)team byAdministrator:(IMAdministrator *)admin;
++ (RACSignal *)createTeam:(IMTeam *)team byAdministrator:(IMAdministrator *)admin;
 
 @end

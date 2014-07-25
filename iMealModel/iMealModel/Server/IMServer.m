@@ -20,7 +20,7 @@
     [IMMember registerSubclass];
 }
 
-+ (RACSignal *)requestCreateTeam:(IMTeam *)team byAdministrator:(IMAdministrator *)admin
++ (RACSignal *)createTeam:(IMTeam *)team byAdministrator:(IMAdministrator *)admin
 {
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         AVObject *object = [AVObject objectWithClassName:@"Team"];

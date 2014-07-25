@@ -17,6 +17,9 @@
 		48A81AB919801734007CE410 /* IMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81AB819801734007CE410 /* IMViewController.m */; };
 		48A81ABB19801734007CE410 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A81ABA19801734007CE410 /* Images.xcassets */; };
 		48A81B1619801EF1007CE410 /* libiMealModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A81B1519801EF1007CE410 /* libiMealModel.a */; };
+		48E2A81919815518006DD602 /* TestModel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E2A81819815518006DD602 /* TestModel.storyboard */; };
+		48E2A81C198155C8006DD602 /* IMTestModelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E2A81B198155C8006DD602 /* IMTestModelTableViewController.m */; };
+		48E2A82319821725006DD602 /* NSObject+DLIntrospection.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E2A82219821725006DD602 /* NSObject+DLIntrospection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +38,11 @@
 		48A81AB819801734007CE410 /* IMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMViewController.m; sourceTree = "<group>"; };
 		48A81ABA19801734007CE410 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		48A81B1519801EF1007CE410 /* libiMealModel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiMealModel.a; path = "iMealModel/build/Debug-iphoneos/libiMealModel.a"; sourceTree = "<group>"; };
-		5B1455FA51D54F6AA36F1CA8 /* libPods-iMeal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMeal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B7ED1CADEB344DC9640DDB0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E2A81819815518006DD602 /* TestModel.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestModel.storyboard; sourceTree = "<group>"; };
+		48E2A81A198155C8006DD602 /* IMTestModelTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTestModelTableViewController.h; sourceTree = "<group>"; };
+		48E2A81B198155C8006DD602 /* IMTestModelTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTestModelTableViewController.m; sourceTree = "<group>"; };
+		48E2A82119821725006DD602 /* NSObject+DLIntrospection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+DLIntrospection.h"; path = "../../../Downloads/DLIntrospection-master/DLIntrospection/NSObject+DLIntrospection.h"; sourceTree = "<group>"; };
+		48E2A82219821725006DD602 /* NSObject+DLIntrospection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+DLIntrospection.m"; path = "../../../Downloads/DLIntrospection-master/DLIntrospection/NSObject+DLIntrospection.m"; sourceTree = "<group>"; };
 		B2FCCE0D79E5451E963FC0D5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		EFAA621A4042417E9C1A3138 /* Pods-iMeal.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMeal.xcconfig"; path = "Pods/Pods-iMeal.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,8 +88,6 @@
 				48A81AA219801734007CE410 /* Foundation.framework */,
 				48A81AA419801734007CE410 /* CoreGraphics.framework */,
 				48A81AA619801734007CE410 /* UIKit.framework */,
-				5B1455FA51D54F6AA36F1CA8 /* libPods-iMeal.a */,
-				7B7ED1CADEB344DC9640DDB0 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -91,6 +95,7 @@
 		48A81AA819801734007CE410 /* iMeal */ = {
 			isa = PBXGroup;
 			children = (
+				48E2A81D19815602006DD602 /* Test Model */,
 				48A81AB119801734007CE410 /* IMAppDelegate.h */,
 				48A81AB219801734007CE410 /* IMAppDelegate.m */,
 				48A81AB419801734007CE410 /* Main.storyboard */,
@@ -111,6 +116,18 @@
 				48A81AB019801734007CE410 /* iMeal-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		48E2A81D19815602006DD602 /* Test Model */ = {
+			isa = PBXGroup;
+			children = (
+				48E2A82119821725006DD602 /* NSObject+DLIntrospection.h */,
+				48E2A82219821725006DD602 /* NSObject+DLIntrospection.m */,
+				48E2A81A198155C8006DD602 /* IMTestModelTableViewController.h */,
+				48E2A81B198155C8006DD602 /* IMTestModelTableViewController.m */,
+				48E2A81819815518006DD602 /* TestModel.storyboard */,
+			);
+			name = "Test Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E2A81919815518006DD602 /* TestModel.storyboard in Resources */,
 				48A81ABB19801734007CE410 /* Images.xcassets in Resources */,
 				48A81AAD19801734007CE410 /* InfoPlist.strings in Resources */,
 				48A81AB619801734007CE410 /* Main.storyboard in Resources */,
@@ -215,7 +233,9 @@
 			files = (
 				48A81AB319801734007CE410 /* IMAppDelegate.m in Sources */,
 				48A81AAF19801734007CE410 /* main.m in Sources */,
+				48E2A81C198155C8006DD602 /* IMTestModelTableViewController.m in Sources */,
 				48A81AB919801734007CE410 /* IMViewController.m in Sources */,
+				48E2A82319821725006DD602 /* NSObject+DLIntrospection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +340,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iMeal/iMeal-Prefix.pch";
 				INFOPLIST_FILE = "iMeal/iMeal-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iMealModel/build/Debug-iphoneos",
@@ -339,6 +360,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iMeal/iMeal-Prefix.pch";
 				INFOPLIST_FILE = "iMeal/iMeal-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iMealModel/build/Debug-iphoneos",
