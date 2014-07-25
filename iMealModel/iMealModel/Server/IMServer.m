@@ -14,10 +14,11 @@
 
 + (void)setup
 {
+    //This method must be called before [AVOSCloud setApplicationId:clientKey:]
+    [IMMember registerSubclass];
+    
     [AVOSCloud setApplicationId:@"lwqrtun88ejwd9omplkeivhtiu9vv3zzo60ngt64qygtkdvp"
                       clientKey:@"w2xg21mruyuvr44yjmimg4o952rptlb0c40qwur33s89w2el"];
-    
-    [IMMember registerSubclass];
 }
 
 + (RACSignal *)createTeam:(IMTeam *)team byAdministrator:(IMAdministrator *)admin
