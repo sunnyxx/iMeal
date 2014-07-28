@@ -129,12 +129,60 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="小伙伴" id="OyS-Dl-QRQ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="EpM-Wg-jeZ"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="EpM-Wg-jeZ">
+                            <connections>
+                                <segue destination="mtB-Mg-InI" kind="push" id="AGS-ZI-51D"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="17Y-SV-qLc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1049" y="330"/>
+        </scene>
+        <!--View Controller - 新成员-->
+        <scene sceneID="7Ru-s0-BjW">
+            <objects>
+                <viewController id="mtB-Mg-InI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pfe-4b-QDl"/>
+                        <viewControllerLayoutGuide type="bottom" id="DMf-QR-meD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qxc-we-f6X">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nickname" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qXR-sl-I3f">
+                                <rect key="frame" x="40" y="90" width="240" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qXR-sl-I3f" firstAttribute="leading" secondItem="Qxc-we-f6X" secondAttribute="leading" constant="40" id="cTq-3w-Mmw"/>
+                            <constraint firstAttribute="trailing" secondItem="qXR-sl-I3f" secondAttribute="trailing" constant="40" id="yg1-2u-7O9"/>
+                            <constraint firstItem="qXR-sl-I3f" firstAttribute="top" secondItem="pfe-4b-QDl" secondAttribute="bottom" constant="26" id="zh7-ju-Jpx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="新成员" id="pjk-AP-OSj">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="rMZ-zg-pTv">
+                            <connections>
+                                <action selector="doneAction:" destination="CS4-4q-fIT" id="C8K-Ex-vVj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l1L-KM-kk8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="CS4-4q-fIT" customClass="IMAddMemberViewModel">
+                    <connections>
+                        <outlet property="nicknameTextField" destination="qXR-sl-I3f" id="q1J-pP-EQt"/>
+                        <outlet property="viewController" destination="mtB-Mg-InI" id="eAD-PF-bSy"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="1453" y="330"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="QeJ-f1-wpq">

@@ -6,16 +6,17 @@
 //
 //
 
+#import "IMModelObjects.h"
+
 @interface IMServer : NSObject
 
 + (void)setup;
 
 @end
 
-@class IMTeam, IMAdministrator;
-
 @interface IMServer (IMApiRequest)
 
 + (RACSignal *)createTeam:(IMTeam *)team byAdministrator:(IMAdministrator *)admin;
-
++ (RACSignal *)addMember:(IMMember *)member intoTeam:(IMTeam *)team;
++ (RACSignal *)addMemberIntoCurrentTeamWithNickname:(NSString *)nickname;
 @end

@@ -10,6 +10,8 @@
 
 @implementation IMMember
 
+@dynamic nickname;
+
 #pragma mark - AVSubclassing
 
 + (NSString *)parseClassName

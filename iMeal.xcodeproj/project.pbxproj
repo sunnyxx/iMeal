@@ -16,6 +16,8 @@
 		48A81AB919801734007CE410 /* IMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81AB819801734007CE410 /* IMViewController.m */; };
 		48A81ABB19801734007CE410 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A81ABA19801734007CE410 /* Images.xcassets */; };
 		48BD64321986AD660039B2EB /* libiMealModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BD64311986AD660039B2EB /* libiMealModel.a */; };
+		48BD64351986B03E0039B2EB /* IMAddMemberViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BD64341986B03E0039B2EB /* IMAddMemberViewModel.m */; };
+		48BD64371986B7F00039B2EB /* TestStarting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48BD64361986B7F00039B2EB /* TestStarting.storyboard */; };
 		48E2A81919815518006DD602 /* TestModel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E2A81819815518006DD602 /* TestModel.storyboard */; };
 		48E2A81C198155C8006DD602 /* IMTestModelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E2A81B198155C8006DD602 /* IMTestModelTableViewController.m */; };
 		48E2A8251982337D006DD602 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48E2A8241982337C006DD602 /* loading.gif */; };
@@ -39,6 +41,9 @@
 		48A81AB819801734007CE410 /* IMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMViewController.m; sourceTree = "<group>"; };
 		48A81ABA19801734007CE410 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		48BD64311986AD660039B2EB /* libiMealModel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiMealModel.a; path = "build/Debug-iphoneos/libiMealModel.a"; sourceTree = "<group>"; };
+		48BD64331986B03E0039B2EB /* IMAddMemberViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAddMemberViewModel.h; sourceTree = "<group>"; };
+		48BD64341986B03E0039B2EB /* IMAddMemberViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMAddMemberViewModel.m; sourceTree = "<group>"; };
+		48BD64361986B7F00039B2EB /* TestStarting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestStarting.storyboard; sourceTree = "<group>"; };
 		48E2A81819815518006DD602 /* TestModel.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestModel.storyboard; sourceTree = "<group>"; };
 		48E2A81A198155C8006DD602 /* IMTestModelTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTestModelTableViewController.h; sourceTree = "<group>"; };
 		48E2A81B198155C8006DD602 /* IMTestModelTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTestModelTableViewController.m; sourceTree = "<group>"; };
@@ -125,9 +130,12 @@
 		48E2A81D19815602006DD602 /* Test Model */ = {
 			isa = PBXGroup;
 			children = (
+				48BD64361986B7F00039B2EB /* TestStarting.storyboard */,
 				48E2A81A198155C8006DD602 /* IMTestModelTableViewController.h */,
 				48E2A81B198155C8006DD602 /* IMTestModelTableViewController.m */,
 				48E2A81819815518006DD602 /* TestModel.storyboard */,
+				48BD64331986B03E0039B2EB /* IMAddMemberViewModel.h */,
+				48BD64341986B03E0039B2EB /* IMAddMemberViewModel.m */,
 			);
 			name = "Test Model";
 			sourceTree = "<group>";
@@ -189,6 +197,7 @@
 				48E2A81919815518006DD602 /* TestModel.storyboard in Resources */,
 				48A81ABB19801734007CE410 /* Images.xcassets in Resources */,
 				48E2A8251982337D006DD602 /* loading.gif in Resources */,
+				48BD64371986B7F00039B2EB /* TestStarting.storyboard in Resources */,
 				48A81AAD19801734007CE410 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +230,7 @@
 				48A81AB319801734007CE410 /* IMAppDelegate.m in Sources */,
 				48A81AAF19801734007CE410 /* main.m in Sources */,
 				48E2A81C198155C8006DD602 /* IMTestModelTableViewController.m in Sources */,
+				48BD64351986B03E0039B2EB /* IMAddMemberViewModel.m in Sources */,
 				48A81AB919801734007CE410 /* IMViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
