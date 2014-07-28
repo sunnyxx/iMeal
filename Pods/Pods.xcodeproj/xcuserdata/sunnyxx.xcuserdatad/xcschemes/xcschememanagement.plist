@@ -14,12 +14,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-iMeal-pop.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-iMeal.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-iMealModel-AVOSCloud.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-iMealModel-FLEX.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,32 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>7CF1611AF1D5443C84668C7A</key>
+		<key>0702024B656343BFB1B0BC1D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>848CB13ED6BD4F6794E8FB64</key>
+		<key>1ECDF970F99F40C995573436</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BB1D947195A1471288B470FC</key>
+		<key>6748FD18B9E54E35819EB68A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BEC75BBC844B49BC88F5F5E4</key>
+		<key>6F49EC2EDFE54AF2ACAC8D8D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C9A0D9A90637498880B40664</key>
+		<key>7213CAE09E5B4AB480B620E7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DFF9490FB7DD4B40B95E42EB</key>
+		<key>8449A9D4A160418EACA97081</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A03E5FA08BA24AF0A2EEAB96</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ADCD91392A6948B39C8C8C54</key>
 		<dict>
 			<key>primary</key>
 			<true/>

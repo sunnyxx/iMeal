@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "848CB13ED6BD4F6794E8FB64"
+               BlueprintIdentifier = "7213CAE09E5B4AB480B620E7"
                BuildableName = "libPods-iMeal-UIImageView-PlayGIF.a"
                BlueprintName = "Pods-iMeal-UIImageView-PlayGIF"
                ReferencedContainer = "container:Pods.xcodeproj">

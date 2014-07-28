@@ -1,5 +1,7 @@
 PODS:
   - AVOSCloud (2.5.8.1)
+  - FLEX (1.0.1)
+  - pop (1.0.6)
   - ReactiveCocoa (2.3.1):
     - ReactiveCocoa/UI
   - ReactiveCocoa/Core (2.3.1):
@@ -11,11 +13,15 @@ PODS:
 
 DEPENDENCIES:
   - AVOSCloud (~> 2.5.8.1)
+  - FLEX (~> 1.0.0)
+  - pop (~> 1.0.6)
   - ReactiveCocoa (~> 2.3.1)
   - UIImageView-PlayGIF (~> 1.0.1)
 
 SPEC CHECKSUMS:
   AVOSCloud: 23a54f17ed9886972b5ca35532fb1e5d7212f931
+  FLEX: 4e53f7bb335cc230113c271b1ee5941cc44d648d
+  pop: e518794da38942c05255eb64b36d894e70cb4f00
   ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
   UIImageView-PlayGIF: 8208c6b864f5083608fb63621a6cb9d34e7106d9
 
