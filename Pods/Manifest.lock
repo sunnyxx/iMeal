@@ -7,13 +7,16 @@ PODS:
   - ReactiveCocoa/no-arc (2.3.1)
   - ReactiveCocoa/UI (2.3.1):
     - ReactiveCocoa/Core
+  - UIImageView-PlayGIF (1.0.1)
 
 DEPENDENCIES:
   - AVOSCloud (~> 2.5.8.1)
   - ReactiveCocoa (~> 2.3.1)
+  - UIImageView-PlayGIF (~> 1.0.1)
 
 SPEC CHECKSUMS:
   AVOSCloud: 23a54f17ed9886972b5ca35532fb1e5d7212f931
   ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
+  UIImageView-PlayGIF: 8208c6b864f5083608fb63621a6cb9d34e7106d9
 
 COCOAPODS: 0.33.1

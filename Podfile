@@ -10,6 +10,7 @@ target 'iMealModel' do
 end
 
 # UI第三方依赖
-#target 'iMeal' do
-#	pod 'ReactiveCocoa', '~> 2.3.1'
-#end
+target 'iMeal' do
+    pod 'AVOSCloud', '~> 2.5.8.1'
+    pod 'UIImageView-PlayGIF', '~> 1.0.1'
+end

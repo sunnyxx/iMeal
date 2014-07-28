@@ -10,6 +10,4 @@
 
 @interface IMTestModelTableViewController : UITableViewController
 
-@property (nonatomic, readonly, copy) NSArray *array;
-
 @end

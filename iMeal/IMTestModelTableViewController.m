@@ -9,6 +9,7 @@
 #import "IMTestModelTableViewController.h"
 #import "IMServer.h"
 #import "IMModelObjects.h"
+#import <UIImageView-PlayGIF/UIImageView+PlayGIF.h>
 
 @interface IMTestModelTableViewController ()
 @property (nonatomic, readwrite, copy) NSArray *array;
@@ -21,9 +22,13 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    NSMutableArray *arr = [@[@1, @2] mutableCopy];
-    _array = arr;
-    
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"loading" ofType:@"gif"];
+    imageView.gifPath = path;
+    imageView.center = tableView.center;
+    [tableView addSubview:imageView];
+    [imageView startGIF];
+    self.navigationItem.titleView = imageView;
     
     IMTeam *team = [IMTeam new];
     team.name = @"sunnyxx's team";

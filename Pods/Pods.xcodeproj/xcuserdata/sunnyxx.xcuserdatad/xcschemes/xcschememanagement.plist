@@ -4,6 +4,21 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-iMeal-AVOSCloud.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-iMeal-UIImageView-PlayGIF.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-iMeal.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-iMealModel-AVOSCloud.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2380057005D145A787AAB19B</key>
+		<key>7CF1611AF1D5443C84668C7A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>251B09BE71E244D1ACB2F10E</key>
+		<key>848CB13ED6BD4F6794E8FB64</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2BCDD535F7EA4010A3B6F826</key>
+		<key>BB1D947195A1471288B470FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BEC75BBC844B49BC88F5F5E4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C9A0D9A90637498880B40664</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DFF9490FB7DD4B40B95E42EB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

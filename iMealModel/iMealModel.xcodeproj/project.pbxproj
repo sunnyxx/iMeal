@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02A1B22D0D9941C9A52D246C /* libPods-iMealModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB544EFBEEE406BB80181D7 /* libPods-iMealModel.a */; };
 		48A81AE419801796007CE410 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A81AE319801796007CE410 /* Foundation.framework */; };
 		48A81B0E198018F4007CE410 /* IMMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81B0B198018F4007CE410 /* IMMember.m */; };
 		48A81B0F198018F4007CE410 /* IMTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81B0D198018F4007CE410 /* IMTeam.m */; };
 		48A81B1319801D4F007CE410 /* IMServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81B1219801D4F007CE410 /* IMServer.m */; };
 		48A81B1C198023BF007CE410 /* IMAdministrator.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81B1B198023BF007CE410 /* IMAdministrator.m */; };
+		48E2A82719823D7C006DD602 /* libPods-iMealModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E2A82619823D7C006DD602 /* libPods-iMealModel.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +28,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2FB544EFBEEE406BB80181D7 /* libPods-iMealModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMealModel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A81AE019801796007CE410 /* libiMealModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiMealModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A81AE319801796007CE410 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		48A81AE719801796007CE410 /* iMealModel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iMealModel-Prefix.pch"; sourceTree = "<group>"; };
@@ -42,6 +41,7 @@
 		48A81B1419801E5A007CE410 /* IMModelObjects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMModelObjects.h; sourceTree = "<group>"; };
 		48A81B1A198023BF007CE410 /* IMAdministrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAdministrator.h; sourceTree = "<group>"; };
 		48A81B1B198023BF007CE410 /* IMAdministrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMAdministrator.m; sourceTree = "<group>"; };
+		48E2A82619823D7C006DD602 /* libPods-iMealModel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-iMealModel.a"; path = "../Pods/build/Debug-iphoneos/libPods-iMealModel.a"; sourceTree = "<group>"; };
 		8284D1FDFEE645E1AFC944F0 /* Pods-iMealModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMealModel.xcconfig"; path = "../Pods/Pods-iMealModel.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,8 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E2A82719823D7C006DD602 /* libPods-iMealModel.a in Frameworks */,
 				48A81AE419801796007CE410 /* Foundation.framework in Frameworks */,
-				02A1B22D0D9941C9A52D246C /* libPods-iMealModel.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,9 +79,9 @@
 		48A81AE219801796007CE410 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				48E2A82619823D7C006DD602 /* libPods-iMealModel.a */,
 				48A81AE319801796007CE410 /* Foundation.framework */,
 				48A81AF419801796007CE410 /* UIKit.framework */,
-				2FB544EFBEEE406BB80181D7 /* libPods-iMealModel.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -297,6 +297,17 @@
 				DSTROOT = /tmp/iMealModel.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iMealModel/iMealModel-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/AVOSCloud\"",
+					"\"${PODS_ROOT}/Headers/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/ReactiveCocoa/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/UIImageView-PlayGIF\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/sunnyxx/git/iMeal/Pods/build/Debug-iphoneos",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -310,6 +321,17 @@
 				DSTROOT = /tmp/iMealModel.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iMealModel/iMealModel-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/AVOSCloud\"",
+					"\"${PODS_ROOT}/Headers/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/ReactiveCocoa/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/UIImageView-PlayGIF\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/sunnyxx/git/iMeal/Pods/build/Debug-iphoneos",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

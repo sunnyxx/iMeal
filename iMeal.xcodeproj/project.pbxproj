@@ -13,13 +13,15 @@
 		48A81AAD19801734007CE410 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48A81AAB19801734007CE410 /* InfoPlist.strings */; };
 		48A81AAF19801734007CE410 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81AAE19801734007CE410 /* main.m */; };
 		48A81AB319801734007CE410 /* IMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81AB219801734007CE410 /* IMAppDelegate.m */; };
-		48A81AB619801734007CE410 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A81AB419801734007CE410 /* Main.storyboard */; };
 		48A81AB919801734007CE410 /* IMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81AB819801734007CE410 /* IMViewController.m */; };
 		48A81ABB19801734007CE410 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A81ABA19801734007CE410 /* Images.xcassets */; };
-		48A81B1619801EF1007CE410 /* libiMealModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A81B1519801EF1007CE410 /* libiMealModel.a */; };
 		48E2A81919815518006DD602 /* TestModel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E2A81819815518006DD602 /* TestModel.storyboard */; };
 		48E2A81C198155C8006DD602 /* IMTestModelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E2A81B198155C8006DD602 /* IMTestModelTableViewController.m */; };
 		48E2A82319821725006DD602 /* NSObject+DLIntrospection.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E2A82219821725006DD602 /* NSObject+DLIntrospection.m */; };
+		48E2A8251982337D006DD602 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48E2A8241982337C006DD602 /* loading.gif */; };
+		48E2A82A198249D0006DD602 /* libPods-iMeal.a in Resources */ = {isa = PBXBuildFile; fileRef = B566D2A1BC1E40FBA370ED12 /* libPods-iMeal.a */; };
+		48E2A82C198249DA006DD602 /* libiMealModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E2A82B198249DA006DD602 /* libiMealModel.a */; };
+		61CD318381F3486D8D97BF5C /* libPods-iMeal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B566D2A1BC1E40FBA370ED12 /* libPods-iMeal.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,13 +39,15 @@
 		48A81AB719801734007CE410 /* IMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMViewController.h; sourceTree = "<group>"; };
 		48A81AB819801734007CE410 /* IMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMViewController.m; sourceTree = "<group>"; };
 		48A81ABA19801734007CE410 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		48A81B1519801EF1007CE410 /* libiMealModel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiMealModel.a; path = "iMealModel/build/Debug-iphoneos/libiMealModel.a"; sourceTree = "<group>"; };
 		48E2A81819815518006DD602 /* TestModel.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestModel.storyboard; sourceTree = "<group>"; };
 		48E2A81A198155C8006DD602 /* IMTestModelTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTestModelTableViewController.h; sourceTree = "<group>"; };
 		48E2A81B198155C8006DD602 /* IMTestModelTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTestModelTableViewController.m; sourceTree = "<group>"; };
 		48E2A82119821725006DD602 /* NSObject+DLIntrospection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+DLIntrospection.h"; path = "../../../Downloads/DLIntrospection-master/DLIntrospection/NSObject+DLIntrospection.h"; sourceTree = "<group>"; };
 		48E2A82219821725006DD602 /* NSObject+DLIntrospection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+DLIntrospection.m"; path = "../../../Downloads/DLIntrospection-master/DLIntrospection/NSObject+DLIntrospection.m"; sourceTree = "<group>"; };
+		48E2A8241982337C006DD602 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		48E2A82B198249DA006DD602 /* libiMealModel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiMealModel.a; path = "iMealModel/build/Debug-iphoneos/libiMealModel.a"; sourceTree = "<group>"; };
 		B2FCCE0D79E5451E963FC0D5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		B566D2A1BC1E40FBA370ED12 /* libPods-iMeal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMeal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAA621A4042417E9C1A3138 /* Pods-iMeal.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMeal.xcconfig"; path = "Pods/Pods-iMeal.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,10 +56,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48A81B1619801EF1007CE410 /* libiMealModel.a in Frameworks */,
+				48E2A82C198249DA006DD602 /* libiMealModel.a in Frameworks */,
 				48A81AA519801734007CE410 /* CoreGraphics.framework in Frameworks */,
 				48A81AA719801734007CE410 /* UIKit.framework in Frameworks */,
 				48A81AA319801734007CE410 /* Foundation.framework in Frameworks */,
+				61CD318381F3486D8D97BF5C /* libPods-iMeal.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,10 +89,11 @@
 		48A81AA119801734007CE410 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				48A81B1519801EF1007CE410 /* libiMealModel.a */,
+				48E2A82B198249DA006DD602 /* libiMealModel.a */,
 				48A81AA219801734007CE410 /* Foundation.framework */,
 				48A81AA419801734007CE410 /* CoreGraphics.framework */,
 				48A81AA619801734007CE410 /* UIKit.framework */,
+				B566D2A1BC1E40FBA370ED12 /* libPods-iMeal.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,6 +108,7 @@
 				48A81AB719801734007CE410 /* IMViewController.h */,
 				48A81AB819801734007CE410 /* IMViewController.m */,
 				48A81ABA19801734007CE410 /* Images.xcassets */,
+				48E2A8241982337C006DD602 /* loading.gif */,
 				48A81AA919801734007CE410 /* Supporting Files */,
 			);
 			path = iMeal;
@@ -184,10 +191,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E2A82A198249D0006DD602 /* libPods-iMeal.a in Resources */,
 				48E2A81919815518006DD602 /* TestModel.storyboard in Resources */,
 				48A81ABB19801734007CE410 /* Images.xcassets in Resources */,
+				48E2A8251982337D006DD602 /* loading.gif in Resources */,
 				48A81AAD19801734007CE410 /* InfoPlist.strings in Resources */,
-				48A81AB619801734007CE410 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +214,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Pods-iMeal-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		920D30D631B3409B8774C5DB /* Check Pods Manifest.lock */ = {
@@ -333,7 +341,7 @@
 		};
 		48A81AD219801734007CE410 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2FCCE0D79E5451E963FC0D5 /* Pods.xcconfig */;
+			baseConfigurationReference = EFAA621A4042417E9C1A3138 /* Pods-iMeal.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -341,10 +349,7 @@
 				GCC_PREFIX_HEADER = "iMeal/iMeal-Prefix.pch";
 				INFOPLIST_FILE = "iMeal/iMeal-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/iMealModel/build/Debug-iphoneos",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "./iMealModel/**";
 				WRAPPER_EXTENSION = app;
@@ -353,7 +358,7 @@
 		};
 		48A81AD319801734007CE410 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2FCCE0D79E5451E963FC0D5 /* Pods.xcconfig */;
+			baseConfigurationReference = EFAA621A4042417E9C1A3138 /* Pods-iMeal.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -361,10 +366,7 @@
 				GCC_PREFIX_HEADER = "iMeal/iMeal-Prefix.pch";
 				INFOPLIST_FILE = "iMeal/iMeal-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/iMealModel/build/Debug-iphoneos",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "./iMealModel/**";
 				WRAPPER_EXTENSION = app;

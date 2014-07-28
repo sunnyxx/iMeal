@@ -1,0 +1,1 @@
+PODS_IMEAL_UIIMAGEVIEW_PLAYGIF_OTHER_LDFLAGS = -framework CoreGraphics -framework Foundation -framework ImageIO -framework QuartzCore -framework UIKit
