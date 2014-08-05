@@ -7,25 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		480EC0651991306D0058CCA7 /* IMChargeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 480EC0641991306D0058CCA7 /* IMChargeVC.m */; };
+		480EC068199130980058CCA7 /* IMChargeReceiverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 480EC067199130980058CCA7 /* IMChargeReceiverVC.m */; };
+		480EC06E199150BE0058CCA7 /* IMMemberAddingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 480EC06B199150BE0058CCA7 /* IMMemberAddingVC.m */; };
+		480EC06F199150BE0058CCA7 /* IMMembersVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 480EC06D199150BE0058CCA7 /* IMMembersVC.m */; };
+		486BA89019893F3000D1CBA0 /* IMTestModelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486BA88C19893F3000D1CBA0 /* IMTestModelTableViewController.m */; };
+		486BA89119893F3000D1CBA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 486BA88D19893F3000D1CBA0 /* Main.storyboard */; };
+		486BA8BD198E063100D1CBA0 /* IMTeamCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 486BA8BC198E063100D1CBA0 /* IMTeamCell.m */; };
+		48846CC519880BA600AF9941 /* Guide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48846CC419880BA600AF9941 /* Guide.storyboard */; };
+		48846CC819880BDA00AF9941 /* IMTeamCreationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48846CC719880BDA00AF9941 /* IMTeamCreationVC.m */; };
 		48A81AA319801734007CE410 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A81AA219801734007CE410 /* Foundation.framework */; };
 		48A81AA519801734007CE410 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A81AA419801734007CE410 /* CoreGraphics.framework */; };
 		48A81AA719801734007CE410 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A81AA619801734007CE410 /* UIKit.framework */; };
 		48A81AAD19801734007CE410 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48A81AAB19801734007CE410 /* InfoPlist.strings */; };
 		48A81AAF19801734007CE410 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81AAE19801734007CE410 /* main.m */; };
 		48A81AB319801734007CE410 /* IMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81AB219801734007CE410 /* IMAppDelegate.m */; };
-		48A81AB919801734007CE410 /* IMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81AB819801734007CE410 /* IMViewController.m */; };
 		48A81ABB19801734007CE410 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A81ABA19801734007CE410 /* Images.xcassets */; };
 		48BD64321986AD660039B2EB /* libiMealModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BD64311986AD660039B2EB /* libiMealModel.a */; };
-		48BD64351986B03E0039B2EB /* IMAddMemberViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BD64341986B03E0039B2EB /* IMAddMemberViewModel.m */; };
-		48BD64371986B7F00039B2EB /* TestStarting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48BD64361986B7F00039B2EB /* TestStarting.storyboard */; };
-		48E2A81919815518006DD602 /* TestModel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E2A81819815518006DD602 /* TestModel.storyboard */; };
-		48E2A81C198155C8006DD602 /* IMTestModelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E2A81B198155C8006DD602 /* IMTestModelTableViewController.m */; };
+		48CC34801990C22B0079108C /* IMTallyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CC347F1990C22B0079108C /* IMTallyVC.m */; };
+		48CC34831990C3940079108C /* IMTallyMemberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CC34821990C3940079108C /* IMTallyMemberCell.m */; };
 		48E2A8251982337D006DD602 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48E2A8241982337C006DD602 /* loading.gif */; };
 		48E2A82A198249D0006DD602 /* libPods-iMeal.a in Resources */ = {isa = PBXBuildFile; fileRef = B566D2A1BC1E40FBA370ED12 /* libPods-iMeal.a */; };
 		8765F09117264BEE8C5DB16F /* libPods-iMeal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B566D2A1BC1E40FBA370ED12 /* libPods-iMeal.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		480EC0631991306D0058CCA7 /* IMChargeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMChargeVC.h; sourceTree = "<group>"; };
+		480EC0641991306D0058CCA7 /* IMChargeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMChargeVC.m; sourceTree = "<group>"; };
+		480EC066199130980058CCA7 /* IMChargeReceiverVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMChargeReceiverVC.h; sourceTree = "<group>"; };
+		480EC067199130980058CCA7 /* IMChargeReceiverVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMChargeReceiverVC.m; sourceTree = "<group>"; };
+		480EC06A199150BE0058CCA7 /* IMMemberAddingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMemberAddingVC.h; sourceTree = "<group>"; };
+		480EC06B199150BE0058CCA7 /* IMMemberAddingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMMemberAddingVC.m; sourceTree = "<group>"; };
+		480EC06C199150BE0058CCA7 /* IMMembersVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMembersVC.h; sourceTree = "<group>"; };
+		480EC06D199150BE0058CCA7 /* IMMembersVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMMembersVC.m; sourceTree = "<group>"; };
+		486BA88B19893F3000D1CBA0 /* IMTestModelTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTestModelTableViewController.h; sourceTree = "<group>"; };
+		486BA88C19893F3000D1CBA0 /* IMTestModelTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTestModelTableViewController.m; sourceTree = "<group>"; };
+		486BA88D19893F3000D1CBA0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		486BA8BB198E063100D1CBA0 /* IMTeamCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTeamCell.h; sourceTree = "<group>"; };
+		486BA8BC198E063100D1CBA0 /* IMTeamCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTeamCell.m; sourceTree = "<group>"; };
+		48846CC419880BA600AF9941 /* Guide.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Guide.storyboard; sourceTree = "<group>"; };
+		48846CC619880BDA00AF9941 /* IMTeamCreationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTeamCreationVC.h; sourceTree = "<group>"; };
+		48846CC719880BDA00AF9941 /* IMTeamCreationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTeamCreationVC.m; sourceTree = "<group>"; };
 		48A81A9F19801734007CE410 /* iMeal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMeal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A81AA219801734007CE410 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		48A81AA419801734007CE410 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -36,17 +58,12 @@
 		48A81AB019801734007CE410 /* iMeal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iMeal-Prefix.pch"; sourceTree = "<group>"; };
 		48A81AB119801734007CE410 /* IMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMAppDelegate.h; sourceTree = "<group>"; };
 		48A81AB219801734007CE410 /* IMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMAppDelegate.m; sourceTree = "<group>"; };
-		48A81AB519801734007CE410 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		48A81AB719801734007CE410 /* IMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMViewController.h; sourceTree = "<group>"; };
-		48A81AB819801734007CE410 /* IMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMViewController.m; sourceTree = "<group>"; };
 		48A81ABA19801734007CE410 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		48BD64311986AD660039B2EB /* libiMealModel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiMealModel.a; path = "build/Debug-iphoneos/libiMealModel.a"; sourceTree = "<group>"; };
-		48BD64331986B03E0039B2EB /* IMAddMemberViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAddMemberViewModel.h; sourceTree = "<group>"; };
-		48BD64341986B03E0039B2EB /* IMAddMemberViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMAddMemberViewModel.m; sourceTree = "<group>"; };
-		48BD64361986B7F00039B2EB /* TestStarting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestStarting.storyboard; sourceTree = "<group>"; };
-		48E2A81819815518006DD602 /* TestModel.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestModel.storyboard; sourceTree = "<group>"; };
-		48E2A81A198155C8006DD602 /* IMTestModelTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTestModelTableViewController.h; sourceTree = "<group>"; };
-		48E2A81B198155C8006DD602 /* IMTestModelTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTestModelTableViewController.m; sourceTree = "<group>"; };
+		48CC347E1990C22B0079108C /* IMTallyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTallyVC.h; sourceTree = "<group>"; };
+		48CC347F1990C22B0079108C /* IMTallyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTallyVC.m; sourceTree = "<group>"; };
+		48CC34811990C3940079108C /* IMTallyMemberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTallyMemberCell.h; sourceTree = "<group>"; };
+		48CC34821990C3940079108C /* IMTallyMemberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTallyMemberCell.m; sourceTree = "<group>"; };
 		48E2A8241982337C006DD602 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		B2FCCE0D79E5451E963FC0D5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B566D2A1BC1E40FBA370ED12 /* libPods-iMeal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMeal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +86,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		480EC0621991306D0058CCA7 /* Charge */ = {
+			isa = PBXGroup;
+			children = (
+				480EC0631991306D0058CCA7 /* IMChargeVC.h */,
+				480EC0641991306D0058CCA7 /* IMChargeVC.m */,
+				480EC066199130980058CCA7 /* IMChargeReceiverVC.h */,
+				480EC067199130980058CCA7 /* IMChargeReceiverVC.m */,
+			);
+			path = Charge;
+			sourceTree = "<group>";
+		};
+		480EC069199150BE0058CCA7 /* Members */ = {
+			isa = PBXGroup;
+			children = (
+				480EC06A199150BE0058CCA7 /* IMMemberAddingVC.h */,
+				480EC06B199150BE0058CCA7 /* IMMemberAddingVC.m */,
+				480EC06C199150BE0058CCA7 /* IMMembersVC.h */,
+				480EC06D199150BE0058CCA7 /* IMMembersVC.m */,
+			);
+			path = Members;
+			sourceTree = "<group>";
+		};
+		486BA88619893F3000D1CBA0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				480EC069199150BE0058CCA7 /* Members */,
+				480EC0621991306D0058CCA7 /* Charge */,
+				48CC347D1990C2040079108C /* Tally */,
+				486BA8BA198E061100D1CBA0 /* Cells */,
+				486BA88B19893F3000D1CBA0 /* IMTestModelTableViewController.h */,
+				486BA88C19893F3000D1CBA0 /* IMTestModelTableViewController.m */,
+				486BA88D19893F3000D1CBA0 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		486BA8BA198E061100D1CBA0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				486BA8BB198E063100D1CBA0 /* IMTeamCell.h */,
+				486BA8BC198E063100D1CBA0 /* IMTeamCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		48846CC319880BA600AF9941 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				48846CC419880BA600AF9941 /* Guide.storyboard */,
+				48846CC619880BDA00AF9941 /* IMTeamCreationVC.h */,
+				48846CC719880BDA00AF9941 /* IMTeamCreationVC.m */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
 		48A81A9619801733007CE410 = {
 			isa = PBXGroup;
 			children = (
@@ -103,12 +175,11 @@
 		48A81AA819801734007CE410 /* iMeal */ = {
 			isa = PBXGroup;
 			children = (
-				48E2A81D19815602006DD602 /* Test Model */,
+				486BA88619893F3000D1CBA0 /* Main */,
+				48846CC319880BA600AF9941 /* Guide */,
+				48BD64531987BF650039B2EB /* Widgets */,
 				48A81AB119801734007CE410 /* IMAppDelegate.h */,
 				48A81AB219801734007CE410 /* IMAppDelegate.m */,
-				48A81AB419801734007CE410 /* Main.storyboard */,
-				48A81AB719801734007CE410 /* IMViewController.h */,
-				48A81AB819801734007CE410 /* IMViewController.m */,
 				48A81ABA19801734007CE410 /* Images.xcassets */,
 				48E2A8241982337C006DD602 /* loading.gif */,
 				48A81AA919801734007CE410 /* Supporting Files */,
@@ -127,17 +198,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		48E2A81D19815602006DD602 /* Test Model */ = {
+		48BD64531987BF650039B2EB /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
-				48BD64361986B7F00039B2EB /* TestStarting.storyboard */,
-				48E2A81A198155C8006DD602 /* IMTestModelTableViewController.h */,
-				48E2A81B198155C8006DD602 /* IMTestModelTableViewController.m */,
-				48E2A81819815518006DD602 /* TestModel.storyboard */,
-				48BD64331986B03E0039B2EB /* IMAddMemberViewModel.h */,
-				48BD64341986B03E0039B2EB /* IMAddMemberViewModel.m */,
 			);
-			name = "Test Model";
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		48CC347D1990C2040079108C /* Tally */ = {
+			isa = PBXGroup;
+			children = (
+				48CC347E1990C22B0079108C /* IMTallyVC.h */,
+				48CC347F1990C22B0079108C /* IMTallyVC.m */,
+				48CC34811990C3940079108C /* IMTallyMemberCell.h */,
+				48CC34821990C3940079108C /* IMTallyMemberCell.m */,
+			);
+			path = Tally;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +245,11 @@
 			attributes = {
 				CLASSPREFIX = IM;
 				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					48A81A9E19801734007CE410 = {
+						DevelopmentTeam = 88239XA7ZJ;
+					};
+				};
 			};
 			buildConfigurationList = 48A81A9A19801733007CE410 /* Build configuration list for PBXProject "iMeal" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -194,11 +275,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				48E2A82A198249D0006DD602 /* libPods-iMeal.a in Resources */,
-				48E2A81919815518006DD602 /* TestModel.storyboard in Resources */,
 				48A81ABB19801734007CE410 /* Images.xcassets in Resources */,
 				48E2A8251982337D006DD602 /* loading.gif in Resources */,
-				48BD64371986B7F00039B2EB /* TestStarting.storyboard in Resources */,
+				486BA89119893F3000D1CBA0 /* Main.storyboard in Resources */,
 				48A81AAD19801734007CE410 /* InfoPlist.strings in Resources */,
+				48846CC519880BA600AF9941 /* Guide.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,11 +308,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48CC34801990C22B0079108C /* IMTallyVC.m in Sources */,
+				486BA89019893F3000D1CBA0 /* IMTestModelTableViewController.m in Sources */,
+				480EC068199130980058CCA7 /* IMChargeReceiverVC.m in Sources */,
 				48A81AB319801734007CE410 /* IMAppDelegate.m in Sources */,
+				48CC34831990C3940079108C /* IMTallyMemberCell.m in Sources */,
+				486BA8BD198E063100D1CBA0 /* IMTeamCell.m in Sources */,
+				480EC0651991306D0058CCA7 /* IMChargeVC.m in Sources */,
 				48A81AAF19801734007CE410 /* main.m in Sources */,
-				48E2A81C198155C8006DD602 /* IMTestModelTableViewController.m in Sources */,
-				48BD64351986B03E0039B2EB /* IMAddMemberViewModel.m in Sources */,
-				48A81AB919801734007CE410 /* IMViewController.m in Sources */,
+				480EC06F199150BE0058CCA7 /* IMMembersVC.m in Sources */,
+				48846CC819880BDA00AF9941 /* IMTeamCreationVC.m in Sources */,
+				480EC06E199150BE0058CCA7 /* IMMemberAddingVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +331,6 @@
 				48A81AAC19801734007CE410 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		48A81AB419801734007CE410 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				48A81AB519801734007CE410 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -333,12 +412,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iMeal/iMeal-Prefix.pch";
 				INFOPLIST_FILE = "iMeal/iMeal-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4BF6EF93-9D25-48BD-99EF-D492EFCE1528";
 				USER_HEADER_SEARCH_PATHS = "iMealModel/**";
 				WRAPPER_EXTENSION = app;
 			};
@@ -350,12 +432,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iMeal/iMeal-Prefix.pch";
 				INFOPLIST_FILE = "iMeal/iMeal-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4BF6EF93-9D25-48BD-99EF-D492EFCE1528";
 				USER_HEADER_SEARCH_PATHS = "iMealModel/**";
 				WRAPPER_EXTENSION = app;
 			};

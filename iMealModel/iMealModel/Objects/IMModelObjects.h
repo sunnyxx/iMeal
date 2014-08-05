@@ -8,4 +8,6 @@
 
 #import "IMTeam.h"
 #import "IMMember.h"
-#import "IMAdministrator.h"
+#import "IMRestaurant.h"
+#import "IMChargeRecord.h"
+#import "IMCostRecord.h"

@@ -10,7 +10,7 @@
 
 @implementation IMMember
 
-@dynamic nickname;
+@dynamic nickname, money;
 
 #pragma mark - AVSubclassing
 

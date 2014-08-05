@@ -11,5 +11,6 @@
 @interface IMMember : AVObject <AVSubclassing>
 
 @property (nonatomic, copy) NSString *nickname;
+@property (nonatomic) CGFloat money;
 
 @end

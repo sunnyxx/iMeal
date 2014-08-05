@@ -18,4 +18,6 @@ target 'iMeal' do
     pod 'AVOSCloud', '~> 2.5.8.1'
     pod 'UIImageView-PlayGIF', '~> 1.0.1'
     pod 'pop', '~> 1.0.6'
+    pod 'XXNibBridge', :git => 'https://github.com/sunnyxx/XXNibBridge.git'
+
 end

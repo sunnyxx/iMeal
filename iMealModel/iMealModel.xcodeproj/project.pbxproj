@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		486BA87F1988E69900D1CBA0 /* IMRestaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 486BA87E1988E69900D1CBA0 /* IMRestaurant.m */; };
+		486BA8821988E6C000D1CBA0 /* IMChargeRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 486BA8811988E6C000D1CBA0 /* IMChargeRecord.m */; };
+		486BA8851988E83300D1CBA0 /* IMCostRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 486BA8841988E83300D1CBA0 /* IMCostRecord.m */; };
 		48A81AE419801796007CE410 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A81AE319801796007CE410 /* Foundation.framework */; };
 		48A81B0E198018F4007CE410 /* IMMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81B0B198018F4007CE410 /* IMMember.m */; };
 		48A81B0F198018F4007CE410 /* IMTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81B0D198018F4007CE410 /* IMTeam.m */; };
 		48A81B1319801D4F007CE410 /* IMServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81B1219801D4F007CE410 /* IMServer.m */; };
-		48A81B1C198023BF007CE410 /* IMAdministrator.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81B1B198023BF007CE410 /* IMAdministrator.m */; };
 		B0C19A53742F442D9EDB13BA /* libPods-iMealModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98932A1B66C74AF89B7E2382 /* libPods-iMealModel.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		486BA87D1988E69900D1CBA0 /* IMRestaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRestaurant.h; sourceTree = "<group>"; };
+		486BA87E1988E69900D1CBA0 /* IMRestaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRestaurant.m; sourceTree = "<group>"; };
+		486BA8801988E6C000D1CBA0 /* IMChargeRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMChargeRecord.h; sourceTree = "<group>"; };
+		486BA8811988E6C000D1CBA0 /* IMChargeRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMChargeRecord.m; sourceTree = "<group>"; };
+		486BA8831988E83300D1CBA0 /* IMCostRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMCostRecord.h; sourceTree = "<group>"; };
+		486BA8841988E83300D1CBA0 /* IMCostRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMCostRecord.m; sourceTree = "<group>"; };
 		48A81AE019801796007CE410 /* libiMealModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiMealModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A81AE319801796007CE410 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		48A81AE719801796007CE410 /* iMealModel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iMealModel-Prefix.pch"; sourceTree = "<group>"; };
@@ -39,8 +47,6 @@
 		48A81B1119801D4F007CE410 /* IMServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMServer.h; sourceTree = "<group>"; };
 		48A81B1219801D4F007CE410 /* IMServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMServer.m; sourceTree = "<group>"; };
 		48A81B1419801E5A007CE410 /* IMModelObjects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMModelObjects.h; sourceTree = "<group>"; };
-		48A81B1A198023BF007CE410 /* IMAdministrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAdministrator.h; sourceTree = "<group>"; };
-		48A81B1B198023BF007CE410 /* IMAdministrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMAdministrator.m; sourceTree = "<group>"; };
 		8284D1FDFEE645E1AFC944F0 /* Pods-iMealModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMealModel.xcconfig"; path = "../Pods/Pods-iMealModel.xcconfig"; sourceTree = "<group>"; };
 		98932A1B66C74AF89B7E2382 /* libPods-iMealModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMealModel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -112,8 +118,12 @@
 				48A81B0B198018F4007CE410 /* IMMember.m */,
 				48A81B0C198018F4007CE410 /* IMTeam.h */,
 				48A81B0D198018F4007CE410 /* IMTeam.m */,
-				48A81B1A198023BF007CE410 /* IMAdministrator.h */,
-				48A81B1B198023BF007CE410 /* IMAdministrator.m */,
+				486BA87D1988E69900D1CBA0 /* IMRestaurant.h */,
+				486BA87E1988E69900D1CBA0 /* IMRestaurant.m */,
+				486BA8801988E6C000D1CBA0 /* IMChargeRecord.h */,
+				486BA8811988E6C000D1CBA0 /* IMChargeRecord.m */,
+				486BA8831988E83300D1CBA0 /* IMCostRecord.h */,
+				486BA8841988E83300D1CBA0 /* IMCostRecord.m */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -199,7 +209,9 @@
 				48A81B0E198018F4007CE410 /* IMMember.m in Sources */,
 				48A81B0F198018F4007CE410 /* IMTeam.m in Sources */,
 				48A81B1319801D4F007CE410 /* IMServer.m in Sources */,
-				48A81B1C198023BF007CE410 /* IMAdministrator.m in Sources */,
+				486BA8851988E83300D1CBA0 /* IMCostRecord.m in Sources */,
+				486BA87F1988E69900D1CBA0 /* IMRestaurant.m in Sources */,
+				486BA8821988E6C000D1CBA0 /* IMChargeRecord.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

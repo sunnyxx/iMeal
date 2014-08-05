@@ -13,11 +13,16 @@
 @interface IMTeam : AVObject <AVSubclassing>
 
 + (IMTeam *)currentTeam;
-
-@property (nonatomic, strong, readonly) IMMember *me;
+- (void)storeAsCurrentTeam;
 
 @property (nonatomic, copy) NSString *name;
-@property (nonatomic, strong) AVRelation *membersRelation;
-@property (nonatomic, copy) NSArray /*IMMember*/*members;
+
+/// Team number
+@property (nonatomic, copy) NSString *number;
+@property (nonatomic, strong) AVRelation *members;
+@property (nonatomic, strong) AVRelation *restaurants;
+
+/// Last member that received money from others
+@property (nonatomic, strong) IMMember *receiver;
 
 @end

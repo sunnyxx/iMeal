@@ -10,6 +10,7 @@ PODS:
   - ReactiveCocoa/UI (2.3.1):
     - ReactiveCocoa/Core
   - UIImageView-PlayGIF (1.0.1)
+  - XXNibBridge (1.0)
 
 DEPENDENCIES:
   - AVOSCloud (~> 2.5.8.1)
@@ -17,6 +18,11 @@ DEPENDENCIES:
   - pop (~> 1.0.6)
   - ReactiveCocoa (~> 2.3.1)
   - UIImageView-PlayGIF (~> 1.0.1)
+  - XXNibBridge (from `https://github.com/sunnyxx/XXNibBridge.git`)
+
+EXTERNAL SOURCES:
+  XXNibBridge:
+    :git: https://github.com/sunnyxx/XXNibBridge.git
 
 SPEC CHECKSUMS:
   AVOSCloud: 23a54f17ed9886972b5ca35532fb1e5d7212f931
@@ -24,5 +30,6 @@ SPEC CHECKSUMS:
   pop: e518794da38942c05255eb64b36d894e70cb4f00
   ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
   UIImageView-PlayGIF: 8208c6b864f5083608fb63621a6cb9d34e7106d9
+  XXNibBridge: 4697add5a023b0ceb8424945df650666ad7271da
 
 COCOAPODS: 0.33.1

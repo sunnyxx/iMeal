@@ -30,17 +30,6 @@
     [imageView startGIF];
     self.navigationItem.titleView = imageView;
     
-    IMTeam *team = [IMTeam new];
-    team.name = @"sunnyxx's team";
-    IMAdministrator *admin = [IMAdministrator new];
-    
-    [[IMServer createTeam:team byAdministrator:admin] subscribeNext:^(id x) {
-        
-    } error:^(NSError *error) {
-        
-    } completed:^{
-        
-    }];
     
 }
 

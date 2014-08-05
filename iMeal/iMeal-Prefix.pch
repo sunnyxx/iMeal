@@ -16,4 +16,6 @@
 
     #import <ReactiveCocoa/ReactiveCocoa.h>
     #import <ReactiveCocoa/RACEXTScope.h>
+
+    #import <XXNibBridge/XXNibBridge.h>
 #endif
