@@ -10,7 +10,7 @@
 
 @implementation IMTeamTally
 
-@dynamic date, member, payer, restaurant, money;
+@dynamic date, team, memberTallies;
 
 + (NSString *)parseClassName
 {
