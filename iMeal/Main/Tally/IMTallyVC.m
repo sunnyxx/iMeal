@@ -7,11 +7,12 @@
 //
 
 #import "IMTallyVC.h"
-#import "IMTallyMemberCell.h"
-#import "IMServer.h"
+#import "IMTallyRecordCell.h"
+#import "IMServer+TeamSignals.h"
 
 @interface IMTallyVC ()
-@property (nonatomic, copy) NSArray *members;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *finishButtonItem;
+@property (nonatomic, copy) NSArray *costRecords;
 @end
 
 @implementation IMTallyVC
@@ -20,12 +21,24 @@
 {
     [super viewDidLoad];
     
-    @weakify(self);
-    [[IMServer allMembersSignalInCurrentTeam] subscribeNext:^(NSArray *members) {
-        @strongify(self);
-        self.members = members;
-        [self.tableView reloadData];
-    }];
+    NSMutableArray *records = [NSMutableArray array];
+    for (IMMember *member in self.members)
+    {
+        IMMemberTally *record = [IMMemberTally new];
+        record.member = member;
+        record.date = [NSDate new];
+        [records addObject:record];
+    }
+    self.costRecords = records;
+    
+
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    [self.tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
 }
 
 #pragma mark - Table view data source
@@ -37,16 +50,19 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.members.count;
+    return self.costRecords.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    IMTallyMemberCell *cell = [tableView dequeueReusableCellWithIdentifier:[IMTallyMemberCell xx_nibID] forIndexPath:indexPath];
-    IMMember *member = self.members[indexPath.row];
-    cell.member = member;
+    IMTallyRecordCell *cell = [tableView dequeueReusableCellWithIdentifier:[IMTallyRecordCell xx_nibID] forIndexPath:indexPath];
+    IMMemberTally *record = self.costRecords[indexPath.row];
+    cell.record = record;
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+}
 
 @end

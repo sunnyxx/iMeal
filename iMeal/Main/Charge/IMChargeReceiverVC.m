@@ -7,7 +7,7 @@
 //
 
 #import "IMChargeReceiverVC.h"
-#import "IMServer.h"
+#import "IMServer+TeamSignals.h"
 
 @interface IMChargeReceiverVC ()
 @property (nonatomic, copy) NSArray *members;
@@ -20,7 +20,7 @@
     [super viewDidLoad];
     
     @weakify(self);
-    [[[IMServer allMembersSignalInCurrentTeam]
+    [[[IMServer allTeamMembersSignal]
         map:^id(NSArray *members) {
         // Filter charger
         NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(SELF != %@)", self.charger];

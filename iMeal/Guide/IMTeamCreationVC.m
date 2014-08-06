@@ -7,10 +7,12 @@
 //
 
 #import "IMTeamCreationVC.h"
-#import "IMServer.h"
+#import "IMServer+TeamSignals.h"
+#import "IMProgressHUD.h"
 
 @interface IMTeamCreationVC ()
-@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+
+@property (weak, nonatomic) IBOutlet UITextField *teamCodeTextField;
 @property (weak, nonatomic) IBOutlet UIButton *createButton;
 
 @end
@@ -22,41 +24,46 @@
     [super viewDidLoad];
     
     @weakify(self);
-    RACSignal *enableSignal = [self.nameTextField.rac_textSignal map:^id(NSString *value) {
+    
+    RACSignal *enableSignal = [self.teamCodeTextField.rac_textSignal map:^id(NSString *value) {
         return @(value.length > 2);
     }];
-    self.createButton.rac_command = [[RACCommand alloc] initWithEnabled:enableSignal signalBlock:^RACSignal *(id input) {
+    
+    // Button command
+    RACCommand *command = [[RACCommand alloc] initWithEnabled:enableSignal signalBlock:^RACSignal *(id input) {
         @strongify(self);
-        [[IMServer createTeamSignalWithTeamName:self.nameTextField.text] subscribeError:^(NSError *error) {
-            
-        } completed:^{
-            UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-            UIViewController *vc = [sb instantiateInitialViewController];
-            [self presentViewController:vc animated:YES completion:nil];
+        return [IMServer createTeamSignalWithSign:self.teamCodeTextField.text];
+    }];
+    
+    // Excuting
+    [[command executing] subscribeNext:^(NSNumber *excuting) {
+
+    }];
+    
+    // Complete
+    [[command executionSignals]
+         subscribeNext:^(RACSignal *signal) {
+             [signal subscribeCompleted:^{
+                 @strongify(self);
+                UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                UIViewController *vc = [sb instantiateInitialViewController];
+                [self presentViewController:vc animated:YES completion:nil];
+            }];
+         }];
+    
+    // TODO: Error handler
+    [command.errors subscribeNext:^(NSError *error) {
+        
+    }];
+    
+    self.createButton.rac_command = command;
+    
+    [[self rac_signalForSelector:@selector(viewWillAppear:)]
+        subscribeNext:^(id x) {
+            @strongify(self);
+            [self.teamCodeTextField becomeFirstResponder];
         }];
-        return [RACSignal empty];
-    }];
-    
-    [[self rac_signalForSelector:@selector(viewDidAppear:)] subscribeNext:^(id x) {
-        @strongify(self);
-        [self.nameTextField becomeFirstResponder];
-    }];
-    
-//    [[self.createButton.rac_command.executionSignals flatten] subscribeError:^(NSError *error) {
-//        
-//    } completed:^{
-//        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//        UIViewController *vc = [sb instantiateInitialViewController];
-//        [self presentViewController:vc animated:YES completion:nil];
-//    }];
-//
-//    [[[self.createButton rac_signalForControlEvents:UIControlEventTouchUpInside] flattenMap:^RACStream *(id value) {
-//        return [IMServer createTeamSignalWithTeamName:self.nameTextField.text];
-//    }] subscribeError:^(NSError *error) {
-//        
-//    } completed:^{
-//        
-//    }];;
+
 }
 
 @end

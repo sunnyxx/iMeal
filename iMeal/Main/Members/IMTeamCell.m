@@ -12,7 +12,7 @@
 @interface IMTeamCell ()
 
 @property (weak, nonatomic) IBOutlet UILabel *teamNameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *teamNumberLabel;
+@property (weak, nonatomic) IBOutlet UILabel *teamCodeLabel;
 
 @end
 
@@ -21,8 +21,8 @@
 - (void)setTeam:(IMTeam *)team
 {
     _team = team;
-    self.teamNameLabel.text = team.name;
-    self.teamNumberLabel.text = [NSString stringWithFormat:@"桌号:%@", team.number];
+    self.teamNameLabel.text = team.name ?: @"赶紧取个名字吧";
+    self.teamCodeLabel.text = [NSString stringWithFormat:@"暗号:%@", team.sign];
 }
 
 @end

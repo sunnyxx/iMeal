@@ -7,12 +7,15 @@
 //
 
 #import "IMMembersVC.h"
+#import <XXNibBridge/XXNibBridge.h>
 #import "IMChargeVC.h"
 #import "IMTeamCell.h"
-#import <XXNibBridge/XXNibBridge.h>
 #import "IMTallyVC.h"
-#import "IMServer.h"
+#import "IMServer+TeamSignals.h"
+#import "IMMemberAddingVC.h"
+
 @interface IMMembersVC ()
+@property (nonatomic, strong) IMTeam *team;
 @property (nonatomic, copy) NSArray *members;
 
 @end
@@ -31,14 +34,35 @@ enum {
     
     @weakify(self);
 
+    // Call first time
+    self.members = @[];
+    
+    [[[[IMServer refreshCurrentTeamSignal]
+        doNext:^(IMTeam *team) {
+            @strongify(self);
+            self.team = team;
+            NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:kSectionTeam];
+            [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+        }]
+        then:^RACSignal *{
+            return [IMServer allTeamMembersSignal];
+        }]
+        subscribeNext:^(NSArray *members){
+            @strongify(self);
+            [self.refreshControl endRefreshing];
+            self.members = members;
+            [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:kSectionMembers] withRowAnimation:UITableViewRowAnimationAutomatic];
+        }];
+    
+    
     // Refresh data when one of
     // 1. view will appear
     // 2. refresh control
-    RACSignal *refreshControlSignal = [self.refreshControl rac_signalForControlEvents:UIControlEventValueChanged];
-    RACSignal *viewWillAppearSignal = [self rac_signalForSelector:@selector(viewWillAppear:)];
-    // Merge
-    [[RACSignal merge:@[refreshControlSignal, viewWillAppearSignal]] subscribeNext:^(id x) {
-        
+//    RACSignal *refreshControlSignal = [self.refreshControl rac_signalForControlEvents:UIControlEventValueChanged];
+//    RACSignal *viewWillAppearSignal = [self rac_signalForSelector:@selector(viewWillAppear:)];
+//    // Merge
+//    [[RACSignal merge:@[refreshControlSignal, viewWillAppearSignal]] subscribeNext:^(id x) {
+    
         // Refresh team data
 //        IMTeam *team = [IMTeam currentTeam];
 //        [team refreshInBackgroundWithBlock:^(AVObject *object, NSError *error) {
@@ -46,13 +70,13 @@ enum {
 //        }];
 //        
         // Refresh member data
-        [[IMServer allMembersSignalInCurrentTeam] subscribeNext:^(NSArray *members) {
-            @strongify(self);
-            [self.refreshControl endRefreshing];
-            self.members = members;
-            [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:kSectionMembers] withRowAnimation:UITableViewRowAnimationAutomatic];
-        }];
-    }];
+//        [[IMServer allTeamMembersSignal] subscribeNext:^(NSArray *members) {
+//            @strongify(self);
+//            [self.refreshControl endRefreshing];
+//            self.members = members;
+//            [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:kSectionMembers] withRowAnimation:UITableViewRowAnimationAutomatic];
+//        }];
+//    }];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -68,6 +92,7 @@ enum {
         UINavigationController *nav = segue.destinationViewController;
         IMTallyVC *vc = (IMTallyVC *)[nav topViewController];
         vc.team = [IMTeam currentTeam];
+        vc.members = self.members;
     }
 }
 
@@ -99,6 +124,7 @@ enum {
     if (indexPath.row == self.members.count)
     {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AddMemberCell" forIndexPath:indexPath];
+
         return cell;
     }
     else
@@ -115,19 +141,49 @@ enum {
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return YES;
+    if (indexPath.section == kSectionMembers) {
+        return YES;
+    }
+    return NO;
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete)
     {
+        @weakify(self);
+        IMMember *member = self.members[indexPath.row];
         
+        UIAlertView *alert = [[UIAlertView alloc] init];
+        alert.title = [NSString stringWithFormat:@"确认移除%@？", member.nickname];
+        [alert addButtonWithTitle:@"移除"];
+        [alert setCancelButtonIndex:1];
+        [[[alert.rac_buttonClickedSignal
+            doNext:^(id x) {
+                // TODO: Loading
+            }]
+            flattenMap:^RACStream *(id value) {
+                return [IMServer removeMemberSignal:member];
+            }]
+            subscribeCompleted:^{
+                @strongify(self);
+                self.members = [[self.members.rac_sequence filter:^BOOL(IMMember *value) {
+                    return [value isEqual:member];
+                }] array];
+                [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+            }];
     }
 }
 
-#pragma mark - exit segue
+#pragma mark - Unwind segues
 
-- (IBAction)cancelRecord:(UIStoryboardSegue *)segue {}
+- (IBAction)unwindCancelRecord:(UIStoryboardSegue *)segue {}
+- (IBAction)unwindNewMemberAdded:(UIStoryboardSegue *)segue
+{
+    IMMemberAddingVC *vc = segue.sourceViewController;
+    self.members = [self.members arrayByAddingObject:vc.addedMember];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.members.count - 1 inSection:kSectionMembers];
+    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+}
 
 @end

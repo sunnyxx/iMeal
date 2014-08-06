@@ -17,7 +17,7 @@
     [IMServer setup];
     
     // Router
-    NSString *storyboardName = [IMTeam currentTeam] ? @"Main" : @"Guide";
+    NSString *storyboardName = [IMTeam cachedTeamId] ? @"Main" : @"Guide";
     UIStoryboard *sb = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
     UIViewController *vc = [sb instantiateInitialViewController];
     self.window.rootViewController = vc;

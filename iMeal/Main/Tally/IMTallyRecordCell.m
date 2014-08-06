@@ -6,10 +6,11 @@
 //
 //
 
-#import "IMTallyMemberCell.h"
+#import "IMTallyRecordCell.h"
+#import "IMMemberCostRecord.h"
 #import "IMMember.h"
 
-@interface IMTallyMemberCell ()
+@interface IMTallyRecordCell ()
 @property (weak, nonatomic) IBOutlet UILabel *nicknameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *paidIcon;
 @property (nonatomic, strong) UIPanGestureRecognizer *panGesture;
@@ -19,11 +20,16 @@
 
 @end
 
-@implementation IMTallyMemberCell
+@implementation IMTallyRecordCell
 
 - (void)awakeFromNib
 {
     [super awakeFromNib];
+    
+    // Bind data
+    RAC(self.nicknameLabel, text) = [[RACObserve(self, record) ignore:nil] map:^id(IMMemberTally *record) {
+        return record.member.nickname;
+    }];
     
     // Gradient view
     CAGradientLayer *gradient = [CAGradientLayer layer];
@@ -89,12 +95,6 @@
     [super setSelected:selected animated:animated];
     
     self.paidIcon.hidden = !selected;
-}
-
-- (void)setMember:(IMMember *)member
-{
-    self->_member = member;
-    self.nicknameLabel.text = member.nickname;
 }
 
 @end

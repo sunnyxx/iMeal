@@ -10,4 +10,4 @@
 #import "IMMember.h"
 #import "IMRestaurant.h"
 #import "IMChargeRecord.h"
-#import "IMCostRecord.h"
+#import "IMMemberTally.h"

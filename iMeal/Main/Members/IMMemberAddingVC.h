@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class IMTeam;
+@class IMTeam, IMMember;
 @interface IMMemberAddingVC : UIViewController
 
-@property (nonatomic, strong) IMTeam *team;
+@property (nonatomic, strong) IMTeam *team; // Input
+@property (nonatomic, strong) IMMember *addedMember; // Output
 
 @end

@@ -11,7 +11,7 @@
 #import "IMMember.h"
 #import "IMChargeRecord.h"
 #import "IMChargeReceiverVC.h"
-#import "IMServer.h"
+#import "IMServer+MoneySignals.h"
 
 @interface IMChargeVC ()
 @property (weak, nonatomic) IBOutlet UIButton *moneyReceiverButton;

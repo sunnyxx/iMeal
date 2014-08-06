@@ -12,13 +12,16 @@
 
 @interface IMTeam : AVObject <AVSubclassing>
 
++ (NSString *)cachedTeamId;
++ (void)cacheTeamId:(NSString *)teamId;
 + (IMTeam *)currentTeam;
 - (void)storeAsCurrentTeam;
 
 @property (nonatomic, copy) NSString *name;
 
-/// Team number
-@property (nonatomic, copy) NSString *number;
+/// Team sign, secret code
+@property (nonatomic, copy) NSString *sign;
+
 @property (nonatomic, strong) AVRelation *members;
 @property (nonatomic, strong) AVRelation *restaurants;
 

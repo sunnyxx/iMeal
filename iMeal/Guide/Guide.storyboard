@@ -22,6 +22,9 @@
                                 <state key="normal" title="加入一个小饭桌">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="RAX-EA-NPy" kind="push" id="B4j-FO-Qtm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYT-oW-lQC">
                                 <rect key="frame" x="108" y="299" width="105" height="30"/>
@@ -55,6 +58,48 @@
             </objects>
             <point key="canvasLocation" x="640" y="-3"/>
         </scene>
+        <!--Team EnterVC - 加入小饭桌-->
+        <scene sceneID="9Ax-7k-6Jb">
+            <objects>
+                <viewController id="RAX-EA-NPy" customClass="IMTeamEnterVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z11-Ak-Ibo"/>
+                        <viewControllerLayoutGuide type="bottom" id="xLM-mH-b02"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ww5-y9-EKw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="暗号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rGZ-Kr-eYY">
+                                <rect key="frame" x="47" y="116" width="226" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ui-4B-wig">
+                                <rect key="frame" x="145" y="154" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="加入"/>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="天王该地虎！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFd-io-sJl">
+                                <rect key="frame" x="114" y="91" width="84" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="加入小饭桌" id="pOD-0H-K2p"/>
+                    <connections>
+                        <outlet property="enterButton" destination="2ui-4B-wig" id="yJZ-VL-XWB"/>
+                        <outlet property="teamNumberTextField" destination="rGZ-Kr-eYY" id="j8d-Sv-5m5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dqk-HY-guf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080" y="-470"/>
+        </scene>
         <!--Team CreationVC - 创建小饭桌-->
         <scene sceneID="U6i-f9-DZ7">
             <objects>
@@ -67,35 +112,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="名字" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MKH-ZK-jFQ">
-                                <rect key="frame" x="47" y="122" width="226" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6Q-uI-XBg">
-                                <rect key="frame" x="145" y="166" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6Q-uI-XBg">
+                                <rect key="frame" x="145" y="207" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="创建"/>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="起个名字" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWT-nK-gFZ">
-                                <rect key="frame" x="132" y="97" width="56" height="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暗号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoe-ti-xDU">
+                                <rect key="frame" x="142" y="79" width="36" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" red="1" green="0.50645188379999995" blue="0.2758464498" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="天王盖地虎！" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vlx-W5-HJz">
+                                <rect key="frame" x="47" y="111" width="226" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="226" id="8KQ-Pi-bUF"/>
+                                    <constraint firstAttribute="height" constant="40" id="NPu-r9-GdA"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="其他组员通过暗号加入小饭桌" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPW-gE-MRt">
+                                <rect key="frame" x="76" y="160" width="169" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一定要保密哟" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEe-zW-gQf">
+                                <rect key="frame" x="121" y="184" width="78" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="O6Q-uI-XBg" secondAttribute="centerX" id="81k-Ev-l6q"/>
+                            <constraint firstAttribute="centerX" secondItem="yoe-ti-xDU" secondAttribute="centerX" id="8De-1s-XbP"/>
+                            <constraint firstItem="yoe-ti-xDU" firstAttribute="top" secondItem="WVz-YS-gMx" secondAttribute="bottom" constant="15" id="9oG-ev-9nD"/>
+                            <constraint firstAttribute="centerX" secondItem="BEe-zW-gQf" secondAttribute="centerX" id="Jq5-AD-FHO"/>
+                            <constraint firstItem="vlx-W5-HJz" firstAttribute="top" secondItem="yoe-ti-xDU" secondAttribute="bottom" constant="10" id="MRZ-MH-OGw"/>
+                            <constraint firstAttribute="centerX" secondItem="vlx-W5-HJz" secondAttribute="centerX" id="bQV-Qx-fBV"/>
+                            <constraint firstItem="BEe-zW-gQf" firstAttribute="top" secondItem="XPW-gE-MRt" secondAttribute="bottom" constant="8" id="dVP-ta-wGZ"/>
+                            <constraint firstItem="XPW-gE-MRt" firstAttribute="top" secondItem="vlx-W5-HJz" secondAttribute="bottom" constant="9" id="iUK-my-GKY"/>
+                            <constraint firstAttribute="centerX" secondItem="XPW-gE-MRt" secondAttribute="centerX" id="rlT-eb-tIJ"/>
+                            <constraint firstItem="O6Q-uI-XBg" firstAttribute="top" secondItem="BEe-zW-gQf" secondAttribute="bottom" constant="7" id="tEa-Fo-zQw"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="创建小饭桌" id="gfe-BJ-8U5"/>
                     <connections>
                         <outlet property="createButton" destination="O6Q-uI-XBg" id="DfG-ZQ-fyV"/>
-                        <outlet property="nameTextField" destination="MKH-ZK-jFQ" id="nWe-g4-hNy"/>
+                        <outlet property="teamCodeTextField" destination="vlx-W5-HJz" id="A17-5H-Ia7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RhZ-px-4aH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1037" y="-3"/>
+            <point key="canvasLocation" x="1080" y="115"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XVh-aZ-v4w">

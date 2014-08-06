@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		480EC075199227510058CCA7 /* IMServer+TeamSignals.m in Sources */ = {isa = PBXBuildFile; fileRef = 480EC074199227510058CCA7 /* IMServer+TeamSignals.m */; };
+		480EC078199227C20058CCA7 /* IMServer+MoneySignals.m in Sources */ = {isa = PBXBuildFile; fileRef = 480EC077199227C20058CCA7 /* IMServer+MoneySignals.m */; };
+		480EC08119928F310058CCA7 /* IMTeamTally.m in Sources */ = {isa = PBXBuildFile; fileRef = 480EC08019928F310058CCA7 /* IMTeamTally.m */; };
 		486BA87F1988E69900D1CBA0 /* IMRestaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 486BA87E1988E69900D1CBA0 /* IMRestaurant.m */; };
 		486BA8821988E6C000D1CBA0 /* IMChargeRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 486BA8811988E6C000D1CBA0 /* IMChargeRecord.m */; };
-		486BA8851988E83300D1CBA0 /* IMCostRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 486BA8841988E83300D1CBA0 /* IMCostRecord.m */; };
+		486BA8851988E83300D1CBA0 /* IMMemberTally.m in Sources */ = {isa = PBXBuildFile; fileRef = 486BA8841988E83300D1CBA0 /* IMMemberTally.m */; };
 		48A81AE419801796007CE410 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A81AE319801796007CE410 /* Foundation.framework */; };
 		48A81B0E198018F4007CE410 /* IMMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81B0B198018F4007CE410 /* IMMember.m */; };
 		48A81B0F198018F4007CE410 /* IMTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81B0D198018F4007CE410 /* IMTeam.m */; };
@@ -30,12 +33,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		480EC073199227510058CCA7 /* IMServer+TeamSignals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMServer+TeamSignals.h"; sourceTree = "<group>"; };
+		480EC074199227510058CCA7 /* IMServer+TeamSignals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMServer+TeamSignals.m"; sourceTree = "<group>"; };
+		480EC076199227C20058CCA7 /* IMServer+MoneySignals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMServer+MoneySignals.h"; sourceTree = "<group>"; };
+		480EC077199227C20058CCA7 /* IMServer+MoneySignals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMServer+MoneySignals.m"; sourceTree = "<group>"; };
+		480EC07F19928F310058CCA7 /* IMTeamTally.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTeamTally.h; sourceTree = "<group>"; };
+		480EC08019928F310058CCA7 /* IMTeamTally.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTeamTally.m; sourceTree = "<group>"; };
 		486BA87D1988E69900D1CBA0 /* IMRestaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRestaurant.h; sourceTree = "<group>"; };
 		486BA87E1988E69900D1CBA0 /* IMRestaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRestaurant.m; sourceTree = "<group>"; };
 		486BA8801988E6C000D1CBA0 /* IMChargeRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMChargeRecord.h; sourceTree = "<group>"; };
 		486BA8811988E6C000D1CBA0 /* IMChargeRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMChargeRecord.m; sourceTree = "<group>"; };
-		486BA8831988E83300D1CBA0 /* IMCostRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMCostRecord.h; sourceTree = "<group>"; };
-		486BA8841988E83300D1CBA0 /* IMCostRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMCostRecord.m; sourceTree = "<group>"; };
+		486BA8831988E83300D1CBA0 /* IMMemberTally.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMemberTally.h; sourceTree = "<group>"; };
+		486BA8841988E83300D1CBA0 /* IMMemberTally.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMMemberTally.m; sourceTree = "<group>"; };
 		48A81AE019801796007CE410 /* libiMealModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiMealModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A81AE319801796007CE410 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		48A81AE719801796007CE410 /* iMealModel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iMealModel-Prefix.pch"; sourceTree = "<group>"; };
@@ -122,8 +131,10 @@
 				486BA87E1988E69900D1CBA0 /* IMRestaurant.m */,
 				486BA8801988E6C000D1CBA0 /* IMChargeRecord.h */,
 				486BA8811988E6C000D1CBA0 /* IMChargeRecord.m */,
-				486BA8831988E83300D1CBA0 /* IMCostRecord.h */,
-				486BA8841988E83300D1CBA0 /* IMCostRecord.m */,
+				486BA8831988E83300D1CBA0 /* IMMemberTally.h */,
+				486BA8841988E83300D1CBA0 /* IMMemberTally.m */,
+				480EC07F19928F310058CCA7 /* IMTeamTally.h */,
+				480EC08019928F310058CCA7 /* IMTeamTally.m */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -133,6 +144,10 @@
 			children = (
 				48A81B1119801D4F007CE410 /* IMServer.h */,
 				48A81B1219801D4F007CE410 /* IMServer.m */,
+				480EC073199227510058CCA7 /* IMServer+TeamSignals.h */,
+				480EC074199227510058CCA7 /* IMServer+TeamSignals.m */,
+				480EC076199227C20058CCA7 /* IMServer+MoneySignals.h */,
+				480EC077199227C20058CCA7 /* IMServer+MoneySignals.m */,
 			);
 			path = Server;
 			sourceTree = "<group>";
@@ -209,8 +224,11 @@
 				48A81B0E198018F4007CE410 /* IMMember.m in Sources */,
 				48A81B0F198018F4007CE410 /* IMTeam.m in Sources */,
 				48A81B1319801D4F007CE410 /* IMServer.m in Sources */,
-				486BA8851988E83300D1CBA0 /* IMCostRecord.m in Sources */,
+				486BA8851988E83300D1CBA0 /* IMMemberTally.m in Sources */,
 				486BA87F1988E69900D1CBA0 /* IMRestaurant.m in Sources */,
+				480EC08119928F310058CCA7 /* IMTeamTally.m in Sources */,
+				480EC075199227510058CCA7 /* IMServer+TeamSignals.m in Sources */,
+				480EC078199227C20058CCA7 /* IMServer+MoneySignals.m in Sources */,
 				486BA8821988E6C000D1CBA0 /* IMChargeRecord.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

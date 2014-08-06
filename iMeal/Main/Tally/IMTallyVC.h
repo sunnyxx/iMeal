@@ -12,5 +12,6 @@
 @interface IMTallyVC : UITableViewController
 
 @property (nonatomic, strong) IMTeam *team;
+@property (nonatomic, copy) NSArray *members;
 
 @end

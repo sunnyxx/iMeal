@@ -7,7 +7,7 @@
 //
 
 #import "IMMemberAddingVC.h"
-#import "IMServer.h"
+#import "IMServer+TeamSignals.h"
 
 @interface IMMemberAddingVC ()
 @property (nonatomic, weak) IBOutlet UITextField *nicknameTextField;
@@ -15,7 +15,6 @@
 @end
 
 @implementation IMMemberAddingVC
-
 
 - (void)viewDidLoad
 {
@@ -26,8 +25,9 @@
     self.addButton.rac_command = [[RACCommand alloc] initWithEnabled:enable signalBlock:^RACSignal *(id _) {
         @strongify(self);
         return [[IMServer addMemberSignalWithNickname:self.nicknameTextField.text]
-            doCompleted:^{
-                [self.navigationController popViewControllerAnimated:YES];
+            doNext:^(IMMember *member){
+                self.addedMember = member;
+                [self performSegueWithIdentifier:@"unwindNewMemberAdded" sender:self];
         }];
     }];
     

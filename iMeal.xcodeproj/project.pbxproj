@@ -11,9 +11,10 @@
 		480EC068199130980058CCA7 /* IMChargeReceiverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 480EC067199130980058CCA7 /* IMChargeReceiverVC.m */; };
 		480EC06E199150BE0058CCA7 /* IMMemberAddingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 480EC06B199150BE0058CCA7 /* IMMemberAddingVC.m */; };
 		480EC06F199150BE0058CCA7 /* IMMembersVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 480EC06D199150BE0058CCA7 /* IMMembersVC.m */; };
-		486BA89019893F3000D1CBA0 /* IMTestModelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486BA88C19893F3000D1CBA0 /* IMTestModelTableViewController.m */; };
+		480EC072199223BC0058CCA7 /* IMTeamCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 480EC071199223BC0058CCA7 /* IMTeamCell.m */; };
+		480EC07B19922FFB0058CCA7 /* IMTeamEnterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 480EC07A19922FFB0058CCA7 /* IMTeamEnterVC.m */; };
+		480EC07E19926A3A0058CCA7 /* IMProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 480EC07D19926A3A0058CCA7 /* IMProgressHUD.m */; };
 		486BA89119893F3000D1CBA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 486BA88D19893F3000D1CBA0 /* Main.storyboard */; };
-		486BA8BD198E063100D1CBA0 /* IMTeamCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 486BA8BC198E063100D1CBA0 /* IMTeamCell.m */; };
 		48846CC519880BA600AF9941 /* Guide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48846CC419880BA600AF9941 /* Guide.storyboard */; };
 		48846CC819880BDA00AF9941 /* IMTeamCreationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48846CC719880BDA00AF9941 /* IMTeamCreationVC.m */; };
 		48A81AA319801734007CE410 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A81AA219801734007CE410 /* Foundation.framework */; };
@@ -25,7 +26,7 @@
 		48A81ABB19801734007CE410 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A81ABA19801734007CE410 /* Images.xcassets */; };
 		48BD64321986AD660039B2EB /* libiMealModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BD64311986AD660039B2EB /* libiMealModel.a */; };
 		48CC34801990C22B0079108C /* IMTallyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CC347F1990C22B0079108C /* IMTallyVC.m */; };
-		48CC34831990C3940079108C /* IMTallyMemberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CC34821990C3940079108C /* IMTallyMemberCell.m */; };
+		48CC34831990C3940079108C /* IMTallyRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CC34821990C3940079108C /* IMTallyRecordCell.m */; };
 		48E2A8251982337D006DD602 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48E2A8241982337C006DD602 /* loading.gif */; };
 		48E2A82A198249D0006DD602 /* libPods-iMeal.a in Resources */ = {isa = PBXBuildFile; fileRef = B566D2A1BC1E40FBA370ED12 /* libPods-iMeal.a */; };
 		8765F09117264BEE8C5DB16F /* libPods-iMeal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B566D2A1BC1E40FBA370ED12 /* libPods-iMeal.a */; };
@@ -40,11 +41,13 @@
 		480EC06B199150BE0058CCA7 /* IMMemberAddingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMMemberAddingVC.m; sourceTree = "<group>"; };
 		480EC06C199150BE0058CCA7 /* IMMembersVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMembersVC.h; sourceTree = "<group>"; };
 		480EC06D199150BE0058CCA7 /* IMMembersVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMMembersVC.m; sourceTree = "<group>"; };
-		486BA88B19893F3000D1CBA0 /* IMTestModelTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTestModelTableViewController.h; sourceTree = "<group>"; };
-		486BA88C19893F3000D1CBA0 /* IMTestModelTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTestModelTableViewController.m; sourceTree = "<group>"; };
+		480EC070199223BC0058CCA7 /* IMTeamCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTeamCell.h; sourceTree = "<group>"; };
+		480EC071199223BC0058CCA7 /* IMTeamCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTeamCell.m; sourceTree = "<group>"; };
+		480EC07919922FFB0058CCA7 /* IMTeamEnterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTeamEnterVC.h; sourceTree = "<group>"; };
+		480EC07A19922FFB0058CCA7 /* IMTeamEnterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTeamEnterVC.m; sourceTree = "<group>"; };
+		480EC07C19926A3A0058CCA7 /* IMProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMProgressHUD.h; sourceTree = "<group>"; };
+		480EC07D19926A3A0058CCA7 /* IMProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMProgressHUD.m; sourceTree = "<group>"; };
 		486BA88D19893F3000D1CBA0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		486BA8BB198E063100D1CBA0 /* IMTeamCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTeamCell.h; sourceTree = "<group>"; };
-		486BA8BC198E063100D1CBA0 /* IMTeamCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTeamCell.m; sourceTree = "<group>"; };
 		48846CC419880BA600AF9941 /* Guide.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Guide.storyboard; sourceTree = "<group>"; };
 		48846CC619880BDA00AF9941 /* IMTeamCreationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTeamCreationVC.h; sourceTree = "<group>"; };
 		48846CC719880BDA00AF9941 /* IMTeamCreationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTeamCreationVC.m; sourceTree = "<group>"; };
@@ -62,8 +65,8 @@
 		48BD64311986AD660039B2EB /* libiMealModel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiMealModel.a; path = "build/Debug-iphoneos/libiMealModel.a"; sourceTree = "<group>"; };
 		48CC347E1990C22B0079108C /* IMTallyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTallyVC.h; sourceTree = "<group>"; };
 		48CC347F1990C22B0079108C /* IMTallyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTallyVC.m; sourceTree = "<group>"; };
-		48CC34811990C3940079108C /* IMTallyMemberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTallyMemberCell.h; sourceTree = "<group>"; };
-		48CC34821990C3940079108C /* IMTallyMemberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTallyMemberCell.m; sourceTree = "<group>"; };
+		48CC34811990C3940079108C /* IMTallyRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTallyRecordCell.h; sourceTree = "<group>"; };
+		48CC34821990C3940079108C /* IMTallyRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTallyRecordCell.m; sourceTree = "<group>"; };
 		48E2A8241982337C006DD602 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		B2FCCE0D79E5451E963FC0D5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B566D2A1BC1E40FBA370ED12 /* libPods-iMeal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMeal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +103,8 @@
 		480EC069199150BE0058CCA7 /* Members */ = {
 			isa = PBXGroup;
 			children = (
+				480EC070199223BC0058CCA7 /* IMTeamCell.h */,
+				480EC071199223BC0058CCA7 /* IMTeamCell.m */,
 				480EC06A199150BE0058CCA7 /* IMMemberAddingVC.h */,
 				480EC06B199150BE0058CCA7 /* IMMemberAddingVC.m */,
 				480EC06C199150BE0058CCA7 /* IMMembersVC.h */,
@@ -114,21 +119,9 @@
 				480EC069199150BE0058CCA7 /* Members */,
 				480EC0621991306D0058CCA7 /* Charge */,
 				48CC347D1990C2040079108C /* Tally */,
-				486BA8BA198E061100D1CBA0 /* Cells */,
-				486BA88B19893F3000D1CBA0 /* IMTestModelTableViewController.h */,
-				486BA88C19893F3000D1CBA0 /* IMTestModelTableViewController.m */,
 				486BA88D19893F3000D1CBA0 /* Main.storyboard */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		486BA8BA198E061100D1CBA0 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				486BA8BB198E063100D1CBA0 /* IMTeamCell.h */,
-				486BA8BC198E063100D1CBA0 /* IMTeamCell.m */,
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		48846CC319880BA600AF9941 /* Guide */ = {
@@ -137,6 +130,8 @@
 				48846CC419880BA600AF9941 /* Guide.storyboard */,
 				48846CC619880BDA00AF9941 /* IMTeamCreationVC.h */,
 				48846CC719880BDA00AF9941 /* IMTeamCreationVC.m */,
+				480EC07919922FFB0058CCA7 /* IMTeamEnterVC.h */,
+				480EC07A19922FFB0058CCA7 /* IMTeamEnterVC.m */,
 			);
 			path = Guide;
 			sourceTree = "<group>";
@@ -201,6 +196,8 @@
 		48BD64531987BF650039B2EB /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				480EC07C19926A3A0058CCA7 /* IMProgressHUD.h */,
+				480EC07D19926A3A0058CCA7 /* IMProgressHUD.m */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -210,8 +207,8 @@
 			children = (
 				48CC347E1990C22B0079108C /* IMTallyVC.h */,
 				48CC347F1990C22B0079108C /* IMTallyVC.m */,
-				48CC34811990C3940079108C /* IMTallyMemberCell.h */,
-				48CC34821990C3940079108C /* IMTallyMemberCell.m */,
+				48CC34811990C3940079108C /* IMTallyRecordCell.h */,
+				48CC34821990C3940079108C /* IMTallyRecordCell.m */,
 			);
 			path = Tally;
 			sourceTree = "<group>";
@@ -309,11 +306,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				48CC34801990C22B0079108C /* IMTallyVC.m in Sources */,
-				486BA89019893F3000D1CBA0 /* IMTestModelTableViewController.m in Sources */,
 				480EC068199130980058CCA7 /* IMChargeReceiverVC.m in Sources */,
+				480EC072199223BC0058CCA7 /* IMTeamCell.m in Sources */,
 				48A81AB319801734007CE410 /* IMAppDelegate.m in Sources */,
-				48CC34831990C3940079108C /* IMTallyMemberCell.m in Sources */,
-				486BA8BD198E063100D1CBA0 /* IMTeamCell.m in Sources */,
+				480EC07B19922FFB0058CCA7 /* IMTeamEnterVC.m in Sources */,
+				48CC34831990C3940079108C /* IMTallyRecordCell.m in Sources */,
+				480EC07E19926A3A0058CCA7 /* IMProgressHUD.m in Sources */,
 				480EC0651991306D0058CCA7 /* IMChargeVC.m in Sources */,
 				48A81AAF19801734007CE410 /* main.m in Sources */,
 				480EC06F199150BE0058CCA7 /* IMMembersVC.m in Sources */,

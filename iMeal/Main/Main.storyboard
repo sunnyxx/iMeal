@@ -198,8 +198,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="teamCodeLabel" destination="y2W-YD-lgb" id="Sah-aM-2hn"/>
                                     <outlet property="teamNameLabel" destination="Dj8-O0-35P" id="qyV-IN-Huc"/>
-                                    <outlet property="teamNumberLabel" destination="y2W-YD-lgb" id="xE1-RD-RBd"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MemberCell" textLabel="R5u-li-YeI" detailTextLabel="1t6-g3-27W" rowHeight="50" style="IBUITableViewCellStyleValue1" id="L3b-fJ-r0c">
@@ -446,7 +446,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="50" id="YSO-Fe-Bme" customClass="IMTallyMemberCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="50" id="YSO-Fe-Bme" customClass="IMTallyRecordCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YSO-Fe-Bme" id="QFR-4x-aiZ">
@@ -469,7 +469,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="IMTallyMemberCell" rowHeight="50" id="mgw-vD-68j" customClass="IMTallyMemberCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="IMTallyRecordCell" rowHeight="50" id="mgw-vD-68j" customClass="IMTallyRecordCell">
                                 <rect key="frame" x="0.0" y="136" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mgw-vD-68j" id="MbU-BU-cKb">
@@ -537,11 +537,14 @@
                     <navigationItem key="navigationItem" title="记一笔" id="q34-oG-D2p">
                         <barButtonItem key="leftBarButtonItem" title="算了" id="CdQ-8y-kyO">
                             <connections>
-                                <segue destination="U5z-Aa-4Nd" kind="unwind" unwindAction="cancelRecord:" id="2z6-Ts-eOk"/>
+                                <segue destination="U5z-Aa-4Nd" kind="unwind" unwindAction="unwindCancelRecord:" id="NR0-mI-qBp"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="完成" id="YQh-cH-T3Q"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="finishButtonItem" destination="YQh-cH-T3Q" id="FwV-eK-YOg"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PsR-b7-FbT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="U5z-Aa-4Nd" userLabel="Exit" sceneMemberID="exit"/>
@@ -589,9 +592,11 @@
                     <connections>
                         <outlet property="addButton" destination="mXO-yj-LVB" id="THC-Bk-Lfx"/>
                         <outlet property="nicknameTextField" destination="qXR-sl-I3f" id="87s-zQ-LNr"/>
+                        <segue destination="Y7x-Pc-d4F" kind="unwind" identifier="unwindNewMemberAdded" unwindAction="unwindNewMemberAdded:" id="jS0-3P-VxT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l1L-KM-kk8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Y7x-Pc-d4F" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="182" y="-1733"/>
         </scene>

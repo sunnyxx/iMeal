@@ -9,11 +9,9 @@
 #import "IMTeam.h"
 #import "IMMember.h"
 
-NSString *const kIMCurrentTeamIdKey = @"CurrentTeamId";
-
 @implementation IMTeam
 
-@dynamic name, number, members, restaurants, receiver;
+@dynamic name, sign, members, restaurants, receiver;
 
 #pragma mark - AVSubclassing
 
@@ -24,45 +22,27 @@ NSString *const kIMCurrentTeamIdKey = @"CurrentTeamId";
 
 #pragma mark - Current team
 
+NSString *const kIMCurrentTeamIdKey = @"IMCurrentTeamId";
 static IMTeam *_currentTeam = nil;
+
++ (NSString *)cachedTeamId
+{
+    return [[NSUserDefaults standardUserDefaults] stringForKey:kIMCurrentTeamIdKey];
+}
+
++ (void)cacheTeamId:(NSString *)teamId
+{
+    [[NSUserDefaults standardUserDefaults] setObject:teamId forKey:kIMCurrentTeamIdKey];
+}
 
 + (IMTeam *)currentTeam
 {
-    if (_currentTeam)
-    {
-        return _currentTeam;
-    }
-    
-    NSString *teamId = [[NSUserDefaults standardUserDefaults] objectForKey:kIMCurrentTeamIdKey];
-    if (teamId)
-    {
-        AVQuery *query = [IMTeam query];
-        [query includeKey:@"receiver"];
-        AVObject *object = [query getObjectWithId:teamId];
-        
-        if (object)
-        {
-            _currentTeam = (IMTeam *)object;
-            return _currentTeam;
-        }
-        else
-        {
-            [[NSUserDefaults standardUserDefaults] setObject:nil forKey:kIMCurrentTeamIdKey];
-            _currentTeam = nil;
-        }
-    }
-    
-    return nil;
+    return _currentTeam;
 }
 
 - (void)storeAsCurrentTeam
 {
     _currentTeam = self;
-    
-    if (self.objectId)
-    {
-        [[NSUserDefaults standardUserDefaults] setObject:self.objectId forKey:kIMCurrentTeamIdKey];
-    }
 }
 
 @end
