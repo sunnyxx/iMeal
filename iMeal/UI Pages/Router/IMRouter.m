@@ -10,6 +10,7 @@
 #import "IMAppDelegate.h"
 #import "IMTeam.h"
 #import "IMGuideVC.h"
+#import "IMAudioPlayer.h"
 
 @implementation IMRouter
 
@@ -27,17 +28,19 @@
 {
     if ([IMTeam currentTeam])
     {
-        self.mainWindow.rootViewController = [self createGuideViewController];
+        self.mainWindow.rootViewController = [self createMainViewController];
     }
     else
     {
-        self.mainWindow.rootViewController = [self createMainViewController];
+        self.mainWindow.rootViewController = [self createGuideViewController];
     }
+    [IMAudioPlayer playLoginSound];
 }
 
 - (void)login
 {
     self.mainWindow.rootViewController = [self createMainViewController];
+    [IMAudioPlayer playLoginSound];
 }
 
 - (void)logout

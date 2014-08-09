@@ -31,22 +31,12 @@
 NSString *const kIMCurrentTeamIdKey = @"IMCurrentTeamId";
 static IMTeam *_currentTeam = nil;
 
-//+ (NSString *)cachedTeamId
-//{
-//    return [[NSUserDefaults standardUserDefaults] stringForKey:kIMCurrentTeamIdKey];
-//}
-//
-//+ (void)cacheTeamId:(NSString *)teamId
-//{
-//    [[NSUserDefaults standardUserDefaults] setObject:teamId forKey:kIMCurrentTeamIdKey];
-//}
-
 + (IMTeam *)currentTeam
 {
     if (!_currentTeam)
     {
         NSString *cachedTeamId = [[NSUserDefaults standardUserDefaults] stringForKey:kIMCurrentTeamIdKey];
-        if (cachedTeamId)
+        if (cachedTeamId.length > 0)
         {
             _currentTeam = [IMTeam objectWithoutDataWithObjectId:cachedTeamId];
         }

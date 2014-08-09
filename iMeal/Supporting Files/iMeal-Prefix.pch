@@ -18,4 +18,5 @@
     #import <ReactiveCocoa/RACEXTScope.h>
 
     #import <XXNibBridge/XXNibBridge.h>
+    #import <TAPKeyboardPop/UIViewController+TAPKeyboardPop.h>
 #endif

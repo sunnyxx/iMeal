@@ -29,9 +29,6 @@
 
 + (IMTeam *)currentTeam;
 
-//+ (NSString *)cachedTeamId;
-//+ (void)cacheTeamId:(NSString *)teamId;
-
 - (void)storeAsCurrentTeam;
 - (void)logout;
 @end

@@ -14,6 +14,7 @@
 #import "IMServer+MoneySignals.h"
 #import "IMFormatDisplay.h"
 #import "IMMoneyLabel.h"
+#import "IMAudioPlayer.h"
 
 @interface IMChargeVC ()
 @property (weak, nonatomic) IBOutlet UIButton *moneyReceiverButton;
@@ -110,6 +111,9 @@
                 [alert show];
             } else {
                 [alert dismissWithClickedButtonIndex:0 animated:YES];
+                
+                // Sound effect
+                [IMAudioPlayer playMoneyChargedSound];
             }
         }];
     

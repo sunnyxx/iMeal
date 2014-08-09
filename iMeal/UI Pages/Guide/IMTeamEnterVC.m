@@ -38,6 +38,7 @@
                        // TODO: not exsit team
                    }]
                    doCompleted:^{
+                       
                        // Router into
                        [[IMRouter globalRouter] login];
                    }];

@@ -19,5 +19,5 @@ target 'iMeal' do
     pod 'UIImageView-PlayGIF', '~> 1.0.1'
     pod 'pop', '~> 1.0.6'
     pod 'XXNibBridge', :git => 'https://github.com/sunnyxx/XXNibBridge.git'
-
+    pod 'TAPKeyboardPop', '~> 0.1.2' # 滑动返回手势动画时把键盘也带着
 end

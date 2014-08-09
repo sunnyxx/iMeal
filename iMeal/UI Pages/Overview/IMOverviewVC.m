@@ -15,6 +15,7 @@
 #import "IMServer+TeamSignals.h"
 #import "IMMemberAddingVC.h"
 #import "IMRouter.h"
+#import <FLEXManager.h>
 
 @interface IMOverviewVC ()
 @property (nonatomic, strong) IMTeam *team;
@@ -225,6 +226,11 @@ enum {
             }];
         
     }
+}
+
+- (IBAction)flexToolBarAction:(id)sender
+{
+    [[FLEXManager sharedManager] showExplorer];
 }
 
 #pragma mark - Unwind segues
