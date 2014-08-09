@@ -7,7 +7,7 @@
         <!--View Controller - 这里是“小饭桌”-->
         <scene sceneID="3dH-GZ-HLa">
             <objects>
-                <viewController id="Csf-ku-aRl" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GuideVC" id="Csf-ku-aRl" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SUY-Gc-FbY"/>
                         <viewControllerLayoutGuide type="bottom" id="XnV-Ib-Nlq"/>
@@ -93,7 +93,7 @@
                     <navigationItem key="navigationItem" title="加入小饭桌" id="pOD-0H-K2p"/>
                     <connections>
                         <outlet property="enterButton" destination="2ui-4B-wig" id="yJZ-VL-XWB"/>
-                        <outlet property="teamNumberTextField" destination="rGZ-Kr-eYY" id="j8d-Sv-5m5"/>
+                        <outlet property="signTextField" destination="rGZ-Kr-eYY" id="qUp-NV-mGj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dqk-HY-guf" userLabel="First Responder" sceneMemberID="firstResponder"/>

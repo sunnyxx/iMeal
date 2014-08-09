@@ -16,7 +16,7 @@
 /// 2. charger.money += money
 /// 3. receiver.money -= money
 + (RACSignal *)chargeSignalWithCharger:(IMMember *)charger
-                              receiver:(IMMember *)receiver
+                                keeper:(IMMember *)keeper
                                  money:(CGFloat)money;
 
 /// Signal for tally once

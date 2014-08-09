@@ -57,7 +57,7 @@
 
 - (void)tableView:(UITableView *)tableView didUnhighlightRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    self->_receiver = self.members[indexPath.row];
+    self->_keeper = self.members[indexPath.row];
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     cell.selected = YES;
 }

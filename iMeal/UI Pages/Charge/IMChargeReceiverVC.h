@@ -12,6 +12,6 @@
 @interface IMChargeReceiverVC : UITableViewController
 
 @property (nonatomic, strong) IMMember *charger; // Input
-@property (nonatomic, strong, readonly) IMMember *receiver; // Output
+@property (nonatomic, strong, readonly) IMMember *keeper; // Output
 
 @end

@@ -14,7 +14,7 @@
 @property (nonatomic, strong) NSDate *date;
 @property (nonatomic, strong) IMTeam *team;
 @property (nonatomic, strong) IMMember *charger;
-@property (nonatomic, strong) IMMember *receiver;
+@property (nonatomic, strong) IMMember *keeper;
 @property (nonatomic) CGFloat money;
 
 @end

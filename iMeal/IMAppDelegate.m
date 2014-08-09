@@ -8,6 +8,7 @@
 
 #import "IMAppDelegate.h"
 #import "IMServer.h"
+#import "IMRouter.h"
 
 @implementation IMAppDelegate
 
@@ -16,11 +17,8 @@
     // Setup server
     [IMServer setup];
     
-    // Router
-    NSString *storyboardName = [IMTeam cachedTeamId] ? @"Main" : @"Guide";
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
-    UIViewController *vc = [sb instantiateInitialViewController];
-    self.window.rootViewController = vc;
+    // Setup root vc by login state
+    [[IMRouter globalRouter] setupRootViewController];
     
     return YES;
 }

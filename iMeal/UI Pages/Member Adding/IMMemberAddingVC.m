@@ -31,7 +31,7 @@
         }];
     }];
     
-    [[self rac_signalForSelector:@selector(viewDidAppear:)] subscribeNext:^(id x) {
+    [[self rac_signalForSelector:@selector(viewWillAppear:)] subscribeNext:^(id x) {
         @strongify(self);
         [self.nicknameTextField becomeFirstResponder];
     }];

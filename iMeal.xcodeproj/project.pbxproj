@@ -7,67 +7,93 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		480EC0651991306D0058CCA7 /* IMChargeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 480EC0641991306D0058CCA7 /* IMChargeVC.m */; };
-		480EC068199130980058CCA7 /* IMChargeReceiverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 480EC067199130980058CCA7 /* IMChargeReceiverVC.m */; };
-		480EC06E199150BE0058CCA7 /* IMMemberAddingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 480EC06B199150BE0058CCA7 /* IMMemberAddingVC.m */; };
-		480EC06F199150BE0058CCA7 /* IMMembersVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 480EC06D199150BE0058CCA7 /* IMMembersVC.m */; };
-		480EC072199223BC0058CCA7 /* IMTeamCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 480EC071199223BC0058CCA7 /* IMTeamCell.m */; };
-		480EC07B19922FFB0058CCA7 /* IMTeamEnterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 480EC07A19922FFB0058CCA7 /* IMTeamEnterVC.m */; };
-		480EC07E19926A3A0058CCA7 /* IMProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 480EC07D19926A3A0058CCA7 /* IMProgressHUD.m */; };
-		486BA89119893F3000D1CBA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 486BA88D19893F3000D1CBA0 /* Main.storyboard */; };
-		48846CC519880BA600AF9941 /* Guide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48846CC419880BA600AF9941 /* Guide.storyboard */; };
-		48846CC819880BDA00AF9941 /* IMTeamCreationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48846CC719880BDA00AF9941 /* IMTeamCreationVC.m */; };
+		48140C971994ACDE0026C28F /* IMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C611994ACDE0026C28F /* IMAppDelegate.m */; };
+		48140C981994ACDE0026C28F /* CCBackBeat-Light_5.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 48140C641994ACDE0026C28F /* CCBackBeat-Light_5.ttf */; };
+		48140C991994ACDE0026C28F /* Supercell-Magic_5.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 48140C651994ACDE0026C28F /* Supercell-Magic_5.ttf */; };
+		48140C9A1994ACDE0026C28F /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48140C671994ACDE0026C28F /* loading.gif */; };
+		48140C9B1994ACDE0026C28F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48140C681994ACDE0026C28F /* Images.xcassets */; };
+		48140C9C1994ACDE0026C28F /* money1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 48140C6A1994ACDE0026C28F /* money1.caf */; };
+		48140C9D1994ACDE0026C28F /* money2.caf in Resources */ = {isa = PBXBuildFile; fileRef = 48140C6B1994ACDE0026C28F /* money2.caf */; };
+		48140C9E1994ACDE0026C28F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48140C6D1994ACDE0026C28F /* InfoPlist.strings */; };
+		48140CA01994ACDE0026C28F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C711994ACDE0026C28F /* main.m */; };
+		48140CA11994ACDE0026C28F /* IMChargeReceiverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C751994ACDE0026C28F /* IMChargeReceiverVC.m */; };
+		48140CA21994ACDE0026C28F /* IMChargeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C771994ACDE0026C28F /* IMChargeVC.m */; };
+		48140CA31994ACDE0026C28F /* Guide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48140C791994ACDE0026C28F /* Guide.storyboard */; };
+		48140CA41994ACDE0026C28F /* IMTeamCreationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C7B1994ACDE0026C28F /* IMTeamCreationVC.m */; };
+		48140CA51994ACDE0026C28F /* IMTeamEnterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C7D1994ACDE0026C28F /* IMTeamEnterVC.m */; };
+		48140CA61994ACDE0026C28F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48140C7E1994ACDE0026C28F /* Main.storyboard */; };
+		48140CA71994ACDE0026C28F /* IMMemberAddingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C811994ACDE0026C28F /* IMMemberAddingVC.m */; };
+		48140CA81994ACDE0026C28F /* IMMemberOverviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C841994ACDE0026C28F /* IMMemberOverviewCell.m */; };
+		48140CA91994ACDE0026C28F /* IMOverviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C861994ACDE0026C28F /* IMOverviewVC.m */; };
+		48140CAA1994ACDE0026C28F /* IMTeamOverviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C881994ACDE0026C28F /* IMTeamOverviewCell.m */; };
+		48140CAB1994ACDE0026C28F /* IMRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C8B1994ACDE0026C28F /* IMRouter.m */; };
+		48140CAC1994ACDE0026C28F /* IMTallyRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C8E1994ACDE0026C28F /* IMTallyRecordCell.m */; };
+		48140CAD1994ACDE0026C28F /* IMTallyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C901994ACDE0026C28F /* IMTallyVC.m */; };
+		48140CAF1994ACDE0026C28F /* IMProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C961994ACDE0026C28F /* IMProgressHUD.m */; };
 		48A81AA319801734007CE410 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A81AA219801734007CE410 /* Foundation.framework */; };
 		48A81AA519801734007CE410 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A81AA419801734007CE410 /* CoreGraphics.framework */; };
 		48A81AA719801734007CE410 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A81AA619801734007CE410 /* UIKit.framework */; };
-		48A81AAD19801734007CE410 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48A81AAB19801734007CE410 /* InfoPlist.strings */; };
-		48A81AAF19801734007CE410 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81AAE19801734007CE410 /* main.m */; };
-		48A81AB319801734007CE410 /* IMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A81AB219801734007CE410 /* IMAppDelegate.m */; };
-		48A81ABB19801734007CE410 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A81ABA19801734007CE410 /* Images.xcassets */; };
 		48BD64321986AD660039B2EB /* libiMealModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BD64311986AD660039B2EB /* libiMealModel.a */; };
-		48CC34801990C22B0079108C /* IMTallyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CC347F1990C22B0079108C /* IMTallyVC.m */; };
-		48CC34831990C3940079108C /* IMTallyRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CC34821990C3940079108C /* IMTallyRecordCell.m */; };
-		48E2A8251982337D006DD602 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48E2A8241982337C006DD602 /* loading.gif */; };
 		48E2A82A198249D0006DD602 /* libPods-iMeal.a in Resources */ = {isa = PBXBuildFile; fileRef = B566D2A1BC1E40FBA370ED12 /* libPods-iMeal.a */; };
+		48E4B5791995302000164A36 /* IMFormatDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4B5781995302000164A36 /* IMFormatDisplay.m */; };
+		48E4B57F19953FEB00164A36 /* UILabel+IMMoneyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4B57E19953FEB00164A36 /* UILabel+IMMoneyLabel.m */; };
+		48E4B5821995C79D00164A36 /* IMMoneyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4B5811995C79D00164A36 /* IMMoneyLabel.m */; };
+		48E4B585199656B600164A36 /* IMGuideVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4B584199656B600164A36 /* IMGuideVC.m */; };
 		8765F09117264BEE8C5DB16F /* libPods-iMeal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B566D2A1BC1E40FBA370ED12 /* libPods-iMeal.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		480EC0631991306D0058CCA7 /* IMChargeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMChargeVC.h; sourceTree = "<group>"; };
-		480EC0641991306D0058CCA7 /* IMChargeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMChargeVC.m; sourceTree = "<group>"; };
-		480EC066199130980058CCA7 /* IMChargeReceiverVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMChargeReceiverVC.h; sourceTree = "<group>"; };
-		480EC067199130980058CCA7 /* IMChargeReceiverVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMChargeReceiverVC.m; sourceTree = "<group>"; };
-		480EC06A199150BE0058CCA7 /* IMMemberAddingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMemberAddingVC.h; sourceTree = "<group>"; };
-		480EC06B199150BE0058CCA7 /* IMMemberAddingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMMemberAddingVC.m; sourceTree = "<group>"; };
-		480EC06C199150BE0058CCA7 /* IMMembersVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMembersVC.h; sourceTree = "<group>"; };
-		480EC06D199150BE0058CCA7 /* IMMembersVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMMembersVC.m; sourceTree = "<group>"; };
-		480EC070199223BC0058CCA7 /* IMTeamCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTeamCell.h; sourceTree = "<group>"; };
-		480EC071199223BC0058CCA7 /* IMTeamCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTeamCell.m; sourceTree = "<group>"; };
-		480EC07919922FFB0058CCA7 /* IMTeamEnterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTeamEnterVC.h; sourceTree = "<group>"; };
-		480EC07A19922FFB0058CCA7 /* IMTeamEnterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTeamEnterVC.m; sourceTree = "<group>"; };
-		480EC07C19926A3A0058CCA7 /* IMProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMProgressHUD.h; sourceTree = "<group>"; };
-		480EC07D19926A3A0058CCA7 /* IMProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMProgressHUD.m; sourceTree = "<group>"; };
-		486BA88D19893F3000D1CBA0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		48846CC419880BA600AF9941 /* Guide.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Guide.storyboard; sourceTree = "<group>"; };
-		48846CC619880BDA00AF9941 /* IMTeamCreationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTeamCreationVC.h; sourceTree = "<group>"; };
-		48846CC719880BDA00AF9941 /* IMTeamCreationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTeamCreationVC.m; sourceTree = "<group>"; };
+		48140C601994ACDE0026C28F /* IMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAppDelegate.h; sourceTree = "<group>"; };
+		48140C611994ACDE0026C28F /* IMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMAppDelegate.m; sourceTree = "<group>"; };
+		48140C641994ACDE0026C28F /* CCBackBeat-Light_5.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CCBackBeat-Light_5.ttf"; sourceTree = "<group>"; };
+		48140C651994ACDE0026C28F /* Supercell-Magic_5.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Supercell-Magic_5.ttf"; sourceTree = "<group>"; };
+		48140C671994ACDE0026C28F /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		48140C681994ACDE0026C28F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		48140C6A1994ACDE0026C28F /* money1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = money1.caf; sourceTree = "<group>"; };
+		48140C6B1994ACDE0026C28F /* money2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = money2.caf; sourceTree = "<group>"; };
+		48140C6E1994ACDE0026C28F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		48140C6F1994ACDE0026C28F /* iMeal-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iMeal-Info.plist"; sourceTree = "<group>"; };
+		48140C701994ACDE0026C28F /* iMeal-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iMeal-Prefix.pch"; sourceTree = "<group>"; };
+		48140C711994ACDE0026C28F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		48140C741994ACDE0026C28F /* IMChargeReceiverVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMChargeReceiverVC.h; sourceTree = "<group>"; };
+		48140C751994ACDE0026C28F /* IMChargeReceiverVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMChargeReceiverVC.m; sourceTree = "<group>"; };
+		48140C761994ACDE0026C28F /* IMChargeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMChargeVC.h; sourceTree = "<group>"; };
+		48140C771994ACDE0026C28F /* IMChargeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMChargeVC.m; sourceTree = "<group>"; };
+		48140C791994ACDE0026C28F /* Guide.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Guide.storyboard; sourceTree = "<group>"; };
+		48140C7A1994ACDE0026C28F /* IMTeamCreationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTeamCreationVC.h; sourceTree = "<group>"; };
+		48140C7B1994ACDE0026C28F /* IMTeamCreationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTeamCreationVC.m; sourceTree = "<group>"; };
+		48140C7C1994ACDE0026C28F /* IMTeamEnterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTeamEnterVC.h; sourceTree = "<group>"; };
+		48140C7D1994ACDE0026C28F /* IMTeamEnterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTeamEnterVC.m; sourceTree = "<group>"; };
+		48140C7E1994ACDE0026C28F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		48140C801994ACDE0026C28F /* IMMemberAddingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMemberAddingVC.h; sourceTree = "<group>"; };
+		48140C811994ACDE0026C28F /* IMMemberAddingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMMemberAddingVC.m; sourceTree = "<group>"; };
+		48140C831994ACDE0026C28F /* IMMemberOverviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMemberOverviewCell.h; sourceTree = "<group>"; };
+		48140C841994ACDE0026C28F /* IMMemberOverviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMMemberOverviewCell.m; sourceTree = "<group>"; };
+		48140C851994ACDE0026C28F /* IMOverviewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMOverviewVC.h; sourceTree = "<group>"; };
+		48140C861994ACDE0026C28F /* IMOverviewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMOverviewVC.m; sourceTree = "<group>"; };
+		48140C871994ACDE0026C28F /* IMTeamOverviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTeamOverviewCell.h; sourceTree = "<group>"; };
+		48140C881994ACDE0026C28F /* IMTeamOverviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTeamOverviewCell.m; sourceTree = "<group>"; };
+		48140C8A1994ACDE0026C28F /* IMRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRouter.h; sourceTree = "<group>"; };
+		48140C8B1994ACDE0026C28F /* IMRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRouter.m; sourceTree = "<group>"; };
+		48140C8D1994ACDE0026C28F /* IMTallyRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTallyRecordCell.h; sourceTree = "<group>"; };
+		48140C8E1994ACDE0026C28F /* IMTallyRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTallyRecordCell.m; sourceTree = "<group>"; };
+		48140C8F1994ACDE0026C28F /* IMTallyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTallyVC.h; sourceTree = "<group>"; };
+		48140C901994ACDE0026C28F /* IMTallyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTallyVC.m; sourceTree = "<group>"; };
+		48140C951994ACDE0026C28F /* IMProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMProgressHUD.h; sourceTree = "<group>"; };
+		48140C961994ACDE0026C28F /* IMProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMProgressHUD.m; sourceTree = "<group>"; };
 		48A81A9F19801734007CE410 /* iMeal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMeal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A81AA219801734007CE410 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		48A81AA419801734007CE410 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		48A81AA619801734007CE410 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		48A81AAA19801734007CE410 /* iMeal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iMeal-Info.plist"; sourceTree = "<group>"; };
-		48A81AAC19801734007CE410 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		48A81AAE19801734007CE410 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		48A81AB019801734007CE410 /* iMeal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iMeal-Prefix.pch"; sourceTree = "<group>"; };
-		48A81AB119801734007CE410 /* IMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMAppDelegate.h; sourceTree = "<group>"; };
-		48A81AB219801734007CE410 /* IMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMAppDelegate.m; sourceTree = "<group>"; };
-		48A81ABA19801734007CE410 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		48BD64311986AD660039B2EB /* libiMealModel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiMealModel.a; path = "build/Debug-iphoneos/libiMealModel.a"; sourceTree = "<group>"; };
-		48CC347E1990C22B0079108C /* IMTallyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTallyVC.h; sourceTree = "<group>"; };
-		48CC347F1990C22B0079108C /* IMTallyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTallyVC.m; sourceTree = "<group>"; };
-		48CC34811990C3940079108C /* IMTallyRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTallyRecordCell.h; sourceTree = "<group>"; };
-		48CC34821990C3940079108C /* IMTallyRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTallyRecordCell.m; sourceTree = "<group>"; };
-		48E2A8241982337C006DD602 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		48E4B5771995302000164A36 /* IMFormatDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMFormatDisplay.h; sourceTree = "<group>"; };
+		48E4B5781995302000164A36 /* IMFormatDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMFormatDisplay.m; sourceTree = "<group>"; };
+		48E4B57D19953FEB00164A36 /* UILabel+IMMoneyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+IMMoneyLabel.h"; sourceTree = "<group>"; };
+		48E4B57E19953FEB00164A36 /* UILabel+IMMoneyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+IMMoneyLabel.m"; sourceTree = "<group>"; };
+		48E4B5801995C79D00164A36 /* IMMoneyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMoneyLabel.h; sourceTree = "<group>"; };
+		48E4B5811995C79D00164A36 /* IMMoneyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMMoneyLabel.m; sourceTree = "<group>"; };
+		48E4B583199656B600164A36 /* IMGuideVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGuideVC.h; sourceTree = "<group>"; };
+		48E4B584199656B600164A36 /* IMGuideVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGuideVC.m; sourceTree = "<group>"; };
 		B2FCCE0D79E5451E963FC0D5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B566D2A1BC1E40FBA370ED12 /* libPods-iMeal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMeal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAA621A4042417E9C1A3138 /* Pods-iMeal.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMeal.xcconfig"; path = "Pods/Pods-iMeal.xcconfig"; sourceTree = "<group>"; };
@@ -89,51 +115,155 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		480EC0621991306D0058CCA7 /* Charge */ = {
+		48140C621994ACDE0026C28F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				480EC0631991306D0058CCA7 /* IMChargeVC.h */,
-				480EC0641991306D0058CCA7 /* IMChargeVC.m */,
-				480EC066199130980058CCA7 /* IMChargeReceiverVC.h */,
-				480EC067199130980058CCA7 /* IMChargeReceiverVC.m */,
+				48140C631994ACDE0026C28F /* font */,
+				48140C661994ACDE0026C28F /* gif */,
+				48140C681994ACDE0026C28F /* Images.xcassets */,
+				48140C691994ACDE0026C28F /* sfx */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		48140C631994ACDE0026C28F /* font */ = {
+			isa = PBXGroup;
+			children = (
+				48140C641994ACDE0026C28F /* CCBackBeat-Light_5.ttf */,
+				48140C651994ACDE0026C28F /* Supercell-Magic_5.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		48140C661994ACDE0026C28F /* gif */ = {
+			isa = PBXGroup;
+			children = (
+				48140C671994ACDE0026C28F /* loading.gif */,
+			);
+			path = gif;
+			sourceTree = "<group>";
+		};
+		48140C691994ACDE0026C28F /* sfx */ = {
+			isa = PBXGroup;
+			children = (
+				48140C6A1994ACDE0026C28F /* money1.caf */,
+				48140C6B1994ACDE0026C28F /* money2.caf */,
+			);
+			path = sfx;
+			sourceTree = "<group>";
+		};
+		48140C6C1994ACDE0026C28F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				48140C6D1994ACDE0026C28F /* InfoPlist.strings */,
+				48140C6F1994ACDE0026C28F /* iMeal-Info.plist */,
+				48140C701994ACDE0026C28F /* iMeal-Prefix.pch */,
+				48140C711994ACDE0026C28F /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		48140C721994ACDE0026C28F /* UI Pages */ = {
+			isa = PBXGroup;
+			children = (
+				48140C7E1994ACDE0026C28F /* Main.storyboard */,
+				48140C731994ACDE0026C28F /* Charge */,
+				48140C781994ACDE0026C28F /* Guide */,
+				48140C7F1994ACDE0026C28F /* Member Adding */,
+				48140C821994ACDE0026C28F /* Overview */,
+				48140C891994ACDE0026C28F /* Router */,
+				48140C8C1994ACDE0026C28F /* Tally */,
+			);
+			path = "UI Pages";
+			sourceTree = "<group>";
+		};
+		48140C731994ACDE0026C28F /* Charge */ = {
+			isa = PBXGroup;
+			children = (
+				48140C741994ACDE0026C28F /* IMChargeReceiverVC.h */,
+				48140C751994ACDE0026C28F /* IMChargeReceiverVC.m */,
+				48140C761994ACDE0026C28F /* IMChargeVC.h */,
+				48140C771994ACDE0026C28F /* IMChargeVC.m */,
 			);
 			path = Charge;
 			sourceTree = "<group>";
 		};
-		480EC069199150BE0058CCA7 /* Members */ = {
+		48140C781994ACDE0026C28F /* Guide */ = {
 			isa = PBXGroup;
 			children = (
-				480EC070199223BC0058CCA7 /* IMTeamCell.h */,
-				480EC071199223BC0058CCA7 /* IMTeamCell.m */,
-				480EC06A199150BE0058CCA7 /* IMMemberAddingVC.h */,
-				480EC06B199150BE0058CCA7 /* IMMemberAddingVC.m */,
-				480EC06C199150BE0058CCA7 /* IMMembersVC.h */,
-				480EC06D199150BE0058CCA7 /* IMMembersVC.m */,
-			);
-			path = Members;
-			sourceTree = "<group>";
-		};
-		486BA88619893F3000D1CBA0 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				480EC069199150BE0058CCA7 /* Members */,
-				480EC0621991306D0058CCA7 /* Charge */,
-				48CC347D1990C2040079108C /* Tally */,
-				486BA88D19893F3000D1CBA0 /* Main.storyboard */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		48846CC319880BA600AF9941 /* Guide */ = {
-			isa = PBXGroup;
-			children = (
-				48846CC419880BA600AF9941 /* Guide.storyboard */,
-				48846CC619880BDA00AF9941 /* IMTeamCreationVC.h */,
-				48846CC719880BDA00AF9941 /* IMTeamCreationVC.m */,
-				480EC07919922FFB0058CCA7 /* IMTeamEnterVC.h */,
-				480EC07A19922FFB0058CCA7 /* IMTeamEnterVC.m */,
+				48140C791994ACDE0026C28F /* Guide.storyboard */,
+				48E4B583199656B600164A36 /* IMGuideVC.h */,
+				48E4B584199656B600164A36 /* IMGuideVC.m */,
+				48140C7A1994ACDE0026C28F /* IMTeamCreationVC.h */,
+				48140C7B1994ACDE0026C28F /* IMTeamCreationVC.m */,
+				48140C7C1994ACDE0026C28F /* IMTeamEnterVC.h */,
+				48140C7D1994ACDE0026C28F /* IMTeamEnterVC.m */,
 			);
 			path = Guide;
+			sourceTree = "<group>";
+		};
+		48140C7F1994ACDE0026C28F /* Member Adding */ = {
+			isa = PBXGroup;
+			children = (
+				48140C801994ACDE0026C28F /* IMMemberAddingVC.h */,
+				48140C811994ACDE0026C28F /* IMMemberAddingVC.m */,
+			);
+			path = "Member Adding";
+			sourceTree = "<group>";
+		};
+		48140C821994ACDE0026C28F /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				48140C851994ACDE0026C28F /* IMOverviewVC.h */,
+				48140C861994ACDE0026C28F /* IMOverviewVC.m */,
+				48140C831994ACDE0026C28F /* IMMemberOverviewCell.h */,
+				48140C841994ACDE0026C28F /* IMMemberOverviewCell.m */,
+				48140C871994ACDE0026C28F /* IMTeamOverviewCell.h */,
+				48140C881994ACDE0026C28F /* IMTeamOverviewCell.m */,
+			);
+			path = Overview;
+			sourceTree = "<group>";
+		};
+		48140C891994ACDE0026C28F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				48140C8A1994ACDE0026C28F /* IMRouter.h */,
+				48140C8B1994ACDE0026C28F /* IMRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		48140C8C1994ACDE0026C28F /* Tally */ = {
+			isa = PBXGroup;
+			children = (
+				48140C8D1994ACDE0026C28F /* IMTallyRecordCell.h */,
+				48140C8E1994ACDE0026C28F /* IMTallyRecordCell.m */,
+				48140C8F1994ACDE0026C28F /* IMTallyVC.h */,
+				48140C901994ACDE0026C28F /* IMTallyVC.m */,
+			);
+			path = Tally;
+			sourceTree = "<group>";
+		};
+		48140C911994ACDE0026C28F /* UI Utils */ = {
+			isa = PBXGroup;
+			children = (
+				48E4B5771995302000164A36 /* IMFormatDisplay.h */,
+				48E4B5781995302000164A36 /* IMFormatDisplay.m */,
+			);
+			path = "UI Utils";
+			sourceTree = "<group>";
+		};
+		48140C941994ACDE0026C28F /* UI Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				48140C951994ACDE0026C28F /* IMProgressHUD.h */,
+				48140C961994ACDE0026C28F /* IMProgressHUD.m */,
+				48E4B57D19953FEB00164A36 /* UILabel+IMMoneyLabel.h */,
+				48E4B57E19953FEB00164A36 /* UILabel+IMMoneyLabel.m */,
+				48E4B5801995C79D00164A36 /* IMMoneyLabel.h */,
+				48E4B5811995C79D00164A36 /* IMMoneyLabel.m */,
+			);
+			path = "UI Widgets";
 			sourceTree = "<group>";
 		};
 		48A81A9619801733007CE410 = {
@@ -170,47 +300,15 @@
 		48A81AA819801734007CE410 /* iMeal */ = {
 			isa = PBXGroup;
 			children = (
-				486BA88619893F3000D1CBA0 /* Main */,
-				48846CC319880BA600AF9941 /* Guide */,
-				48BD64531987BF650039B2EB /* Widgets */,
-				48A81AB119801734007CE410 /* IMAppDelegate.h */,
-				48A81AB219801734007CE410 /* IMAppDelegate.m */,
-				48A81ABA19801734007CE410 /* Images.xcassets */,
-				48E2A8241982337C006DD602 /* loading.gif */,
-				48A81AA919801734007CE410 /* Supporting Files */,
+				48140C601994ACDE0026C28F /* IMAppDelegate.h */,
+				48140C611994ACDE0026C28F /* IMAppDelegate.m */,
+				48140C621994ACDE0026C28F /* Resources */,
+				48140C6C1994ACDE0026C28F /* Supporting Files */,
+				48140C721994ACDE0026C28F /* UI Pages */,
+				48140C911994ACDE0026C28F /* UI Utils */,
+				48140C941994ACDE0026C28F /* UI Widgets */,
 			);
 			path = iMeal;
-			sourceTree = "<group>";
-		};
-		48A81AA919801734007CE410 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				48A81AAA19801734007CE410 /* iMeal-Info.plist */,
-				48A81AAB19801734007CE410 /* InfoPlist.strings */,
-				48A81AAE19801734007CE410 /* main.m */,
-				48A81AB019801734007CE410 /* iMeal-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		48BD64531987BF650039B2EB /* Widgets */ = {
-			isa = PBXGroup;
-			children = (
-				480EC07C19926A3A0058CCA7 /* IMProgressHUD.h */,
-				480EC07D19926A3A0058CCA7 /* IMProgressHUD.m */,
-			);
-			path = Widgets;
-			sourceTree = "<group>";
-		};
-		48CC347D1990C2040079108C /* Tally */ = {
-			isa = PBXGroup;
-			children = (
-				48CC347E1990C22B0079108C /* IMTallyVC.h */,
-				48CC347F1990C22B0079108C /* IMTallyVC.m */,
-				48CC34811990C3940079108C /* IMTallyRecordCell.h */,
-				48CC34821990C3940079108C /* IMTallyRecordCell.m */,
-			);
-			path = Tally;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,12 +369,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48140C981994ACDE0026C28F /* CCBackBeat-Light_5.ttf in Resources */,
+				48140C9E1994ACDE0026C28F /* InfoPlist.strings in Resources */,
+				48140C9B1994ACDE0026C28F /* Images.xcassets in Resources */,
+				48140C9A1994ACDE0026C28F /* loading.gif in Resources */,
+				48140C9C1994ACDE0026C28F /* money1.caf in Resources */,
+				48140CA61994ACDE0026C28F /* Main.storyboard in Resources */,
+				48140CA31994ACDE0026C28F /* Guide.storyboard in Resources */,
+				48140C991994ACDE0026C28F /* Supercell-Magic_5.ttf in Resources */,
 				48E2A82A198249D0006DD602 /* libPods-iMeal.a in Resources */,
-				48A81ABB19801734007CE410 /* Images.xcassets in Resources */,
-				48E2A8251982337D006DD602 /* loading.gif in Resources */,
-				486BA89119893F3000D1CBA0 /* Main.storyboard in Resources */,
-				48A81AAD19801734007CE410 /* InfoPlist.strings in Resources */,
-				48846CC519880BA600AF9941 /* Guide.storyboard in Resources */,
+				48140C9D1994ACDE0026C28F /* money2.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,28 +407,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48CC34801990C22B0079108C /* IMTallyVC.m in Sources */,
-				480EC068199130980058CCA7 /* IMChargeReceiverVC.m in Sources */,
-				480EC072199223BC0058CCA7 /* IMTeamCell.m in Sources */,
-				48A81AB319801734007CE410 /* IMAppDelegate.m in Sources */,
-				480EC07B19922FFB0058CCA7 /* IMTeamEnterVC.m in Sources */,
-				48CC34831990C3940079108C /* IMTallyRecordCell.m in Sources */,
-				480EC07E19926A3A0058CCA7 /* IMProgressHUD.m in Sources */,
-				480EC0651991306D0058CCA7 /* IMChargeVC.m in Sources */,
-				48A81AAF19801734007CE410 /* main.m in Sources */,
-				480EC06F199150BE0058CCA7 /* IMMembersVC.m in Sources */,
-				48846CC819880BDA00AF9941 /* IMTeamCreationVC.m in Sources */,
-				480EC06E199150BE0058CCA7 /* IMMemberAddingVC.m in Sources */,
+				48140CAF1994ACDE0026C28F /* IMProgressHUD.m in Sources */,
+				48E4B57F19953FEB00164A36 /* UILabel+IMMoneyLabel.m in Sources */,
+				48E4B5791995302000164A36 /* IMFormatDisplay.m in Sources */,
+				48140CA51994ACDE0026C28F /* IMTeamEnterVC.m in Sources */,
+				48140CAC1994ACDE0026C28F /* IMTallyRecordCell.m in Sources */,
+				48140CA21994ACDE0026C28F /* IMChargeVC.m in Sources */,
+				48140CA71994ACDE0026C28F /* IMMemberAddingVC.m in Sources */,
+				48140CA01994ACDE0026C28F /* main.m in Sources */,
+				48140CA11994ACDE0026C28F /* IMChargeReceiverVC.m in Sources */,
+				48E4B585199656B600164A36 /* IMGuideVC.m in Sources */,
+				48140CAD1994ACDE0026C28F /* IMTallyVC.m in Sources */,
+				48140CAA1994ACDE0026C28F /* IMTeamOverviewCell.m in Sources */,
+				48E4B5821995C79D00164A36 /* IMMoneyLabel.m in Sources */,
+				48140CA41994ACDE0026C28F /* IMTeamCreationVC.m in Sources */,
+				48140CA81994ACDE0026C28F /* IMMemberOverviewCell.m in Sources */,
+				48140CAB1994ACDE0026C28F /* IMRouter.m in Sources */,
+				48140CA91994ACDE0026C28F /* IMOverviewVC.m in Sources */,
+				48140C971994ACDE0026C28F /* IMAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		48A81AAB19801734007CE410 /* InfoPlist.strings */ = {
+		48140C6D1994ACDE0026C28F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				48A81AAC19801734007CE410 /* en */,
+				48140C6E1994ACDE0026C28F /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -413,8 +521,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iMeal/iMeal-Prefix.pch";
-				INFOPLIST_FILE = "iMeal/iMeal-Info.plist";
+				GCC_PREFIX_HEADER = "iMeal/Supporting Files/iMeal-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/iMeal/Supporting Files/iMeal-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,8 +541,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iMeal/iMeal-Prefix.pch";
-				INFOPLIST_FILE = "iMeal/iMeal-Info.plist";
+				GCC_PREFIX_HEADER = "iMeal/Supporting Files/iMeal-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/iMeal/Supporting Files/iMeal-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

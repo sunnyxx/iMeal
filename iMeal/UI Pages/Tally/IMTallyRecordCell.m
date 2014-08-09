@@ -7,7 +7,7 @@
 //
 
 #import "IMTallyRecordCell.h"
-#import "IMMemberCostRecord.h"
+#import "IMMemberTally.h"
 #import "IMMember.h"
 
 @interface IMTallyRecordCell ()

@@ -10,7 +10,7 @@
 
 @implementation IMChargeRecord
 
-@dynamic date, team, charger, receiver, money;
+@dynamic date, team, charger, keeper, money;
 
 + (NSString *)parseClassName
 {

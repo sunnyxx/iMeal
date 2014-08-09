@@ -15,12 +15,10 @@
 /// `+ [IMTeam currentTeam]` is updated
 + (RACSignal *)refreshCurrentTeamSignal;
 
-/// Signal for creating a team
+/// Signals in `Guide`
+/// User create or enter a team with `sign`
 + (RACSignal *)createTeamSignalWithSign:(NSString *)sign;
-
-/// Signal for entering a team
-/// Error for a non exist team
-+ (RACSignal *)enterTeamSignalWithTeamNumber:(NSString *)number;
++ (RACSignal *)enterTeamSignalWithSign:(NSString *)sign;
 
 /// Signal for add member into current team
 + (RACSignal *)addMemberSignalWithNickname:(NSString *)nickname;

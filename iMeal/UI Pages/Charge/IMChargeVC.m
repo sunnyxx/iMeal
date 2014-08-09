@@ -12,16 +12,18 @@
 #import "IMChargeRecord.h"
 #import "IMChargeReceiverVC.h"
 #import "IMServer+MoneySignals.h"
+#import "IMFormatDisplay.h"
+#import "IMMoneyLabel.h"
 
 @interface IMChargeVC ()
 @property (weak, nonatomic) IBOutlet UIButton *moneyReceiverButton;
 @property (weak, nonatomic) IBOutlet UITextField *moneyTextField;
 @property (weak, nonatomic) IBOutlet UIButton *confirmButton;
-@property (weak, nonatomic) IBOutlet UILabel *originalMoneyLabel;
-@property (weak, nonatomic) IBOutlet UILabel *resultMoneyLabel;
+@property (weak, nonatomic) IBOutlet IMMoneyLabel *originalMoneyLabel;
+@property (weak, nonatomic) IBOutlet IMMoneyLabel *resultMoneyLabel;
 
 @property (nonatomic, strong) IMChargeRecord *record;
-@property (nonatomic, strong) IMMember *receiver; // Who takes the money
+@property (nonatomic, strong) IMMember *keeper; // Who takes the money
 
 @end
 
@@ -32,30 +34,29 @@
     [super viewDidLoad];
     
     @weakify(self);
-    self.extendedLayoutIncludesOpaqueBars = YES;
     
     // Navigation bar title
     self.title = [NSString stringWithFormat:@"给%@冲钱", self.charger.nickname];
     
     // Money receiver
-    [[[RACObserve(self, receiver)
+    [[RACObserve(self, keeper)
         ignore:nil]
-        distinctUntilChanged]
-        subscribeNext:^(IMMember *receiver) {
+        subscribeNext:^(IMMember *keeper) {
             @strongify(self);
-            if (receiver.nickname) {
-                [self.moneyReceiverButton setTitle:receiver.nickname forState:UIControlStateNormal];
+            if (keeper.nickname) {
+                [self.moneyReceiverButton setTitle:keeper.nickname forState:UIControlStateNormal];
             }
     }];
     // Set the last receiver in current team
-    self.receiver = [IMTeam currentTeam].receiver;
+    self.keeper = [IMTeam currentTeam].keeper;
     
     // Make the equation
     // `original + input = result`
-    self.originalMoneyLabel.text = [NSString stringWithFormat:@"￥%.1f", self.charger.money];
-    RAC(self.resultMoneyLabel, text) = [self.moneyTextField.rac_textSignal map:^id(NSString *value) {
+    RAC(self.originalMoneyLabel, money) = RACObserve(self.charger, money);
+    
+    RAC(self.resultMoneyLabel, money) = [self.moneyTextField.rac_textSignal map:^id(NSString *value) {
         @strongify(self);
-        return [NSString stringWithFormat:@"￥%.1f", self.charger.money + [value floatValue]];
+        return @(self.charger.money + value.floatValue);
     }];
     
     // Confirm button enable when:
@@ -63,7 +64,7 @@
     // 2. Have input money
     RACSignal *enable = [[RACSignal
         combineLatest:@[self.moneyTextField.rac_textSignal,
-                        RACObserve(self, receiver)]
+                        RACObserve(self, keeper)]
         reduce:^id(NSString *text, IMMember *receiver){
             return (text.length > 0 && receiver) ? @YES : @NO;
     }] doNext:^(NSNumber *enable) {
@@ -80,7 +81,7 @@
                 CGFloat chargedMoney = [self.moneyTextField.text floatValue];
                 [[IMServer
                     chargeSignalWithCharger:self.charger
-                                   receiver:self.receiver
+                                     keeper:self.keeper
                                       money:chargedMoney]
                     subscribeError:^(NSError *error) {
                         [subscriber sendError:error];
@@ -119,7 +120,7 @@
     }];
     
     // Pop keyboard automatically
-    [[self rac_signalForSelector:@selector(viewDidAppear:)] subscribeNext:^(id _) {
+    [[self rac_signalForSelector:@selector(viewWillAppear:)] subscribeNext:^(id _) {
         @strongify(self);
         [self.moneyTextField becomeFirstResponder];
     }];
@@ -138,7 +139,7 @@
 {
     // Get back the data
     IMChargeReceiverVC *vc = segue.sourceViewController;
-    self.receiver = vc.receiver;
+    self.keeper = vc.keeper;
 }
 
 - (IBAction)unwindFromChargeReceiverVCCanceled:(UIStoryboardSegue *)segue {}

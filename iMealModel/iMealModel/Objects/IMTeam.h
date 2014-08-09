@@ -12,11 +12,6 @@
 
 @interface IMTeam : AVObject <AVSubclassing>
 
-+ (NSString *)cachedTeamId;
-+ (void)cacheTeamId:(NSString *)teamId;
-+ (IMTeam *)currentTeam;
-- (void)storeAsCurrentTeam;
-
 @property (nonatomic, copy) NSString *name;
 
 /// Team sign, secret code
@@ -26,6 +21,17 @@
 @property (nonatomic, strong) AVRelation *restaurants;
 
 /// Last member that received money from others
-@property (nonatomic, strong) IMMember *receiver;
+@property (nonatomic, strong) IMMember *keeper;
 
+@end
+
+@interface IMTeam (IMCurrentTeam)
+
++ (IMTeam *)currentTeam;
+
+//+ (NSString *)cachedTeamId;
+//+ (void)cacheTeamId:(NSString *)teamId;
+
+- (void)storeAsCurrentTeam;
+- (void)logout;
 @end

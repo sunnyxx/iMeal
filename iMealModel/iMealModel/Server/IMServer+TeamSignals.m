@@ -15,21 +15,30 @@
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         
         // Load cached team id
-        NSString *teamId = [IMTeam cachedTeamId];
+        IMTeam *team = [IMTeam currentTeam];
         
-        if (teamId) {
-            AVQuery *query = [IMTeam query];
-            query.cachePolicy = kAVCachePolicyIgnoreCache;
-            [query includeKey:@"receiver"];
-            [query getObjectInBackgroundWithId:teamId block:^(AVObject *object, NSError *error) {
-                
+        if (team.objectId) {
+            [team refreshInBackgroundWithKeys:@[@"keeper"] block:^(AVObject *object, NSError *error) {
                 // Save as current team
                 // Then we can get it from `+ [IMTeam currentTeam]`
                 [(IMTeam *)object storeAsCurrentTeam];
                 
                 [subscriber sendNext:object];
                 [subscriber sendCompleted];
+
             }];
+//            AVQuery *query = [IMTeam query];
+//            query.cachePolicy = kAVCachePolicyIgnoreCache;
+//            [query includeKey:@"keeper"];
+//            [query getObjectInBackgroundWithId:teamId block:^(AVObject *object, NSError *error) {
+//                
+//                // Save as current team
+//                // Then we can get it from `+ [IMTeam currentTeam]`
+//                [(IMTeam *)object storeAsCurrentTeam];
+//                
+//                [subscriber sendNext:object];
+//                [subscriber sendCompleted];
+//            }];
         }
         
         // Team id not exists;
@@ -46,7 +55,7 @@
 {
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         
-        // Check if this team code exists
+        // Check if this team sign exists
         AVQuery *query = [IMTeam query];
         [query whereKey:@"sign" equalTo:sign];
         [query countObjectsInBackgroundWithBlock:^(NSInteger number, NSError *error) {
@@ -64,23 +73,40 @@
                 }
                 
                 // Store local
-                [IMTeam cacheTeamId:newTeam.objectId];
                 [newTeam storeAsCurrentTeam];
                 
+                [subscriber sendNext:newTeam];
                 [subscriber sendCompleted];
             }];
             
         }];
         return nil;
     }];
-    
-    
-    return [RACSignal return:@YES];
 }
 
-+ (RACSignal *)enterTeamSignalWithTeamNumber:(NSString *)number
++ (RACSignal *)enterTeamSignalWithSign:(NSString *)sign
 {
-    return nil;
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        
+        // Check if this team sign exists
+        AVQuery *query = [IMTeam query];
+        [query whereKey:@"sign" equalTo:sign];
+        [query getFirstObjectInBackgroundWithBlock:^(AVObject *object, NSError *error) {
+            if (!object) {
+                [subscriber sendError:error];
+                return;
+            }
+            
+            IMTeam *team = (IMTeam *)object;
+            // Store local
+            [team storeAsCurrentTeam];
+            
+            [subscriber sendNext:team];
+            [subscriber sendCompleted];
+            
+        }];
+        return nil;
+    }];
 }
 
 
