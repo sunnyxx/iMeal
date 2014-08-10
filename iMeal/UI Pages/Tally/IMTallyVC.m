@@ -8,6 +8,8 @@
 
 #import "IMTallyVC.h"
 #import "IMTallyRecordCell.h"
+#import "IMTallyPublicItemCell.h"
+#import "IMTallyMemberCell.h"
 #import "IMServer+TeamSignals.h"
 
 @interface IMTallyVC ()
@@ -30,8 +32,6 @@
         [records addObject:record];
     }
     self.costRecords = records;
-    
-
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -43,22 +43,42 @@
 
 #pragma mark - Table view data source
 
+enum {
+    kSectionPublicItem,
+    kSectionMembers,
+    kSectionCount
+};
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return kSectionCount;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.costRecords.count;
+    return (NSInteger[]){1, self.costRecords.count}[section];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return (CGFloat[]){60.0f, 50.0f}[indexPath.section];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    IMTallyRecordCell *cell = [tableView dequeueReusableCellWithIdentifier:[IMTallyRecordCell xx_nibID] forIndexPath:indexPath];
-    IMMemberTally *record = self.costRecords[indexPath.row];
-    cell.record = record;
-    return cell;
+    if (indexPath.section == kSectionPublicItem)
+    {
+        IMTallyPublicItemCell *cell = [tableView dequeueReusableCellWithIdentifier:[IMTallyPublicItemCell xx_nibID] forIndexPath:indexPath];
+        
+        return cell;
+    }
+    else if (indexPath.section == kSectionMembers)
+    {
+        IMTallyMemberCell *cell = [tableView dequeueReusableCellWithIdentifier:[IMTallyMemberCell xx_nibID] forIndexPath:indexPath];
+        
+        return cell;
+    }
+    return nil;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

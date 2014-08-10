@@ -30,6 +30,9 @@
 		48140CAC1994ACDE0026C28F /* IMTallyRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C8E1994ACDE0026C28F /* IMTallyRecordCell.m */; };
 		48140CAD1994ACDE0026C28F /* IMTallyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C901994ACDE0026C28F /* IMTallyVC.m */; };
 		48140CAF1994ACDE0026C28F /* IMProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C961994ACDE0026C28F /* IMProgressHUD.m */; };
+		4892E48D199777F70065A7AD /* IMTallyMemberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4892E48C199777F70065A7AD /* IMTallyMemberCell.m */; };
+		4892E4901997795F0065A7AD /* IMTallyPublicItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4892E48F1997795F0065A7AD /* IMTallyPublicItemCell.m */; };
+		4892E493199782920065A7AD /* IMMoneySlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4892E492199782920065A7AD /* IMMoneySlider.m */; };
 		48A81AA319801734007CE410 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A81AA219801734007CE410 /* Foundation.framework */; };
 		48A81AA519801734007CE410 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A81AA419801734007CE410 /* CoreGraphics.framework */; };
 		48A81AA719801734007CE410 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A81AA619801734007CE410 /* UIKit.framework */; };
@@ -83,6 +86,12 @@
 		48140C901994ACDE0026C28F /* IMTallyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTallyVC.m; sourceTree = "<group>"; };
 		48140C951994ACDE0026C28F /* IMProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMProgressHUD.h; sourceTree = "<group>"; };
 		48140C961994ACDE0026C28F /* IMProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMProgressHUD.m; sourceTree = "<group>"; };
+		4892E48B199777F70065A7AD /* IMTallyMemberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTallyMemberCell.h; sourceTree = "<group>"; };
+		4892E48C199777F70065A7AD /* IMTallyMemberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTallyMemberCell.m; sourceTree = "<group>"; };
+		4892E48E1997795F0065A7AD /* IMTallyPublicItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTallyPublicItemCell.h; sourceTree = "<group>"; };
+		4892E48F1997795F0065A7AD /* IMTallyPublicItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTallyPublicItemCell.m; sourceTree = "<group>"; };
+		4892E491199782920065A7AD /* IMMoneySlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMoneySlider.h; sourceTree = "<group>"; };
+		4892E492199782920065A7AD /* IMMoneySlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMMoneySlider.m; sourceTree = "<group>"; };
 		48A81A9F19801734007CE410 /* iMeal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMeal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A81AA219801734007CE410 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		48A81AA419801734007CE410 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -242,10 +251,14 @@
 		48140C8C1994ACDE0026C28F /* Tally */ = {
 			isa = PBXGroup;
 			children = (
-				48140C8D1994ACDE0026C28F /* IMTallyRecordCell.h */,
-				48140C8E1994ACDE0026C28F /* IMTallyRecordCell.m */,
 				48140C8F1994ACDE0026C28F /* IMTallyVC.h */,
 				48140C901994ACDE0026C28F /* IMTallyVC.m */,
+				48140C8D1994ACDE0026C28F /* IMTallyRecordCell.h */,
+				48140C8E1994ACDE0026C28F /* IMTallyRecordCell.m */,
+				4892E48B199777F70065A7AD /* IMTallyMemberCell.h */,
+				4892E48C199777F70065A7AD /* IMTallyMemberCell.m */,
+				4892E48E1997795F0065A7AD /* IMTallyPublicItemCell.h */,
+				4892E48F1997795F0065A7AD /* IMTallyPublicItemCell.m */,
 			);
 			path = Tally;
 			sourceTree = "<group>";
@@ -268,6 +281,8 @@
 				48E4B57E19953FEB00164A36 /* UILabel+IMMoneyLabel.m */,
 				48E4B5801995C79D00164A36 /* IMMoneyLabel.h */,
 				48E4B5811995C79D00164A36 /* IMMoneyLabel.m */,
+				4892E491199782920065A7AD /* IMMoneySlider.h */,
+				4892E492199782920065A7AD /* IMMoneySlider.m */,
 			);
 			path = "UI Widgets";
 			sourceTree = "<group>";
@@ -427,6 +442,7 @@
 				48140CAF1994ACDE0026C28F /* IMProgressHUD.m in Sources */,
 				48E4B57F19953FEB00164A36 /* UILabel+IMMoneyLabel.m in Sources */,
 				48E4B5791995302000164A36 /* IMFormatDisplay.m in Sources */,
+				4892E493199782920065A7AD /* IMMoneySlider.m in Sources */,
 				48140CA51994ACDE0026C28F /* IMTeamEnterVC.m in Sources */,
 				48140CAC1994ACDE0026C28F /* IMTallyRecordCell.m in Sources */,
 				48140CA21994ACDE0026C28F /* IMChargeVC.m in Sources */,
@@ -434,10 +450,12 @@
 				48140CA01994ACDE0026C28F /* main.m in Sources */,
 				48140CA11994ACDE0026C28F /* IMChargeReceiverVC.m in Sources */,
 				48E4B585199656B600164A36 /* IMGuideVC.m in Sources */,
+				4892E4901997795F0065A7AD /* IMTallyPublicItemCell.m in Sources */,
 				48140CAD1994ACDE0026C28F /* IMTallyVC.m in Sources */,
 				48140CAA1994ACDE0026C28F /* IMTeamOverviewCell.m in Sources */,
 				48E4B58919966C1300164A36 /* IMAudioPlayer.m in Sources */,
 				48E4B5821995C79D00164A36 /* IMMoneyLabel.m in Sources */,
+				4892E48D199777F70065A7AD /* IMTallyMemberCell.m in Sources */,
 				48140CA41994ACDE0026C28F /* IMTeamCreationVC.m in Sources */,
 				48140CA81994ACDE0026C28F /* IMMemberOverviewCell.m in Sources */,
 				48140CAB1994ACDE0026C28F /* IMRouter.m in Sources */,
