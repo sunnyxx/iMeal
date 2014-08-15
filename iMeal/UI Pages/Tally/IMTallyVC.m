@@ -11,6 +11,7 @@
 #import "IMTallyPublicItemCell.h"
 #import "IMTallyMemberCell.h"
 #import "IMServer+TeamSignals.h"
+#import "IMTallyViewModel.h"
 
 @interface IMTallyVC ()
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *finishButtonItem;
@@ -24,7 +25,7 @@
     [super viewDidLoad];
     
     NSMutableArray *records = [NSMutableArray array];
-    for (IMMember *member in self.members)
+    for (IMMember *member in self.viewModel.members)
     {
         IMMemberTally *record = [IMMemberTally new];
         record.member = member;

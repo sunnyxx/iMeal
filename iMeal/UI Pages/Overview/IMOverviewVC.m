@@ -11,7 +11,7 @@
 #import "IMChargeVC.h"
 #import "IMTeamOverviewCell.h"
 #import "IMMemberOverviewCell.h"
-#import "IMTallyVC.h"
+#import "IMTallyMemberSelectVC.h"
 #import "IMServer+TeamSignals.h"
 #import "IMMemberAddingVC.h"
 #import "IMRouter.h"
@@ -44,7 +44,8 @@ enum {
                        @strongify(self);
                        self.team = team;
                        NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:kSectionTeam];
-                       [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+                       [self.tableView reloadSections:indexSet
+                                     withRowAnimation:UITableViewRowAnimationAutomatic];
                    }]
                    then:^RACSignal *{
                        return [IMServer allTeamMembersSignal];
@@ -54,7 +55,8 @@ enum {
                        [self.refreshControl endRefreshing];
                        self.members = members;
                        NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:kSectionMembers];
-                       [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+                       [self.tableView reloadSections:indexSet
+                                     withRowAnimation:UITableViewRowAnimationAutomatic];
                    }];
         }];
     
@@ -73,9 +75,9 @@ enum {
     else if ([segue.identifier isEqualToString:@"TallySegue"])
     {
         UINavigationController *nav = segue.destinationViewController;
-        IMTallyVC *vc = (IMTallyVC *)[nav topViewController];
-        vc.team = [IMTeam currentTeam];
-        vc.members = self.members;
+        IMTallyMemberSelectVC *vc = (IMTallyMemberSelectVC *)[nav topViewController];
+        IMTallyViewModel *viewModel = [[IMTallyViewModel alloc] initWithTeam:self.team members:self.members];
+        vc.viewModel = viewModel;
     }
 }
 
@@ -110,7 +112,6 @@ enum {
         if (indexPath.row == self.members.count)
         {
             UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AddMemberCell" forIndexPath:indexPath];
-            
             return cell;
         }
         else
@@ -236,6 +237,7 @@ enum {
 #pragma mark - Unwind segues
 
 - (IBAction)unwindCancelRecord:(UIStoryboardSegue *)segue {}
+- (IBAction)unwindCancelTally:(UIStoryboardSegue *)segue {}
 - (IBAction)unwindNewMemberAdded:(UIStoryboardSegue *)segue
 {
     IMMemberAddingVC *vc = segue.sourceViewController;

@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@class IMTeam;
+@class IMTallyViewModel;
 @interface IMTallyVC : UITableViewController
 
-@property (nonatomic, strong) IMTeam *team;
-@property (nonatomic, copy) NSArray *members;
+@property (nonatomic, strong) IMTallyViewModel *viewModel;
 
 @end
