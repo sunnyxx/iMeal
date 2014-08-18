@@ -1,6 +1,6 @@
 //
-//  MFTeam.m
-//  MealFundModel
+//  IMTeam.m
+//  iMealModel
 //
 //  Created by sunnyxx on 14-7-23.
 //
