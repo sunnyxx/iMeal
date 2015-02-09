@@ -1,23 +1,17 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '8.0'
 
-workspace 'iMeal.xcworkspace'
-xcodeproj 'iMeal.xcodeproj'
-
-platform :ios, '7.0'
-
-# 非UI第三方依赖
-target 'iMealModel' do
-    xcodeproj 'iMealModel/iMealModel.xcodeproj'
-    pod 'AVOSCloud', '~> 2.5.8.1'
-    pod 'ReactiveCocoa', '~> 2.3.1'
-    pod 'FLEX', '~> 1.0.0'
-end
-
-# UI第三方依赖
 target 'iMeal' do
-    xcodeproj 'iMeal.xcodeproj'
-    pod 'AVOSCloud', '~> 2.5.8.1'
-    pod 'UIImageView-PlayGIF', '~> 1.0.1'
-    pod 'pop', '~> 1.0.6'
-    pod 'XXNibBridge', :git => 'https://github.com/sunnyxx/XXNibBridge.git'
-    pod 'TAPKeyboardPop', '~> 0.1.2' # 滑动返回手势动画时把键盘也带着
+pod 'XXNibBridge', '~> 2.1'
+
 end
+
+target 'iMealWidgets' do
+
+end
+
+target 'iMealModel' do
+pod 'ReactiveCocoa', '~> 2.4.4'
+pod 'AVOSCloud', '~> 2.6.10'
+end
+

@@ -2,17 +2,15 @@
 //  main.m
 //  iMeal
 //
-//  Created by sunnyxx on 14-7-24.
-//
+//  Created by sunnyxx on 15/2/9.
+//  Copyright (c) 2015年 sunnyxx. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
-#import "IMAppDelegate.h"
-
-int main(int argc, char * argv[])
-{
+int main(int argc, char * argv[]) {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([IMAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

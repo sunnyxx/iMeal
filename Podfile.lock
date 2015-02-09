@@ -1,38 +1,22 @@
 PODS:
-  - AVOSCloud (2.5.8.1)
-  - FLEX (1.0.1)
-  - pop (1.0.6)
-  - ReactiveCocoa (2.3.1):
-    - ReactiveCocoa/UI
-  - ReactiveCocoa/Core (2.3.1):
+  - AVOSCloud (2.6.10)
+  - ReactiveCocoa (2.4.4):
+    - ReactiveCocoa/UI (= 2.4.4)
+  - ReactiveCocoa/Core (2.4.4):
     - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.3.1)
-  - ReactiveCocoa/UI (2.3.1):
+  - ReactiveCocoa/no-arc (2.4.4)
+  - ReactiveCocoa/UI (2.4.4):
     - ReactiveCocoa/Core
-  - TAPKeyboardPop (0.1.2)
-  - UIImageView-PlayGIF (1.0.1)
-  - XXNibBridge (1.0)
+  - XXNibBridge (2.1)
 
 DEPENDENCIES:
-  - AVOSCloud (~> 2.5.8.1)
-  - FLEX (~> 1.0.0)
-  - pop (~> 1.0.6)
-  - ReactiveCocoa (~> 2.3.1)
-  - TAPKeyboardPop (~> 0.1.2)
-  - UIImageView-PlayGIF (~> 1.0.1)
-  - XXNibBridge (from `https://github.com/sunnyxx/XXNibBridge.git`)
-
-EXTERNAL SOURCES:
-  XXNibBridge:
-    :git: https://github.com/sunnyxx/XXNibBridge.git
+  - AVOSCloud (~> 2.6.10)
+  - ReactiveCocoa (~> 2.4.4)
+  - XXNibBridge (~> 2.1)
 
 SPEC CHECKSUMS:
-  AVOSCloud: 23a54f17ed9886972b5ca35532fb1e5d7212f931
-  FLEX: 4e53f7bb335cc230113c271b1ee5941cc44d648d
-  pop: e518794da38942c05255eb64b36d894e70cb4f00
-  ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
-  TAPKeyboardPop: 1d57b5b8e7521454164c5e9e9e4e9cf19a375f37
-  UIImageView-PlayGIF: 8208c6b864f5083608fb63621a6cb9d34e7106d9
-  XXNibBridge: 4697add5a023b0ceb8424945df650666ad7271da
+  AVOSCloud: f6bda519d035a21ceacab049184aa5cdb9e1177f
+  ReactiveCocoa: 31119068e3dde866bd257cf74e1f06b4023bf387
+  XXNibBridge: be70e8ca01f487cebbd601a111de03f3358f3beb
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.35.0

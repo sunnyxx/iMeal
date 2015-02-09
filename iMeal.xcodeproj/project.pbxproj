@@ -7,400 +7,328 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		48140C971994ACDE0026C28F /* IMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C611994ACDE0026C28F /* IMAppDelegate.m */; };
-		48140C981994ACDE0026C28F /* CCBackBeat-Light_5.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 48140C641994ACDE0026C28F /* CCBackBeat-Light_5.ttf */; };
-		48140C991994ACDE0026C28F /* Supercell-Magic_5.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 48140C651994ACDE0026C28F /* Supercell-Magic_5.ttf */; };
-		48140C9A1994ACDE0026C28F /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 48140C671994ACDE0026C28F /* loading.gif */; };
-		48140C9B1994ACDE0026C28F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48140C681994ACDE0026C28F /* Images.xcassets */; };
-		48140C9C1994ACDE0026C28F /* money1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 48140C6A1994ACDE0026C28F /* money1.caf */; };
-		48140C9D1994ACDE0026C28F /* money2.caf in Resources */ = {isa = PBXBuildFile; fileRef = 48140C6B1994ACDE0026C28F /* money2.caf */; };
-		48140C9E1994ACDE0026C28F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48140C6D1994ACDE0026C28F /* InfoPlist.strings */; };
-		48140CA01994ACDE0026C28F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C711994ACDE0026C28F /* main.m */; };
-		48140CA11994ACDE0026C28F /* IMChargeReceiverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C751994ACDE0026C28F /* IMChargeReceiverVC.m */; };
-		48140CA21994ACDE0026C28F /* IMChargeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C771994ACDE0026C28F /* IMChargeVC.m */; };
-		48140CA31994ACDE0026C28F /* Guide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48140C791994ACDE0026C28F /* Guide.storyboard */; };
-		48140CA41994ACDE0026C28F /* IMTeamCreationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C7B1994ACDE0026C28F /* IMTeamCreationVC.m */; };
-		48140CA51994ACDE0026C28F /* IMTeamEnterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C7D1994ACDE0026C28F /* IMTeamEnterVC.m */; };
-		48140CA61994ACDE0026C28F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48140C7E1994ACDE0026C28F /* Main.storyboard */; };
-		48140CA71994ACDE0026C28F /* IMMemberAddingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C811994ACDE0026C28F /* IMMemberAddingVC.m */; };
-		48140CA81994ACDE0026C28F /* IMMemberOverviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C841994ACDE0026C28F /* IMMemberOverviewCell.m */; };
-		48140CA91994ACDE0026C28F /* IMOverviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C861994ACDE0026C28F /* IMOverviewVC.m */; };
-		48140CAA1994ACDE0026C28F /* IMTeamOverviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C881994ACDE0026C28F /* IMTeamOverviewCell.m */; };
-		48140CAB1994ACDE0026C28F /* IMRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C8B1994ACDE0026C28F /* IMRouter.m */; };
-		48140CAC1994ACDE0026C28F /* IMTallyRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C8E1994ACDE0026C28F /* IMTallyRecordCell.m */; };
-		48140CAD1994ACDE0026C28F /* IMTallyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C901994ACDE0026C28F /* IMTallyVC.m */; };
-		48140CAF1994ACDE0026C28F /* IMProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 48140C961994ACDE0026C28F /* IMProgressHUD.m */; };
-		4816FB6C199A795A00364CF7 /* IMTallyMemberSelectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4816FB6B199A795A00364CF7 /* IMTallyMemberSelectVC.m */; };
-		4816FB6F199A797300364CF7 /* IMTallyMemberSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4816FB6E199A797300364CF7 /* IMTallyMemberSelectCell.m */; };
-		4816FB72199A7CDC00364CF7 /* IMTallyViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4816FB71199A7CDC00364CF7 /* IMTallyViewModel.m */; };
-		4892E48D199777F70065A7AD /* IMTallyMemberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4892E48C199777F70065A7AD /* IMTallyMemberCell.m */; };
-		4892E4901997795F0065A7AD /* IMTallyPublicItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4892E48F1997795F0065A7AD /* IMTallyPublicItemCell.m */; };
-		4892E493199782920065A7AD /* IMMoneySlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4892E492199782920065A7AD /* IMMoneySlider.m */; };
-		48A81AA319801734007CE410 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A81AA219801734007CE410 /* Foundation.framework */; };
-		48A81AA519801734007CE410 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A81AA419801734007CE410 /* CoreGraphics.framework */; };
-		48A81AA719801734007CE410 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A81AA619801734007CE410 /* UIKit.framework */; };
-		48BD64321986AD660039B2EB /* libiMealModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BD64311986AD660039B2EB /* libiMealModel.a */; };
-		48E2A82A198249D0006DD602 /* libPods-iMeal.a in Resources */ = {isa = PBXBuildFile; fileRef = B566D2A1BC1E40FBA370ED12 /* libPods-iMeal.a */; };
-		48E4B5791995302000164A36 /* IMFormatDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4B5781995302000164A36 /* IMFormatDisplay.m */; };
-		48E4B57F19953FEB00164A36 /* UILabel+IMMoneyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4B57E19953FEB00164A36 /* UILabel+IMMoneyLabel.m */; };
-		48E4B5821995C79D00164A36 /* IMMoneyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4B5811995C79D00164A36 /* IMMoneyLabel.m */; };
-		48E4B585199656B600164A36 /* IMGuideVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4B584199656B600164A36 /* IMGuideVC.m */; };
-		48E4B58919966C1300164A36 /* IMAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4B58819966C1200164A36 /* IMAudioPlayer.m */; };
-		48E4B58B1996727300164A36 /* loading_screen_jingle.caf in Resources */ = {isa = PBXBuildFile; fileRef = 48E4B58A1996727300164A36 /* loading_screen_jingle.caf */; };
-		8765F09117264BEE8C5DB16F /* libPods-iMeal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B566D2A1BC1E40FBA370ED12 /* libPods-iMeal.a */; };
+		00EFFAC5887BB56A95188FCE /* libPods-iMealModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F439D0DA77D6743450082F1 /* libPods-iMealModel.a */; };
+		352ABCD34F251CFE64BB0F84 /* libPods-iMeal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5280BCF4065CA6747471F99 /* libPods-iMeal.a */; };
+		484E7BD51A8866C1007CC566 /* iMealWidgets.h in Headers */ = {isa = PBXBuildFile; fileRef = 484E7BD41A8866C1007CC566 /* iMealWidgets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		484E7BE71A8866C2007CC566 /* iMealWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484E7BD01A8866C1007CC566 /* iMealWidgets.framework */; };
+		484E7BE81A8866C2007CC566 /* iMealWidgets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 484E7BD01A8866C1007CC566 /* iMealWidgets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		484E7BFA1A8866EF007CC566 /* iMealModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 484E7BF91A8866EF007CC566 /* iMealModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		484E7C0C1A8866EF007CC566 /* iMealModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484E7BF51A8866EF007CC566 /* iMealModel.framework */; };
+		484E7C0D1A8866EF007CC566 /* iMealModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 484E7BF51A8866EF007CC566 /* iMealModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		484E7C3C1A88687D007CC566 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484E7C3B1A88687D007CC566 /* Images.xcassets */; };
+		484E7C421A8868BD007CC566 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 484E7C3F1A8868BC007CC566 /* AppDelegate.m */; };
+		484E7C441A8868BD007CC566 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 484E7C411A8868BC007CC566 /* main.m */; };
+		484E7C481A886913007CC566 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 484E7C471A886913007CC566 /* ViewController.m */; };
+		484E7C4A1A88692F007CC566 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 484E7C491A88692F007CC566 /* LaunchScreen.xib */; };
+		484E7C4C1A886936007CC566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484E7C4B1A886936007CC566 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		484E7BE51A8866C2007CC566 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 484E7B9A1A88654F007CC566 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 484E7BCF1A8866C1007CC566;
+			remoteInfo = iMealWidgets;
+		};
+		484E7C0A1A8866EF007CC566 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 484E7B9A1A88654F007CC566 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 484E7BF41A8866EF007CC566;
+			remoteInfo = iMealModel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		484E7BEC1A8866C2007CC566 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				484E7BE81A8866C2007CC566 /* iMealWidgets.framework in Embed Frameworks */,
+				484E7C0D1A8866EF007CC566 /* iMealModel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		48140C601994ACDE0026C28F /* IMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAppDelegate.h; sourceTree = "<group>"; };
-		48140C611994ACDE0026C28F /* IMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMAppDelegate.m; sourceTree = "<group>"; };
-		48140C641994ACDE0026C28F /* CCBackBeat-Light_5.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CCBackBeat-Light_5.ttf"; sourceTree = "<group>"; };
-		48140C651994ACDE0026C28F /* Supercell-Magic_5.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Supercell-Magic_5.ttf"; sourceTree = "<group>"; };
-		48140C671994ACDE0026C28F /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
-		48140C681994ACDE0026C28F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		48140C6A1994ACDE0026C28F /* money1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = money1.caf; sourceTree = "<group>"; };
-		48140C6B1994ACDE0026C28F /* money2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = money2.caf; sourceTree = "<group>"; };
-		48140C6E1994ACDE0026C28F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		48140C6F1994ACDE0026C28F /* iMeal-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iMeal-Info.plist"; sourceTree = "<group>"; };
-		48140C701994ACDE0026C28F /* iMeal-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iMeal-Prefix.pch"; sourceTree = "<group>"; };
-		48140C711994ACDE0026C28F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		48140C741994ACDE0026C28F /* IMChargeReceiverVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMChargeReceiverVC.h; sourceTree = "<group>"; };
-		48140C751994ACDE0026C28F /* IMChargeReceiverVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMChargeReceiverVC.m; sourceTree = "<group>"; };
-		48140C761994ACDE0026C28F /* IMChargeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMChargeVC.h; sourceTree = "<group>"; };
-		48140C771994ACDE0026C28F /* IMChargeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMChargeVC.m; sourceTree = "<group>"; };
-		48140C791994ACDE0026C28F /* Guide.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Guide.storyboard; sourceTree = "<group>"; };
-		48140C7A1994ACDE0026C28F /* IMTeamCreationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTeamCreationVC.h; sourceTree = "<group>"; };
-		48140C7B1994ACDE0026C28F /* IMTeamCreationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTeamCreationVC.m; sourceTree = "<group>"; };
-		48140C7C1994ACDE0026C28F /* IMTeamEnterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTeamEnterVC.h; sourceTree = "<group>"; };
-		48140C7D1994ACDE0026C28F /* IMTeamEnterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTeamEnterVC.m; sourceTree = "<group>"; };
-		48140C7E1994ACDE0026C28F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		48140C801994ACDE0026C28F /* IMMemberAddingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMemberAddingVC.h; sourceTree = "<group>"; };
-		48140C811994ACDE0026C28F /* IMMemberAddingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMMemberAddingVC.m; sourceTree = "<group>"; };
-		48140C831994ACDE0026C28F /* IMMemberOverviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMemberOverviewCell.h; sourceTree = "<group>"; };
-		48140C841994ACDE0026C28F /* IMMemberOverviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMMemberOverviewCell.m; sourceTree = "<group>"; };
-		48140C851994ACDE0026C28F /* IMOverviewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMOverviewVC.h; sourceTree = "<group>"; };
-		48140C861994ACDE0026C28F /* IMOverviewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMOverviewVC.m; sourceTree = "<group>"; };
-		48140C871994ACDE0026C28F /* IMTeamOverviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTeamOverviewCell.h; sourceTree = "<group>"; };
-		48140C881994ACDE0026C28F /* IMTeamOverviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTeamOverviewCell.m; sourceTree = "<group>"; };
-		48140C8A1994ACDE0026C28F /* IMRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRouter.h; sourceTree = "<group>"; };
-		48140C8B1994ACDE0026C28F /* IMRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRouter.m; sourceTree = "<group>"; };
-		48140C8D1994ACDE0026C28F /* IMTallyRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTallyRecordCell.h; sourceTree = "<group>"; };
-		48140C8E1994ACDE0026C28F /* IMTallyRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTallyRecordCell.m; sourceTree = "<group>"; };
-		48140C8F1994ACDE0026C28F /* IMTallyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTallyVC.h; sourceTree = "<group>"; };
-		48140C901994ACDE0026C28F /* IMTallyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTallyVC.m; sourceTree = "<group>"; };
-		48140C951994ACDE0026C28F /* IMProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMProgressHUD.h; sourceTree = "<group>"; };
-		48140C961994ACDE0026C28F /* IMProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMProgressHUD.m; sourceTree = "<group>"; };
-		4816FB6A199A795A00364CF7 /* IMTallyMemberSelectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTallyMemberSelectVC.h; sourceTree = "<group>"; };
-		4816FB6B199A795A00364CF7 /* IMTallyMemberSelectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTallyMemberSelectVC.m; sourceTree = "<group>"; };
-		4816FB6D199A797300364CF7 /* IMTallyMemberSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTallyMemberSelectCell.h; sourceTree = "<group>"; };
-		4816FB6E199A797300364CF7 /* IMTallyMemberSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTallyMemberSelectCell.m; sourceTree = "<group>"; };
-		4816FB70199A7CDC00364CF7 /* IMTallyViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTallyViewModel.h; sourceTree = "<group>"; };
-		4816FB71199A7CDC00364CF7 /* IMTallyViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTallyViewModel.m; sourceTree = "<group>"; };
-		4892E48B199777F70065A7AD /* IMTallyMemberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTallyMemberCell.h; sourceTree = "<group>"; };
-		4892E48C199777F70065A7AD /* IMTallyMemberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTallyMemberCell.m; sourceTree = "<group>"; };
-		4892E48E1997795F0065A7AD /* IMTallyPublicItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTallyPublicItemCell.h; sourceTree = "<group>"; };
-		4892E48F1997795F0065A7AD /* IMTallyPublicItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTallyPublicItemCell.m; sourceTree = "<group>"; };
-		4892E491199782920065A7AD /* IMMoneySlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMoneySlider.h; sourceTree = "<group>"; };
-		4892E492199782920065A7AD /* IMMoneySlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMMoneySlider.m; sourceTree = "<group>"; };
-		48A81A9F19801734007CE410 /* iMeal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMeal.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		48A81AA219801734007CE410 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		48A81AA419801734007CE410 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		48A81AA619801734007CE410 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		48BD64311986AD660039B2EB /* libiMealModel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiMealModel.a; path = "build/Debug-iphoneos/libiMealModel.a"; sourceTree = "<group>"; };
-		48E4B5771995302000164A36 /* IMFormatDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMFormatDisplay.h; sourceTree = "<group>"; };
-		48E4B5781995302000164A36 /* IMFormatDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMFormatDisplay.m; sourceTree = "<group>"; };
-		48E4B57D19953FEB00164A36 /* UILabel+IMMoneyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+IMMoneyLabel.h"; sourceTree = "<group>"; };
-		48E4B57E19953FEB00164A36 /* UILabel+IMMoneyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+IMMoneyLabel.m"; sourceTree = "<group>"; };
-		48E4B5801995C79D00164A36 /* IMMoneyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMoneyLabel.h; sourceTree = "<group>"; };
-		48E4B5811995C79D00164A36 /* IMMoneyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMMoneyLabel.m; sourceTree = "<group>"; };
-		48E4B583199656B600164A36 /* IMGuideVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGuideVC.h; sourceTree = "<group>"; };
-		48E4B584199656B600164A36 /* IMGuideVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGuideVC.m; sourceTree = "<group>"; };
-		48E4B58719966C1200164A36 /* IMAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAudioPlayer.h; sourceTree = "<group>"; };
-		48E4B58819966C1200164A36 /* IMAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMAudioPlayer.m; sourceTree = "<group>"; };
-		48E4B58A1996727300164A36 /* loading_screen_jingle.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = loading_screen_jingle.caf; path = ../../../../../Desktop/caf/loading_screen_jingle.caf; sourceTree = "<group>"; };
-		B2FCCE0D79E5451E963FC0D5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		B566D2A1BC1E40FBA370ED12 /* libPods-iMeal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMeal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFAA621A4042417E9C1A3138 /* Pods-iMeal.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMeal.xcconfig"; path = "Pods/Pods-iMeal.xcconfig"; sourceTree = "<group>"; };
+		0802B19633DA2417616B0258 /* Pods-iMealModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMealModel.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMealModel/Pods-iMealModel.release.xcconfig"; sourceTree = "<group>"; };
+		083D2644C8134505036B5FD3 /* Pods-iMealModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMealModel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMealModel/Pods-iMealModel.debug.xcconfig"; sourceTree = "<group>"; };
+		410D603AA9CD5398A71DD96E /* Pods-iMeal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMeal.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMeal/Pods-iMeal.release.xcconfig"; sourceTree = "<group>"; };
+		484E7BA21A88654F007CC566 /* iMeal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMeal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		484E7BD01A8866C1007CC566 /* iMealWidgets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iMealWidgets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		484E7BD31A8866C1007CC566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		484E7BD41A8866C1007CC566 /* iMealWidgets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iMealWidgets.h; sourceTree = "<group>"; };
+		484E7BF51A8866EF007CC566 /* iMealModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iMealModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		484E7BF81A8866EF007CC566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		484E7BF91A8866EF007CC566 /* iMealModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iMealModel.h; sourceTree = "<group>"; };
+		484E7C3B1A88687D007CC566 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		484E7C3E1A8868BC007CC566 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		484E7C3F1A8868BC007CC566 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		484E7C401A8868BC007CC566 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		484E7C411A8868BC007CC566 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		484E7C461A886913007CC566 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		484E7C471A886913007CC566 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		484E7C491A88692F007CC566 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		484E7C4B1A886936007CC566 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7F439D0DA77D6743450082F1 /* libPods-iMealModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMealModel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6603BA03C97512DA68209BD /* Pods-iMeal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMeal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMeal/Pods-iMeal.debug.xcconfig"; sourceTree = "<group>"; };
+		D5280BCF4065CA6747471F99 /* libPods-iMeal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMeal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		48A81A9C19801734007CE410 /* Frameworks */ = {
+		484E7B9F1A88654F007CC566 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48BD64321986AD660039B2EB /* libiMealModel.a in Frameworks */,
-				48A81AA519801734007CE410 /* CoreGraphics.framework in Frameworks */,
-				48A81AA719801734007CE410 /* UIKit.framework in Frameworks */,
-				48A81AA319801734007CE410 /* Foundation.framework in Frameworks */,
-				8765F09117264BEE8C5DB16F /* libPods-iMeal.a in Frameworks */,
+				484E7BE71A8866C2007CC566 /* iMealWidgets.framework in Frameworks */,
+				484E7C0C1A8866EF007CC566 /* iMealModel.framework in Frameworks */,
+				352ABCD34F251CFE64BB0F84 /* libPods-iMeal.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		484E7BCC1A8866C1007CC566 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		484E7BF11A8866EF007CC566 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EFFAC5887BB56A95188FCE /* libPods-iMealModel.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		48140C621994ACDE0026C28F /* Resources */ = {
+		484E7B991A88654F007CC566 = {
 			isa = PBXGroup;
 			children = (
-				48140C631994ACDE0026C28F /* font */,
-				48140C661994ACDE0026C28F /* gif */,
-				48140C681994ACDE0026C28F /* Images.xcassets */,
-				48140C691994ACDE0026C28F /* sfx */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		48140C631994ACDE0026C28F /* font */ = {
-			isa = PBXGroup;
-			children = (
-				48140C641994ACDE0026C28F /* CCBackBeat-Light_5.ttf */,
-				48140C651994ACDE0026C28F /* Supercell-Magic_5.ttf */,
-			);
-			path = font;
-			sourceTree = "<group>";
-		};
-		48140C661994ACDE0026C28F /* gif */ = {
-			isa = PBXGroup;
-			children = (
-				48140C671994ACDE0026C28F /* loading.gif */,
-			);
-			path = gif;
-			sourceTree = "<group>";
-		};
-		48140C691994ACDE0026C28F /* sfx */ = {
-			isa = PBXGroup;
-			children = (
-				48E4B58A1996727300164A36 /* loading_screen_jingle.caf */,
-				48140C6A1994ACDE0026C28F /* money1.caf */,
-				48140C6B1994ACDE0026C28F /* money2.caf */,
-			);
-			path = sfx;
-			sourceTree = "<group>";
-		};
-		48140C6C1994ACDE0026C28F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				48140C6D1994ACDE0026C28F /* InfoPlist.strings */,
-				48140C6F1994ACDE0026C28F /* iMeal-Info.plist */,
-				48140C701994ACDE0026C28F /* iMeal-Prefix.pch */,
-				48140C711994ACDE0026C28F /* main.m */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		48140C721994ACDE0026C28F /* UI Pages */ = {
-			isa = PBXGroup;
-			children = (
-				48140C7E1994ACDE0026C28F /* Main.storyboard */,
-				48140C731994ACDE0026C28F /* Charge */,
-				48140C781994ACDE0026C28F /* Guide */,
-				48140C7F1994ACDE0026C28F /* Member Adding */,
-				48140C821994ACDE0026C28F /* Overview */,
-				48140C891994ACDE0026C28F /* Router */,
-				48140C8C1994ACDE0026C28F /* Tally */,
-			);
-			path = "UI Pages";
-			sourceTree = "<group>";
-		};
-		48140C731994ACDE0026C28F /* Charge */ = {
-			isa = PBXGroup;
-			children = (
-				48140C741994ACDE0026C28F /* IMChargeReceiverVC.h */,
-				48140C751994ACDE0026C28F /* IMChargeReceiverVC.m */,
-				48140C761994ACDE0026C28F /* IMChargeVC.h */,
-				48140C771994ACDE0026C28F /* IMChargeVC.m */,
-			);
-			path = Charge;
-			sourceTree = "<group>";
-		};
-		48140C781994ACDE0026C28F /* Guide */ = {
-			isa = PBXGroup;
-			children = (
-				48140C791994ACDE0026C28F /* Guide.storyboard */,
-				48E4B583199656B600164A36 /* IMGuideVC.h */,
-				48E4B584199656B600164A36 /* IMGuideVC.m */,
-				48140C7A1994ACDE0026C28F /* IMTeamCreationVC.h */,
-				48140C7B1994ACDE0026C28F /* IMTeamCreationVC.m */,
-				48140C7C1994ACDE0026C28F /* IMTeamEnterVC.h */,
-				48140C7D1994ACDE0026C28F /* IMTeamEnterVC.m */,
-			);
-			path = Guide;
-			sourceTree = "<group>";
-		};
-		48140C7F1994ACDE0026C28F /* Member Adding */ = {
-			isa = PBXGroup;
-			children = (
-				48140C801994ACDE0026C28F /* IMMemberAddingVC.h */,
-				48140C811994ACDE0026C28F /* IMMemberAddingVC.m */,
-			);
-			path = "Member Adding";
-			sourceTree = "<group>";
-		};
-		48140C821994ACDE0026C28F /* Overview */ = {
-			isa = PBXGroup;
-			children = (
-				48140C851994ACDE0026C28F /* IMOverviewVC.h */,
-				48140C861994ACDE0026C28F /* IMOverviewVC.m */,
-				48140C831994ACDE0026C28F /* IMMemberOverviewCell.h */,
-				48140C841994ACDE0026C28F /* IMMemberOverviewCell.m */,
-				48140C871994ACDE0026C28F /* IMTeamOverviewCell.h */,
-				48140C881994ACDE0026C28F /* IMTeamOverviewCell.m */,
-			);
-			path = Overview;
-			sourceTree = "<group>";
-		};
-		48140C891994ACDE0026C28F /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				48140C8A1994ACDE0026C28F /* IMRouter.h */,
-				48140C8B1994ACDE0026C28F /* IMRouter.m */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		48140C8C1994ACDE0026C28F /* Tally */ = {
-			isa = PBXGroup;
-			children = (
-				4816FB69199A795A00364CF7 /* Member Select */,
-				48140C8F1994ACDE0026C28F /* IMTallyVC.h */,
-				48140C901994ACDE0026C28F /* IMTallyVC.m */,
-				48140C8D1994ACDE0026C28F /* IMTallyRecordCell.h */,
-				48140C8E1994ACDE0026C28F /* IMTallyRecordCell.m */,
-				4892E48B199777F70065A7AD /* IMTallyMemberCell.h */,
-				4892E48C199777F70065A7AD /* IMTallyMemberCell.m */,
-				4892E48E1997795F0065A7AD /* IMTallyPublicItemCell.h */,
-				4892E48F1997795F0065A7AD /* IMTallyPublicItemCell.m */,
-				4816FB70199A7CDC00364CF7 /* IMTallyViewModel.h */,
-				4816FB71199A7CDC00364CF7 /* IMTallyViewModel.m */,
-			);
-			path = Tally;
-			sourceTree = "<group>";
-		};
-		48140C911994ACDE0026C28F /* UI Utils */ = {
-			isa = PBXGroup;
-			children = (
-				48E4B5771995302000164A36 /* IMFormatDisplay.h */,
-				48E4B5781995302000164A36 /* IMFormatDisplay.m */,
-			);
-			path = "UI Utils";
-			sourceTree = "<group>";
-		};
-		48140C941994ACDE0026C28F /* UI Widgets */ = {
-			isa = PBXGroup;
-			children = (
-				48140C951994ACDE0026C28F /* IMProgressHUD.h */,
-				48140C961994ACDE0026C28F /* IMProgressHUD.m */,
-				48E4B57D19953FEB00164A36 /* UILabel+IMMoneyLabel.h */,
-				48E4B57E19953FEB00164A36 /* UILabel+IMMoneyLabel.m */,
-				48E4B5801995C79D00164A36 /* IMMoneyLabel.h */,
-				48E4B5811995C79D00164A36 /* IMMoneyLabel.m */,
-				4892E491199782920065A7AD /* IMMoneySlider.h */,
-				4892E492199782920065A7AD /* IMMoneySlider.m */,
-			);
-			path = "UI Widgets";
-			sourceTree = "<group>";
-		};
-		4816FB69199A795A00364CF7 /* Member Select */ = {
-			isa = PBXGroup;
-			children = (
-				4816FB6A199A795A00364CF7 /* IMTallyMemberSelectVC.h */,
-				4816FB6B199A795A00364CF7 /* IMTallyMemberSelectVC.m */,
-				4816FB6D199A797300364CF7 /* IMTallyMemberSelectCell.h */,
-				4816FB6E199A797300364CF7 /* IMTallyMemberSelectCell.m */,
-			);
-			path = "Member Select";
-			sourceTree = "<group>";
-		};
-		48A81A9619801733007CE410 = {
-			isa = PBXGroup;
-			children = (
-				48A81AA819801734007CE410 /* iMeal */,
-				48A81AA119801734007CE410 /* Frameworks */,
-				48A81AA019801734007CE410 /* Products */,
-				EFAA621A4042417E9C1A3138 /* Pods-iMeal.xcconfig */,
-				B2FCCE0D79E5451E963FC0D5 /* Pods.xcconfig */,
+				484E7BA41A88654F007CC566 /* iMeal */,
+				484E7BD11A8866C1007CC566 /* iMealWidgets */,
+				484E7BF61A8866EF007CC566 /* iMealModel */,
+				484E7BA31A88654F007CC566 /* Products */,
+				AFDA87DF9C3B5442C26C10EC /* Pods */,
+				592F9AFED202EEED06E5A043 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		48A81AA019801734007CE410 /* Products */ = {
+		484E7BA31A88654F007CC566 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				48A81A9F19801734007CE410 /* iMeal.app */,
+				484E7BA21A88654F007CC566 /* iMeal.app */,
+				484E7BD01A8866C1007CC566 /* iMealWidgets.framework */,
+				484E7BF51A8866EF007CC566 /* iMealModel.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		48A81AA119801734007CE410 /* Frameworks */ = {
+		484E7BA41A88654F007CC566 /* iMeal */ = {
 			isa = PBXGroup;
 			children = (
-				48BD64311986AD660039B2EB /* libiMealModel.a */,
-				48A81AA219801734007CE410 /* Foundation.framework */,
-				48A81AA419801734007CE410 /* CoreGraphics.framework */,
-				48A81AA619801734007CE410 /* UIKit.framework */,
-				B566D2A1BC1E40FBA370ED12 /* libPods-iMeal.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		48A81AA819801734007CE410 /* iMeal */ = {
-			isa = PBXGroup;
-			children = (
-				48140C601994ACDE0026C28F /* IMAppDelegate.h */,
-				48140C611994ACDE0026C28F /* IMAppDelegate.m */,
-				48E4B58619966BFD00164A36 /* Audio Player */,
-				48140C621994ACDE0026C28F /* Resources */,
-				48140C6C1994ACDE0026C28F /* Supporting Files */,
-				48140C721994ACDE0026C28F /* UI Pages */,
-				48140C911994ACDE0026C28F /* UI Utils */,
-				48140C941994ACDE0026C28F /* UI Widgets */,
+				484E7C451A886913007CC566 /* UI */,
+				484E7C3D1A886899007CC566 /* Supporting Files */,
+				484E7C3A1A88687D007CC566 /* Resources */,
 			);
 			path = iMeal;
 			sourceTree = "<group>";
 		};
-		48E4B58619966BFD00164A36 /* Audio Player */ = {
+		484E7BD11A8866C1007CC566 /* iMealWidgets */ = {
 			isa = PBXGroup;
 			children = (
-				48E4B58719966C1200164A36 /* IMAudioPlayer.h */,
-				48E4B58819966C1200164A36 /* IMAudioPlayer.m */,
+				484E7BD41A8866C1007CC566 /* iMealWidgets.h */,
+				484E7BD21A8866C1007CC566 /* Supporting Files */,
 			);
-			path = "Audio Player";
+			path = iMealWidgets;
+			sourceTree = "<group>";
+		};
+		484E7BD21A8866C1007CC566 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				484E7BD31A8866C1007CC566 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		484E7BF61A8866EF007CC566 /* iMealModel */ = {
+			isa = PBXGroup;
+			children = (
+				484E7BF91A8866EF007CC566 /* iMealModel.h */,
+				484E7BF71A8866EF007CC566 /* Supporting Files */,
+			);
+			path = iMealModel;
+			sourceTree = "<group>";
+		};
+		484E7BF71A8866EF007CC566 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				484E7BF81A8866EF007CC566 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		484E7C3A1A88687D007CC566 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				484E7C3B1A88687D007CC566 /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		484E7C3D1A886899007CC566 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				484E7C491A88692F007CC566 /* LaunchScreen.xib */,
+				484E7C3E1A8868BC007CC566 /* AppDelegate.h */,
+				484E7C3F1A8868BC007CC566 /* AppDelegate.m */,
+				484E7C401A8868BC007CC566 /* Info.plist */,
+				484E7C411A8868BC007CC566 /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		484E7C451A886913007CC566 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				484E7C4B1A886936007CC566 /* Main.storyboard */,
+				484E7C461A886913007CC566 /* ViewController.h */,
+				484E7C471A886913007CC566 /* ViewController.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		592F9AFED202EEED06E5A043 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5280BCF4065CA6747471F99 /* libPods-iMeal.a */,
+				7F439D0DA77D6743450082F1 /* libPods-iMealModel.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFDA87DF9C3B5442C26C10EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6603BA03C97512DA68209BD /* Pods-iMeal.debug.xcconfig */,
+				410D603AA9CD5398A71DD96E /* Pods-iMeal.release.xcconfig */,
+				083D2644C8134505036B5FD3 /* Pods-iMealModel.debug.xcconfig */,
+				0802B19633DA2417616B0258 /* Pods-iMealModel.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		484E7BCD1A8866C1007CC566 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				484E7BD51A8866C1007CC566 /* iMealWidgets.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		484E7BF21A8866EF007CC566 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				484E7BFA1A8866EF007CC566 /* iMealModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		48A81A9E19801734007CE410 /* iMeal */ = {
+		484E7BA11A88654F007CC566 /* iMeal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 48A81AD119801734007CE410 /* Build configuration list for PBXNativeTarget "iMeal" */;
+			buildConfigurationList = 484E7BC51A886550007CC566 /* Build configuration list for PBXNativeTarget "iMeal" */;
 			buildPhases = (
-				48A81A9B19801734007CE410 /* Sources */,
-				48A81A9C19801734007CE410 /* Frameworks */,
-				48A81A9D19801734007CE410 /* Resources */,
-				833911A6447745708CA8CAA7 /* Copy Pods Resources */,
+				7A4173327A0C5CE956E88A3A /* Check Pods Manifest.lock */,
+				484E7B9E1A88654F007CC566 /* Sources */,
+				484E7B9F1A88654F007CC566 /* Frameworks */,
+				484E7BA01A88654F007CC566 /* Resources */,
+				484E7BEC1A8866C2007CC566 /* Embed Frameworks */,
+				4F61E066537D6F3E816CC54D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				484E7BE61A8866C2007CC566 /* PBXTargetDependency */,
+				484E7C0B1A8866EF007CC566 /* PBXTargetDependency */,
+			);
+			name = iMeal;
+			productName = iMeal;
+			productReference = 484E7BA21A88654F007CC566 /* iMeal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		484E7BCF1A8866C1007CC566 /* iMealWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 484E7BE91A8866C2007CC566 /* Build configuration list for PBXNativeTarget "iMealWidgets" */;
+			buildPhases = (
+				484E7BCB1A8866C1007CC566 /* Sources */,
+				484E7BCC1A8866C1007CC566 /* Frameworks */,
+				484E7BCD1A8866C1007CC566 /* Headers */,
+				484E7BCE1A8866C1007CC566 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = iMeal;
-			productName = iMeal;
-			productReference = 48A81A9F19801734007CE410 /* iMeal.app */;
-			productType = "com.apple.product-type.application";
+			name = iMealWidgets;
+			productName = iMealWidgets;
+			productReference = 484E7BD01A8866C1007CC566 /* iMealWidgets.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		484E7BF41A8866EF007CC566 /* iMealModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 484E7C0E1A8866EF007CC566 /* Build configuration list for PBXNativeTarget "iMealModel" */;
+			buildPhases = (
+				88EE350929C4FE7BC00BC814 /* Check Pods Manifest.lock */,
+				484E7BF01A8866EF007CC566 /* Sources */,
+				484E7BF11A8866EF007CC566 /* Frameworks */,
+				484E7BF21A8866EF007CC566 /* Headers */,
+				484E7BF31A8866EF007CC566 /* Resources */,
+				58E7EDBF08989811B81AD5D6 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iMealModel;
+			productName = iMealModel;
+			productReference = 484E7BF51A8866EF007CC566 /* iMealModel.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		48A81A9719801733007CE410 /* Project object */ = {
+		484E7B9A1A88654F007CC566 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = IM;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = sunnyxx;
 				TargetAttributes = {
-					48A81A9E19801734007CE410 = {
-						DevelopmentTeam = 88239XA7ZJ;
+					484E7BA11A88654F007CC566 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					484E7BCF1A8866C1007CC566 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					484E7BF41A8866EF007CC566 = {
+						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
 			};
-			buildConfigurationList = 48A81A9A19801733007CE410 /* Build configuration list for PBXProject "iMeal" */;
+			buildConfigurationList = 484E7B9D1A88654F007CC566 /* Build configuration list for PBXProject "iMeal" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -408,39 +336,47 @@
 				en,
 				Base,
 			);
-			mainGroup = 48A81A9619801733007CE410;
-			productRefGroup = 48A81AA019801734007CE410 /* Products */;
+			mainGroup = 484E7B991A88654F007CC566;
+			productRefGroup = 484E7BA31A88654F007CC566 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				48A81A9E19801734007CE410 /* iMeal */,
+				484E7BA11A88654F007CC566 /* iMeal */,
+				484E7BCF1A8866C1007CC566 /* iMealWidgets */,
+				484E7BF41A8866EF007CC566 /* iMealModel */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		48A81A9D19801734007CE410 /* Resources */ = {
+		484E7BA01A88654F007CC566 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48140C981994ACDE0026C28F /* CCBackBeat-Light_5.ttf in Resources */,
-				48140C9E1994ACDE0026C28F /* InfoPlist.strings in Resources */,
-				48140C9B1994ACDE0026C28F /* Images.xcassets in Resources */,
-				48140C9A1994ACDE0026C28F /* loading.gif in Resources */,
-				48140C9C1994ACDE0026C28F /* money1.caf in Resources */,
-				48140CA61994ACDE0026C28F /* Main.storyboard in Resources */,
-				48140CA31994ACDE0026C28F /* Guide.storyboard in Resources */,
-				48140C991994ACDE0026C28F /* Supercell-Magic_5.ttf in Resources */,
-				48E4B58B1996727300164A36 /* loading_screen_jingle.caf in Resources */,
-				48E2A82A198249D0006DD602 /* libPods-iMeal.a in Resources */,
-				48140C9D1994ACDE0026C28F /* money2.caf in Resources */,
+				484E7C4A1A88692F007CC566 /* LaunchScreen.xib in Resources */,
+				484E7C3C1A88687D007CC566 /* Images.xcassets in Resources */,
+				484E7C4C1A886936007CC566 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		484E7BCE1A8866C1007CC566 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		484E7BF31A8866EF007CC566 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		833911A6447745708CA8CAA7 /* Copy Pods Resources */ = {
+		4F61E066537D6F3E816CC54D /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -452,59 +388,98 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-iMeal-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMeal/Pods-iMeal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58E7EDBF08989811B81AD5D6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMealModel/Pods-iMealModel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A4173327A0C5CE956E88A3A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		88EE350929C4FE7BC00BC814 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		48A81A9B19801734007CE410 /* Sources */ = {
+		484E7B9E1A88654F007CC566 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48140CAF1994ACDE0026C28F /* IMProgressHUD.m in Sources */,
-				48E4B57F19953FEB00164A36 /* UILabel+IMMoneyLabel.m in Sources */,
-				48E4B5791995302000164A36 /* IMFormatDisplay.m in Sources */,
-				4892E493199782920065A7AD /* IMMoneySlider.m in Sources */,
-				48140CA51994ACDE0026C28F /* IMTeamEnterVC.m in Sources */,
-				48140CAC1994ACDE0026C28F /* IMTallyRecordCell.m in Sources */,
-				48140CA21994ACDE0026C28F /* IMChargeVC.m in Sources */,
-				48140CA71994ACDE0026C28F /* IMMemberAddingVC.m in Sources */,
-				4816FB6F199A797300364CF7 /* IMTallyMemberSelectCell.m in Sources */,
-				4816FB6C199A795A00364CF7 /* IMTallyMemberSelectVC.m in Sources */,
-				48140CA01994ACDE0026C28F /* main.m in Sources */,
-				48140CA11994ACDE0026C28F /* IMChargeReceiverVC.m in Sources */,
-				48E4B585199656B600164A36 /* IMGuideVC.m in Sources */,
-				4892E4901997795F0065A7AD /* IMTallyPublicItemCell.m in Sources */,
-				48140CAD1994ACDE0026C28F /* IMTallyVC.m in Sources */,
-				48140CAA1994ACDE0026C28F /* IMTeamOverviewCell.m in Sources */,
-				48E4B58919966C1300164A36 /* IMAudioPlayer.m in Sources */,
-				48E4B5821995C79D00164A36 /* IMMoneyLabel.m in Sources */,
-				4892E48D199777F70065A7AD /* IMTallyMemberCell.m in Sources */,
-				4816FB72199A7CDC00364CF7 /* IMTallyViewModel.m in Sources */,
-				48140CA41994ACDE0026C28F /* IMTeamCreationVC.m in Sources */,
-				48140CA81994ACDE0026C28F /* IMMemberOverviewCell.m in Sources */,
-				48140CAB1994ACDE0026C28F /* IMRouter.m in Sources */,
-				48140CA91994ACDE0026C28F /* IMOverviewVC.m in Sources */,
-				48140C971994ACDE0026C28F /* IMAppDelegate.m in Sources */,
+				484E7C481A886913007CC566 /* ViewController.m in Sources */,
+				484E7C421A8868BD007CC566 /* AppDelegate.m in Sources */,
+				484E7C441A8868BD007CC566 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		484E7BCB1A8866C1007CC566 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		484E7BF01A8866EF007CC566 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		48140C6D1994ACDE0026C28F /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				48140C6E1994ACDE0026C28F /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		484E7BE61A8866C2007CC566 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 484E7BCF1A8866C1007CC566 /* iMealWidgets */;
+			targetProxy = 484E7BE51A8866C2007CC566 /* PBXContainerItemProxy */;
 		};
-/* End PBXVariantGroup section */
+		484E7C0B1A8866EF007CC566 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 484E7BF41A8866EF007CC566 /* iMealModel */;
+			targetProxy = 484E7C0A1A8866EF007CC566 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		48A81ACF19801734007CE410 /* Debug */ = {
+		484E7BC31A886550007CC566 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -519,9 +494,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -536,13 +513,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		48A81AD019801734007CE410 /* Release */ = {
+		484E7BC41A886550007CC566 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -557,10 +535,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -568,74 +548,161 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		48A81AD219801734007CE410 /* Debug */ = {
+		484E7BC61A886550007CC566 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFAA621A4042417E9C1A3138 /* Pods-iMeal.xcconfig */;
+			baseConfigurationReference = C6603BA03C97512DA68209BD /* Pods-iMeal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iMeal/Supporting Files/iMeal-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/iMeal/Supporting Files/iMeal-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/iMeal/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4BF6EF93-9D25-48BD-99EF-D492EFCE1528";
-				USER_HEADER_SEARCH_PATHS = "iMealModel/**";
-				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		48A81AD319801734007CE410 /* Release */ = {
+		484E7BC71A886550007CC566 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFAA621A4042417E9C1A3138 /* Pods-iMeal.xcconfig */;
+			baseConfigurationReference = 410D603AA9CD5398A71DD96E /* Pods-iMeal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iMeal/Supporting Files/iMeal-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/iMeal/Supporting Files/iMeal-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/iMeal/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4BF6EF93-9D25-48BD-99EF-D492EFCE1528";
-				USER_HEADER_SEARCH_PATHS = "iMealModel/**";
-				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		484E7BEA1A8866C2007CC566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iMealWidgets/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		484E7BEB1A8866C2007CC566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = iMealWidgets/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		484E7C0F1A8866EF007CC566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 083D2644C8134505036B5FD3 /* Pods-iMealModel.debug.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iMealModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		484E7C101A8866EF007CC566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0802B19633DA2417616B0258 /* Pods-iMealModel.release.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = iMealModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		48A81A9A19801733007CE410 /* Build configuration list for PBXProject "iMeal" */ = {
+		484E7B9D1A88654F007CC566 /* Build configuration list for PBXProject "iMeal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				48A81ACF19801734007CE410 /* Debug */,
-				48A81AD019801734007CE410 /* Release */,
+				484E7BC31A886550007CC566 /* Debug */,
+				484E7BC41A886550007CC566 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		48A81AD119801734007CE410 /* Build configuration list for PBXNativeTarget "iMeal" */ = {
+		484E7BC51A886550007CC566 /* Build configuration list for PBXNativeTarget "iMeal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				48A81AD219801734007CE410 /* Debug */,
-				48A81AD319801734007CE410 /* Release */,
+				484E7BC61A886550007CC566 /* Debug */,
+				484E7BC71A886550007CC566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		484E7BE91A8866C2007CC566 /* Build configuration list for PBXNativeTarget "iMealWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				484E7BEA1A8866C2007CC566 /* Debug */,
+				484E7BEB1A8866C2007CC566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		484E7C0E1A8866EF007CC566 /* Build configuration list for PBXNativeTarget "iMealModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				484E7C0F1A8866EF007CC566 /* Debug */,
+				484E7C101A8866EF007CC566 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 48A81A9719801733007CE410 /* Project object */;
+	rootObject = 484E7B9A1A88654F007CC566 /* Project object */;
 }

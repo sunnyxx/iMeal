@@ -9,15 +9,60 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>iMealModel.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>iMealResources.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>iMealWidgets.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>48A81A9E19801734007CE410</key>
+		<key>484E7BA11A88654F007CC566</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>48A81ABF19801734007CE410</key>
+		<key>484E7BBA1A886550007CC566</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>484E7BCF1A8866C1007CC566</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>484E7BD91A8866C2007CC566</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>484E7BF41A8866EF007CC566</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>484E7BFE1A8866EF007CC566</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>484E7C181A886763007CC566</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>484E7C221A886763007CC566</key>
 		<dict>
 			<key>primary</key>
 			<true/>
