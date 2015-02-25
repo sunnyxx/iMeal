@@ -109,6 +109,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		481E55411A9D6B8200F0871C /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		481E55501A9D6B8200F0871C /* Server */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
 		484E7B991A88654F007CC566 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +175,8 @@
 		484E7BF61A8866EF007CC566 /* iMealModel */ = {
 			isa = PBXGroup;
 			children = (
+				481E55411A9D6B8200F0871C /* Objects */,
+				481E55501A9D6B8200F0871C /* Server */,
 				484E7BF91A8866EF007CC566 /* iMealModel.h */,
 				484E7BF71A8866EF007CC566 /* Supporting Files */,
 			);
@@ -563,6 +579,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/iMeal/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f93ff574-77a8-49d1-81da-a38d82d99e0c";
 			};
 			name = Debug;
 		};
@@ -574,6 +591,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/iMeal/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f93ff574-77a8-49d1-81da-a38d82d99e0c";
 			};
 			name = Release;
 		};
