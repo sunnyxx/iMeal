@@ -29,3 +29,5 @@ Pods/
 *.xcuserstate
 
 iMeal.xcworkspace/xcuserdata/sunnyxx.xcuserdatad/UserInterfaceState.xcuserstate
+
+Podfile.lock
