@@ -1,842 +1,417 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>410D603AA9CD5398A71DD96E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-iMeal.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-iMeal/Pods-iMeal.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>482382FE1AA05E190060D07F</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Utils</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>484E7B991A88654F007CC566</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>484E7BA41A88654F007CC566</string>
-				<string>484E7BA31A88654F007CC566</string>
-				<string>AFDA87DF9C3B5442C26C10EC</string>
-				<string>592F9AFED202EEED06E5A043</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>484E7B9A1A88654F007CC566</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>IM</string>
-				<key>LastUpgradeCheck</key>
-				<string>0610</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>sunnyxx</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>484E7BA11A88654F007CC566</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.1.1</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>484E7B9D1A88654F007CC566</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>484E7B991A88654F007CC566</string>
-			<key>productRefGroup</key>
-			<string>484E7BA31A88654F007CC566</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>484E7BA11A88654F007CC566</string>
-			</array>
-		</dict>
-		<key>484E7B9D1A88654F007CC566</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>484E7BC31A886550007CC566</string>
-				<string>484E7BC41A886550007CC566</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>484E7B9E1A88654F007CC566</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>487E1CE91AA07DA90018731C</string>
-				<string>484E7C421A8868BD007CC566</string>
-				<string>488CDB2E1AA0781300D24AAE</string>
-				<string>484E7C441A8868BD007CC566</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>484E7B9F1A88654F007CC566</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9E50358693CC182458097A3E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>484E7BA01A88654F007CC566</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>484E7C4A1A88692F007CC566</string>
-				<string>484E7C3C1A88687D007CC566</string>
-				<string>487E1CE51AA07B4D0018731C</string>
-				<string>484E7C4C1A886936007CC566</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>484E7BA11A88654F007CC566</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>484E7BC51A886550007CC566</string>
-			<key>buildPhases</key>
-			<array>
-				<string>7A4173327A0C5CE956E88A3A</string>
-				<string>484E7B9E1A88654F007CC566</string>
-				<string>484E7B9F1A88654F007CC566</string>
-				<string>484E7BA01A88654F007CC566</string>
-				<string>484E7BEC1A8866C2007CC566</string>
-				<string>4F61E066537D6F3E816CC54D</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>iMeal</string>
-			<key>productName</key>
-			<string>iMeal</string>
-			<key>productReference</key>
-			<string>484E7BA21A88654F007CC566</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>484E7BA21A88654F007CC566</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>iMeal.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>484E7BA31A88654F007CC566</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>484E7BA21A88654F007CC566</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>484E7BA41A88654F007CC566</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>482382FE1AA05E190060D07F</string>
-				<string>484E7C451A886913007CC566</string>
-				<string>484E7C3D1A886899007CC566</string>
-				<string>484E7C3A1A88687D007CC566</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>iMeal</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>484E7BC31A886550007CC566</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>484E7BC41A886550007CC566</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>484E7BC51A886550007CC566</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>484E7BC61A886550007CC566</string>
-				<string>484E7BC71A886550007CC566</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>484E7BC61A886550007CC566</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C6603BA03C97512DA68209BD</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>$(SRCROOT)/iMeal/Supporting Files/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PROVISIONING_PROFILE</key>
-				<string>0f866da5-931a-45c6-9ffb-dc78271e8e59</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>484E7BC71A886550007CC566</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>410D603AA9CD5398A71DD96E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>$(SRCROOT)/iMeal/Supporting Files/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PROVISIONING_PROFILE</key>
-				<string>0f866da5-931a-45c6-9ffb-dc78271e8e59</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>484E7BEC1A8866C2007CC566</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>dstPath</key>
-			<string></string>
-			<key>dstSubfolderSpec</key>
-			<string>10</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXCopyFilesBuildPhase</string>
-			<key>name</key>
-			<string>Embed Frameworks</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>484E7C3A1A88687D007CC566</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>484E7C3B1A88687D007CC566</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Resources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>484E7C3B1A88687D007CC566</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>484E7C3C1A88687D007CC566</key>
-		<dict>
-			<key>fileRef</key>
-			<string>484E7C3B1A88687D007CC566</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>484E7C3D1A886899007CC566</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>484E7C491A88692F007CC566</string>
-				<string>484E7C3E1A8868BC007CC566</string>
-				<string>484E7C3F1A8868BC007CC566</string>
-				<string>484E7C401A8868BC007CC566</string>
-				<string>484E7C411A8868BC007CC566</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>484E7C3E1A8868BC007CC566</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>484E7C3F1A8868BC007CC566</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>484E7C401A8868BC007CC566</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>484E7C411A8868BC007CC566</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>484E7C421A8868BD007CC566</key>
-		<dict>
-			<key>fileRef</key>
-			<string>484E7C3F1A8868BC007CC566</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>484E7C441A8868BD007CC566</key>
-		<dict>
-			<key>fileRef</key>
-			<string>484E7C411A8868BC007CC566</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>484E7C451A886913007CC566</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>487E1CE31AA07B380018731C</string>
-				<string>484E7C4B1A886936007CC566</string>
-				<string>488CDB2C1AA0781300D24AAE</string>
-				<string>488CDB2D1AA0781300D24AAE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>UI</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>484E7C491A88692F007CC566</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>LaunchScreen.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>484E7C4A1A88692F007CC566</key>
-		<dict>
-			<key>fileRef</key>
-			<string>484E7C491A88692F007CC566</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>484E7C4B1A886936007CC566</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>path</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>484E7C4C1A886936007CC566</key>
-		<dict>
-			<key>fileRef</key>
-			<string>484E7C4B1A886936007CC566</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>487E1CE31AA07B380018731C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>487E1CE61AA07DA90018731C</string>
-				<string>487E1CE71AA07DA90018731C</string>
-				<string>487E1CE41AA07B4D0018731C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>QRCode</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>487E1CE41AA07B4D0018731C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>path</key>
-			<string>QRCode.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>487E1CE51AA07B4D0018731C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>487E1CE41AA07B4D0018731C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>487E1CE61AA07DA90018731C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>IMQRCodeRecognizerViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>487E1CE71AA07DA90018731C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>IMQRCodeRecognizerViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>487E1CE91AA07DA90018731C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>487E1CE71AA07DA90018731C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>488CDB2C1AA0781300D24AAE</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>IMTestEntranceViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>488CDB2D1AA0781300D24AAE</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>IMTestEntranceViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>488CDB2E1AA0781300D24AAE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>488CDB2D1AA0781300D24AAE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4F61E066537D6F3E816CC54D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-iMeal/Pods-iMeal-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>592F9AFED202EEED06E5A043</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F257F0EA2407A5D31FB8340C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7A4173327A0C5CE956E88A3A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>9E50358693CC182458097A3E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F257F0EA2407A5D31FB8340C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AFDA87DF9C3B5442C26C10EC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C6603BA03C97512DA68209BD</string>
-				<string>410D603AA9CD5398A71DD96E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C6603BA03C97512DA68209BD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-iMeal.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-iMeal/Pods-iMeal.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F257F0EA2407A5D31FB8340C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-iMeal.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>484E7B9A1A88654F007CC566</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		484E7C3C1A88687D007CC566 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484E7C3B1A88687D007CC566 /* Images.xcassets */; };
+		484E7C421A8868BD007CC566 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 484E7C3F1A8868BC007CC566 /* AppDelegate.m */; };
+		484E7C441A8868BD007CC566 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 484E7C411A8868BC007CC566 /* main.m */; };
+		484E7C4A1A88692F007CC566 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 484E7C491A88692F007CC566 /* LaunchScreen.xib */; };
+		484E7C4C1A886936007CC566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484E7C4B1A886936007CC566 /* Main.storyboard */; };
+		487E1CE51AA07B4D0018731C /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487E1CE41AA07B4D0018731C /* QRCode.storyboard */; };
+		487E1CE91AA07DA90018731C /* IMQRCodeRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 487E1CE71AA07DA90018731C /* IMQRCodeRecognizerViewController.m */; };
+		488CDB2E1AA0781300D24AAE /* IMTestEntranceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488CDB2D1AA0781300D24AAE /* IMTestEntranceViewController.m */; };
+		9E50358693CC182458097A3E /* libPods-iMeal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F257F0EA2407A5D31FB8340C /* libPods-iMeal.a */; };
+		EB695E9F1AA0C9820019B448 /* IMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = EB695E9E1AA0C9820019B448 /* IMUser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		484E7BEC1A8866C2007CC566 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		410D603AA9CD5398A71DD96E /* Pods-iMeal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMeal.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMeal/Pods-iMeal.release.xcconfig"; sourceTree = "<group>"; };
+		484E7BA21A88654F007CC566 /* iMeal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMeal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		484E7C3B1A88687D007CC566 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		484E7C3E1A8868BC007CC566 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		484E7C3F1A8868BC007CC566 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		484E7C401A8868BC007CC566 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		484E7C411A8868BC007CC566 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		484E7C491A88692F007CC566 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		484E7C4B1A886936007CC566 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		487E1CE41AA07B4D0018731C /* QRCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
+		487E1CE61AA07DA90018731C /* IMQRCodeRecognizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMQRCodeRecognizerViewController.h; sourceTree = "<group>"; };
+		487E1CE71AA07DA90018731C /* IMQRCodeRecognizerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMQRCodeRecognizerViewController.m; sourceTree = "<group>"; };
+		488CDB2C1AA0781300D24AAE /* IMTestEntranceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTestEntranceViewController.h; sourceTree = "<group>"; };
+		488CDB2D1AA0781300D24AAE /* IMTestEntranceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTestEntranceViewController.m; sourceTree = "<group>"; };
+		C6603BA03C97512DA68209BD /* Pods-iMeal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMeal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMeal/Pods-iMeal.debug.xcconfig"; sourceTree = "<group>"; };
+		EB695E9D1AA0C9820019B448 /* IMUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMUser.h; sourceTree = "<group>"; };
+		EB695E9E1AA0C9820019B448 /* IMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMUser.m; sourceTree = "<group>"; };
+		EB695EA01AA0D33F0019B448 /* IMMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMMarco.h; sourceTree = "<group>"; };
+		F257F0EA2407A5D31FB8340C /* libPods-iMeal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMeal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		484E7B9F1A88654F007CC566 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E50358693CC182458097A3E /* libPods-iMeal.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		482382FE1AA05E190060D07F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EB695EA01AA0D33F0019B448 /* IMMarco.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		484E7B991A88654F007CC566 = {
+			isa = PBXGroup;
+			children = (
+				484E7BA41A88654F007CC566 /* iMeal */,
+				484E7BA31A88654F007CC566 /* Products */,
+				AFDA87DF9C3B5442C26C10EC /* Pods */,
+				592F9AFED202EEED06E5A043 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		484E7BA31A88654F007CC566 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				484E7BA21A88654F007CC566 /* iMeal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		484E7BA41A88654F007CC566 /* iMeal */ = {
+			isa = PBXGroup;
+			children = (
+				EB695E9C1AA0C8FB0019B448 /* Model */,
+				482382FE1AA05E190060D07F /* Utils */,
+				484E7C451A886913007CC566 /* UI */,
+				484E7C3D1A886899007CC566 /* Supporting Files */,
+				484E7C3A1A88687D007CC566 /* Resources */,
+			);
+			path = iMeal;
+			sourceTree = "<group>";
+		};
+		484E7C3A1A88687D007CC566 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				484E7C3B1A88687D007CC566 /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		484E7C3D1A886899007CC566 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				484E7C491A88692F007CC566 /* LaunchScreen.xib */,
+				484E7C3E1A8868BC007CC566 /* AppDelegate.h */,
+				484E7C3F1A8868BC007CC566 /* AppDelegate.m */,
+				484E7C401A8868BC007CC566 /* Info.plist */,
+				484E7C411A8868BC007CC566 /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		484E7C451A886913007CC566 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				487E1CE31AA07B380018731C /* QRCode */,
+				484E7C4B1A886936007CC566 /* Main.storyboard */,
+				488CDB2C1AA0781300D24AAE /* IMTestEntranceViewController.h */,
+				488CDB2D1AA0781300D24AAE /* IMTestEntranceViewController.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		487E1CE31AA07B380018731C /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				487E1CE61AA07DA90018731C /* IMQRCodeRecognizerViewController.h */,
+				487E1CE71AA07DA90018731C /* IMQRCodeRecognizerViewController.m */,
+				487E1CE41AA07B4D0018731C /* QRCode.storyboard */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		592F9AFED202EEED06E5A043 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F257F0EA2407A5D31FB8340C /* libPods-iMeal.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFDA87DF9C3B5442C26C10EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6603BA03C97512DA68209BD /* Pods-iMeal.debug.xcconfig */,
+				410D603AA9CD5398A71DD96E /* Pods-iMeal.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB695E9C1AA0C8FB0019B448 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB695E9D1AA0C9820019B448 /* IMUser.h */,
+				EB695E9E1AA0C9820019B448 /* IMUser.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		484E7BA11A88654F007CC566 /* iMeal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 484E7BC51A886550007CC566 /* Build configuration list for PBXNativeTarget "iMeal" */;
+			buildPhases = (
+				7A4173327A0C5CE956E88A3A /* Check Pods Manifest.lock */,
+				484E7B9E1A88654F007CC566 /* Sources */,
+				484E7B9F1A88654F007CC566 /* Frameworks */,
+				484E7BA01A88654F007CC566 /* Resources */,
+				484E7BEC1A8866C2007CC566 /* Embed Frameworks */,
+				4F61E066537D6F3E816CC54D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iMeal;
+			productName = iMeal;
+			productReference = 484E7BA21A88654F007CC566 /* iMeal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		484E7B9A1A88654F007CC566 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IM;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = sunnyxx;
+				TargetAttributes = {
+					484E7BA11A88654F007CC566 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 484E7B9D1A88654F007CC566 /* Build configuration list for PBXProject "iMeal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 484E7B991A88654F007CC566;
+			productRefGroup = 484E7BA31A88654F007CC566 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				484E7BA11A88654F007CC566 /* iMeal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		484E7BA01A88654F007CC566 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				484E7C4A1A88692F007CC566 /* LaunchScreen.xib in Resources */,
+				484E7C3C1A88687D007CC566 /* Images.xcassets in Resources */,
+				487E1CE51AA07B4D0018731C /* QRCode.storyboard in Resources */,
+				484E7C4C1A886936007CC566 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F61E066537D6F3E816CC54D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMeal/Pods-iMeal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A4173327A0C5CE956E88A3A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		484E7B9E1A88654F007CC566 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				487E1CE91AA07DA90018731C /* IMQRCodeRecognizerViewController.m in Sources */,
+				484E7C421A8868BD007CC566 /* AppDelegate.m in Sources */,
+				488CDB2E1AA0781300D24AAE /* IMTestEntranceViewController.m in Sources */,
+				484E7C441A8868BD007CC566 /* main.m in Sources */,
+				EB695E9F1AA0C9820019B448 /* IMUser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		484E7BC31A886550007CC566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		484E7BC41A886550007CC566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		484E7BC61A886550007CC566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6603BA03C97512DA68209BD /* Pods-iMeal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/iMeal/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0f866da5-931a-45c6-9ffb-dc78271e8e59";
+			};
+			name = Debug;
+		};
+		484E7BC71A886550007CC566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 410D603AA9CD5398A71DD96E /* Pods-iMeal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/iMeal/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0f866da5-931a-45c6-9ffb-dc78271e8e59";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		484E7B9D1A88654F007CC566 /* Build configuration list for PBXProject "iMeal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				484E7BC31A886550007CC566 /* Debug */,
+				484E7BC41A886550007CC566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		484E7BC51A886550007CC566 /* Build configuration list for PBXNativeTarget "iMeal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				484E7BC61A886550007CC566 /* Debug */,
+				484E7BC71A886550007CC566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 484E7B9A1A88654F007CC566 /* Project object */;
+}
