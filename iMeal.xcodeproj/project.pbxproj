@@ -9,28 +9,22 @@
 /* Begin PBXBuildFile section */
 		00EFFAC5887BB56A95188FCE /* libPods-iMealModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F439D0DA77D6743450082F1 /* libPods-iMealModel.a */; };
 		352ABCD34F251CFE64BB0F84 /* libPods-iMeal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5280BCF4065CA6747471F99 /* libPods-iMeal.a */; };
-		484E7BD51A8866C1007CC566 /* iMealWidgets.h in Headers */ = {isa = PBXBuildFile; fileRef = 484E7BD41A8866C1007CC566 /* iMealWidgets.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		484E7BE71A8866C2007CC566 /* iMealWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484E7BD01A8866C1007CC566 /* iMealWidgets.framework */; };
-		484E7BE81A8866C2007CC566 /* iMealWidgets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 484E7BD01A8866C1007CC566 /* iMealWidgets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		484E7BFA1A8866EF007CC566 /* iMealModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 484E7BF91A8866EF007CC566 /* iMealModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		484E7C0C1A8866EF007CC566 /* iMealModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484E7BF51A8866EF007CC566 /* iMealModel.framework */; };
 		484E7C0D1A8866EF007CC566 /* iMealModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 484E7BF51A8866EF007CC566 /* iMealModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		484E7C3C1A88687D007CC566 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484E7C3B1A88687D007CC566 /* Images.xcassets */; };
 		484E7C421A8868BD007CC566 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 484E7C3F1A8868BC007CC566 /* AppDelegate.m */; };
 		484E7C441A8868BD007CC566 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 484E7C411A8868BC007CC566 /* main.m */; };
-		484E7C481A886913007CC566 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 484E7C471A886913007CC566 /* ViewController.m */; };
 		484E7C4A1A88692F007CC566 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 484E7C491A88692F007CC566 /* LaunchScreen.xib */; };
 		484E7C4C1A886936007CC566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484E7C4B1A886936007CC566 /* Main.storyboard */; };
+		487E1CE51AA07B4D0018731C /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487E1CE41AA07B4D0018731C /* QRCode.storyboard */; };
+		487E1CE91AA07DA90018731C /* IMQRCodeRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 487E1CE71AA07DA90018731C /* IMQRCodeRecognizerViewController.m */; };
+		488CDB2E1AA0781300D24AAE /* IMTestEntranceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488CDB2D1AA0781300D24AAE /* IMTestEntranceViewController.m */; };
+		9C86FEFAF5F16B841844AAF6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF882741A0AC8320C8544BE8 /* libPods.a */; };
+		C8D2EDFCACFBFF7170DBA3F0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF882741A0AC8320C8544BE8 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		484E7BE51A8866C2007CC566 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 484E7B9A1A88654F007CC566 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 484E7BCF1A8866C1007CC566;
-			remoteInfo = iMealWidgets;
-		};
 		484E7C0A1A8866EF007CC566 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 484E7B9A1A88654F007CC566 /* Project object */;
@@ -47,7 +41,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				484E7BE81A8866C2007CC566 /* iMealWidgets.framework in Embed Frameworks */,
 				484E7C0D1A8866EF007CC566 /* iMealModel.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -58,11 +51,10 @@
 /* Begin PBXFileReference section */
 		0802B19633DA2417616B0258 /* Pods-iMealModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMealModel.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMealModel/Pods-iMealModel.release.xcconfig"; sourceTree = "<group>"; };
 		083D2644C8134505036B5FD3 /* Pods-iMealModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMealModel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMealModel/Pods-iMealModel.debug.xcconfig"; sourceTree = "<group>"; };
+		2C59E6DE76DEE6F3810E49BA /* Pods-iMealWidgets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMealWidgets.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMealWidgets/Pods-iMealWidgets.release.xcconfig"; sourceTree = "<group>"; };
 		410D603AA9CD5398A71DD96E /* Pods-iMeal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMeal.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMeal/Pods-iMeal.release.xcconfig"; sourceTree = "<group>"; };
+		4177214284EBC37F3324131C /* Pods-iMealWidgets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMealWidgets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMealWidgets/Pods-iMealWidgets.debug.xcconfig"; sourceTree = "<group>"; };
 		484E7BA21A88654F007CC566 /* iMeal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMeal.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		484E7BD01A8866C1007CC566 /* iMealWidgets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iMealWidgets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		484E7BD31A8866C1007CC566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		484E7BD41A8866C1007CC566 /* iMealWidgets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iMealWidgets.h; sourceTree = "<group>"; };
 		484E7BF51A8866EF007CC566 /* iMealModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iMealModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		484E7BF81A8866EF007CC566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		484E7BF91A8866EF007CC566 /* iMealModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iMealModel.h; sourceTree = "<group>"; };
@@ -71,12 +63,17 @@
 		484E7C3F1A8868BC007CC566 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		484E7C401A8868BC007CC566 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		484E7C411A8868BC007CC566 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		484E7C461A886913007CC566 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		484E7C471A886913007CC566 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		484E7C491A88692F007CC566 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		484E7C4B1A886936007CC566 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		487E1CE41AA07B4D0018731C /* QRCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
+		487E1CE61AA07DA90018731C /* IMQRCodeRecognizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMQRCodeRecognizerViewController.h; sourceTree = "<group>"; };
+		487E1CE71AA07DA90018731C /* IMQRCodeRecognizerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMQRCodeRecognizerViewController.m; sourceTree = "<group>"; };
+		488CDB2C1AA0781300D24AAE /* IMTestEntranceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTestEntranceViewController.h; sourceTree = "<group>"; };
+		488CDB2D1AA0781300D24AAE /* IMTestEntranceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTestEntranceViewController.m; sourceTree = "<group>"; };
 		7F439D0DA77D6743450082F1 /* libPods-iMealModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMealModel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B43733DDEB943846CA364EFE /* libPods-iMealWidgets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMealWidgets.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6603BA03C97512DA68209BD /* Pods-iMeal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMeal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMeal/Pods-iMeal.debug.xcconfig"; sourceTree = "<group>"; };
+		CF882741A0AC8320C8544BE8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5280BCF4065CA6747471F99 /* libPods-iMeal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMeal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -85,16 +82,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				484E7BE71A8866C2007CC566 /* iMealWidgets.framework in Frameworks */,
 				484E7C0C1A8866EF007CC566 /* iMealModel.framework in Frameworks */,
 				352ABCD34F251CFE64BB0F84 /* libPods-iMeal.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		484E7BCC1A8866C1007CC566 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				9C86FEFAF5F16B841844AAF6 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00EFFAC5887BB56A95188FCE /* libPods-iMealModel.a in Frameworks */,
+				C8D2EDFCACFBFF7170DBA3F0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,11 +114,17 @@
 			path = Server;
 			sourceTree = "<group>";
 		};
+		482382FE1AA05E190060D07F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		484E7B991A88654F007CC566 = {
 			isa = PBXGroup;
 			children = (
 				484E7BA41A88654F007CC566 /* iMeal */,
-				484E7BD11A8866C1007CC566 /* iMealWidgets */,
 				484E7BF61A8866EF007CC566 /* iMealModel */,
 				484E7BA31A88654F007CC566 /* Products */,
 				AFDA87DF9C3B5442C26C10EC /* Pods */,
@@ -139,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				484E7BA21A88654F007CC566 /* iMeal.app */,
-				484E7BD01A8866C1007CC566 /* iMealWidgets.framework */,
 				484E7BF51A8866EF007CC566 /* iMealModel.framework */,
 			);
 			name = Products;
@@ -148,28 +144,12 @@
 		484E7BA41A88654F007CC566 /* iMeal */ = {
 			isa = PBXGroup;
 			children = (
+				482382FE1AA05E190060D07F /* Utils */,
 				484E7C451A886913007CC566 /* UI */,
 				484E7C3D1A886899007CC566 /* Supporting Files */,
 				484E7C3A1A88687D007CC566 /* Resources */,
 			);
 			path = iMeal;
-			sourceTree = "<group>";
-		};
-		484E7BD11A8866C1007CC566 /* iMealWidgets */ = {
-			isa = PBXGroup;
-			children = (
-				484E7BD41A8866C1007CC566 /* iMealWidgets.h */,
-				484E7BD21A8866C1007CC566 /* Supporting Files */,
-			);
-			path = iMealWidgets;
-			sourceTree = "<group>";
-		};
-		484E7BD21A8866C1007CC566 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				484E7BD31A8866C1007CC566 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		484E7BF61A8866EF007CC566 /* iMealModel */ = {
@@ -214,11 +194,22 @@
 		484E7C451A886913007CC566 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				487E1CE31AA07B380018731C /* QRCode */,
 				484E7C4B1A886936007CC566 /* Main.storyboard */,
-				484E7C461A886913007CC566 /* ViewController.h */,
-				484E7C471A886913007CC566 /* ViewController.m */,
+				488CDB2C1AA0781300D24AAE /* IMTestEntranceViewController.h */,
+				488CDB2D1AA0781300D24AAE /* IMTestEntranceViewController.m */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		487E1CE31AA07B380018731C /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				487E1CE61AA07DA90018731C /* IMQRCodeRecognizerViewController.h */,
+				487E1CE71AA07DA90018731C /* IMQRCodeRecognizerViewController.m */,
+				487E1CE41AA07B4D0018731C /* QRCode.storyboard */,
+			);
+			path = QRCode;
 			sourceTree = "<group>";
 		};
 		592F9AFED202EEED06E5A043 /* Frameworks */ = {
@@ -226,6 +217,8 @@
 			children = (
 				D5280BCF4065CA6747471F99 /* libPods-iMeal.a */,
 				7F439D0DA77D6743450082F1 /* libPods-iMealModel.a */,
+				B43733DDEB943846CA364EFE /* libPods-iMealWidgets.a */,
+				CF882741A0AC8320C8544BE8 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -237,6 +230,8 @@
 				410D603AA9CD5398A71DD96E /* Pods-iMeal.release.xcconfig */,
 				083D2644C8134505036B5FD3 /* Pods-iMealModel.debug.xcconfig */,
 				0802B19633DA2417616B0258 /* Pods-iMealModel.release.xcconfig */,
+				4177214284EBC37F3324131C /* Pods-iMealWidgets.debug.xcconfig */,
+				2C59E6DE76DEE6F3810E49BA /* Pods-iMealWidgets.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -244,14 +239,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		484E7BCD1A8866C1007CC566 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				484E7BD51A8866C1007CC566 /* iMealWidgets.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		484E7BF21A8866EF007CC566 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -277,31 +264,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				484E7BE61A8866C2007CC566 /* PBXTargetDependency */,
 				484E7C0B1A8866EF007CC566 /* PBXTargetDependency */,
 			);
 			name = iMeal;
 			productName = iMeal;
 			productReference = 484E7BA21A88654F007CC566 /* iMeal.app */;
 			productType = "com.apple.product-type.application";
-		};
-		484E7BCF1A8866C1007CC566 /* iMealWidgets */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 484E7BE91A8866C2007CC566 /* Build configuration list for PBXNativeTarget "iMealWidgets" */;
-			buildPhases = (
-				484E7BCB1A8866C1007CC566 /* Sources */,
-				484E7BCC1A8866C1007CC566 /* Frameworks */,
-				484E7BCD1A8866C1007CC566 /* Headers */,
-				484E7BCE1A8866C1007CC566 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = iMealWidgets;
-			productName = iMealWidgets;
-			productReference = 484E7BD01A8866C1007CC566 /* iMealWidgets.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 		484E7BF41A8866EF007CC566 /* iMealModel */ = {
 			isa = PBXNativeTarget;
@@ -336,9 +304,6 @@
 					484E7BA11A88654F007CC566 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
-					484E7BCF1A8866C1007CC566 = {
-						CreatedOnToolsVersion = 6.1.1;
-					};
 					484E7BF41A8866EF007CC566 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -358,7 +323,6 @@
 			projectRoot = "";
 			targets = (
 				484E7BA11A88654F007CC566 /* iMeal */,
-				484E7BCF1A8866C1007CC566 /* iMealWidgets */,
 				484E7BF41A8866EF007CC566 /* iMealModel */,
 			);
 		};
@@ -371,14 +335,8 @@
 			files = (
 				484E7C4A1A88692F007CC566 /* LaunchScreen.xib in Resources */,
 				484E7C3C1A88687D007CC566 /* Images.xcassets in Resources */,
+				487E1CE51AA07B4D0018731C /* QRCode.storyboard in Resources */,
 				484E7C4C1A886936007CC566 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		484E7BCE1A8866C1007CC566 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,16 +417,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				484E7C481A886913007CC566 /* ViewController.m in Sources */,
+				487E1CE91AA07DA90018731C /* IMQRCodeRecognizerViewController.m in Sources */,
 				484E7C421A8868BD007CC566 /* AppDelegate.m in Sources */,
+				488CDB2E1AA0781300D24AAE /* IMTestEntranceViewController.m in Sources */,
 				484E7C441A8868BD007CC566 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		484E7BCB1A8866C1007CC566 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,11 +434,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		484E7BE61A8866C2007CC566 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 484E7BCF1A8866C1007CC566 /* iMealWidgets */;
-			targetProxy = 484E7BE51A8866C2007CC566 /* PBXContainerItemProxy */;
-		};
 		484E7C0B1A8866EF007CC566 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 484E7BF41A8866EF007CC566 /* iMealModel */;
@@ -579,7 +526,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/iMeal/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f93ff574-77a8-49d1-81da-a38d82d99e0c";
+				PROVISIONING_PROFILE = "0f866da5-931a-45c6-9ffb-dc78271e8e59";
 			};
 			name = Debug;
 		};
@@ -591,49 +538,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/iMeal/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f93ff574-77a8-49d1-81da-a38d82d99e0c";
-			};
-			name = Release;
-		};
-		484E7BEA1A8866C2007CC566 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = iMealWidgets/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		484E7BEB1A8866C2007CC566 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = iMealWidgets/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				PROVISIONING_PROFILE = "0f866da5-931a-45c6-9ffb-dc78271e8e59";
 			};
 			name = Release;
 		};
@@ -654,6 +559,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -674,6 +580,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -698,15 +605,6 @@
 			buildConfigurations = (
 				484E7BC61A886550007CC566 /* Debug */,
 				484E7BC71A886550007CC566 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		484E7BE91A8866C2007CC566 /* Build configuration list for PBXNativeTarget "iMealWidgets" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				484E7BEA1A8866C2007CC566 /* Debug */,
-				484E7BEB1A8866C2007CC566 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
