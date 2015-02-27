@@ -1,5 +1,5 @@
 PODS:
-  - AVOSCloud (2.6.10)
+  - AVOSCloud (2.6.10.2)
   - libextobjc (0.4.1):
     - libextobjc/EXTADT (= 0.4.1)
     - libextobjc/EXTConcreteProtocol (= 0.4.1)
@@ -36,18 +36,21 @@ PODS:
   - libextobjc/RuntimeExtensions (0.4.1)
   - libextobjc/UmbrellaHeader (0.4.1)
   - ObjectiveSugar (1.1.0)
+  - SSKeychain (1.2.2)
   - XXNibBridge (2.1)
 
 DEPENDENCIES:
   - AVOSCloud (~> 2.6.10)
   - libextobjc (~> 0.4.1)
   - ObjectiveSugar (~> 1.1.0)
+  - SSKeychain
   - XXNibBridge (~> 2.1)
 
 SPEC CHECKSUMS:
-  AVOSCloud: f6bda519d035a21ceacab049184aa5cdb9e1177f
+  AVOSCloud: 903429163bce9feabb4473ab07ea30ed47ba5db1
   libextobjc: d6146fce3ebea986b7f75fcb4c967639200b88b0
   ObjectiveSugar: f48793f5902c77cfc02a4ce46d2e8ecddcad4dc2
+  SSKeychain: cc48bd3ad24fcd9125adb9e0d23dd50b8bbd08b9
   XXNibBridge: be70e8ca01f487cebbd601a111de03f3358f3beb
 
 COCOAPODS: 0.35.0

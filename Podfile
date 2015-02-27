@@ -8,4 +8,5 @@ target 'iMeal' do
     pod 'AVOSCloud', '~> 2.6.10'
     pod 'libextobjc', '~> 0.4.1'
     pod 'ObjectiveSugar', '~> 1.1.0'
+    pod 'SSKeychain'
 end
