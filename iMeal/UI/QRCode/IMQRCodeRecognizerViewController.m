@@ -11,7 +11,6 @@
 @import AVFoundation;
 
 @interface IMQRCodeRecognizerViewController () <AVCaptureMetadataOutputObjectsDelegate>
-@property (weak, nonatomic) IBOutlet UIImageView *codeImageView;
 @property (nonatomic, strong) AVCaptureSession *captureSession;
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *videoPreviewLayer;
 @end
@@ -22,25 +21,7 @@
 {
     [super viewDidLoad];
     
-    UIImage *image = [self generateQRCodeWithString:@"www.baidu.com"];
-    self.codeImageView.image = image;
-    
     [self startReading];
-}
-
-- (UIImage *)generateQRCodeWithString:(NSString *)string
-{
-    NSData *stringData = [string dataUsingEncoding:NSUTF8StringEncoding];
-    
-    CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
-    [filter setValue:stringData forKey:@"inputMessage"];
-    [filter setValue:@"Q" forKey:@"inputCorrectionLevel"];
-    
-    CIImage *originalImage = filter.outputImage;
-    CGAffineTransform transform = CGAffineTransformMakeScale(5, 5);
-    CIImage *scaledImage = [originalImage imageByApplyingTransform:transform];
-    
-    return [UIImage imageWithCIImage:scaledImage];
 }
 
 - (BOOL)startReading
@@ -80,10 +61,13 @@
 {
 //    if (!_isReading) return;
     
-    if (metadataObjects != nil && [metadataObjects count] > 0) {
-        AVMetadataMachineReadableCodeObject *metadataObj = [metadataObjects objectAtIndex:0];
+    AVMetadataMachineReadableCodeObject *codeObject = metadataObjects.firstObject;
+    if (codeObject) {
         
-//        Do Something....
+        NSLog(@"%@", codeObject);
+        
+        [self.captureSession stopRunning];
     }
 }
+
 @end
