@@ -17,6 +17,7 @@
 		487E1CED1AA162B00018731C /* IMQRCodeGeneratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 487E1CEC1AA162B00018731C /* IMQRCodeGeneratorViewController.m */; };
 		488CDB2E1AA0781300D24AAE /* IMTestEntranceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488CDB2D1AA0781300D24AAE /* IMTestEntranceViewController.m */; };
 		9E50358693CC182458097A3E /* libPods-iMeal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F257F0EA2407A5D31FB8340C /* libPods-iMeal.a */; };
+		EB695E9F1AA0C9820019B448 /* IMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = EB695E9E1AA0C9820019B448 /* IMUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +51,9 @@
 		488CDB2C1AA0781300D24AAE /* IMTestEntranceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTestEntranceViewController.h; sourceTree = "<group>"; };
 		488CDB2D1AA0781300D24AAE /* IMTestEntranceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTestEntranceViewController.m; sourceTree = "<group>"; };
 		C6603BA03C97512DA68209BD /* Pods-iMeal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMeal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMeal/Pods-iMeal.debug.xcconfig"; sourceTree = "<group>"; };
+		EB695E9D1AA0C9820019B448 /* IMUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMUser.h; sourceTree = "<group>"; };
+		EB695E9E1AA0C9820019B448 /* IMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMUser.m; sourceTree = "<group>"; };
+		EB695EA01AA0D33F0019B448 /* IMMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMMarco.h; sourceTree = "<group>"; };
 		F257F0EA2407A5D31FB8340C /* libPods-iMeal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMeal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -68,6 +72,7 @@
 		482382FE1AA05E190060D07F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				EB695EA01AA0D33F0019B448 /* IMMarco.h */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 		484E7BA41A88654F007CC566 /* iMeal */ = {
 			isa = PBXGroup;
 			children = (
+				EB695E9C1AA0C8FB0019B448 /* Model */,
 				482382FE1AA05E190060D07F /* Utils */,
 				484E7C451A886913007CC566 /* UI */,
 				484E7C3D1A886899007CC566 /* Supporting Files */,
@@ -159,6 +165,15 @@
 				410D603AA9CD5398A71DD96E /* Pods-iMeal.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB695E9C1AA0C8FB0019B448 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB695E9D1AA0C9820019B448 /* IMUser.h */,
+				EB695E9E1AA0C9820019B448 /* IMUser.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +289,7 @@
 				488CDB2E1AA0781300D24AAE /* IMTestEntranceViewController.m in Sources */,
 				487E1CED1AA162B00018731C /* IMQRCodeGeneratorViewController.m in Sources */,
 				484E7C441A8868BD007CC566 /* main.m in Sources */,
+				EB695E9F1AA0C9820019B448 /* IMUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
