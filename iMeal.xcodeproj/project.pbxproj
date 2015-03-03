@@ -69,6 +69,7 @@
 		EBF653731AA467EA003E6F05 /* IMSetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSetup.m; sourceTree = "<group>"; };
 		EBF653751AA59882003E6F05 /* IMMoney.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMoney.h; sourceTree = "<group>"; };
 		EBF653761AA59882003E6F05 /* IMMoney.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMMoney.m; sourceTree = "<group>"; };
+		EBF653781AA5AF93003E6F05 /* iMealPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iMealPrefixHeader.pch; sourceTree = "<group>"; };
 		F257F0EA2407A5D31FB8340C /* libPods-iMeal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMeal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -138,6 +139,7 @@
 				484E7C3F1A8868BC007CC566 /* AppDelegate.m */,
 				484E7C401A8868BC007CC566 /* Info.plist */,
 				484E7C411A8868BC007CC566 /* main.m */,
+				EBF653781AA5AF93003E6F05 /* iMealPrefixHeader.pch */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -407,6 +409,7 @@
 			baseConfigurationReference = C6603BA03C97512DA68209BD /* Pods-iMeal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iMeal/Supporting Files/iMealPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/iMeal/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -419,6 +422,7 @@
 			baseConfigurationReference = 410D603AA9CD5398A71DD96E /* Pods-iMeal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iMeal/Supporting Files/iMealPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/iMeal/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

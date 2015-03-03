@@ -8,7 +8,6 @@
 
 #import "IMUser.h"
 #import <SSKeychain/SSKeychain.h>
-#import "IMMarco.h"
 #import "IMTeam.h"
 
 @implementation IMUser
