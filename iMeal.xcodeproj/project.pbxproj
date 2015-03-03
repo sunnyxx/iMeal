@@ -14,6 +14,7 @@
 		484E7C4C1A886936007CC566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484E7C4B1A886936007CC566 /* Main.storyboard */; };
 		487E1CE51AA07B4D0018731C /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487E1CE41AA07B4D0018731C /* QRCode.storyboard */; };
 		487E1CE91AA07DA90018731C /* IMQRCodeRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 487E1CE71AA07DA90018731C /* IMQRCodeRecognizerViewController.m */; };
+		487E1CED1AA162B00018731C /* IMQRCodeGeneratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 487E1CEC1AA162B00018731C /* IMQRCodeGeneratorViewController.m */; };
 		488CDB2E1AA0781300D24AAE /* IMTestEntranceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488CDB2D1AA0781300D24AAE /* IMTestEntranceViewController.m */; };
 		9E50358693CC182458097A3E /* libPods-iMeal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F257F0EA2407A5D31FB8340C /* libPods-iMeal.a */; };
 		EB695E9F1AA0C9820019B448 /* IMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = EB695E9E1AA0C9820019B448 /* IMUser.m */; };
@@ -50,6 +51,8 @@
 		487E1CE41AA07B4D0018731C /* QRCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
 		487E1CE61AA07DA90018731C /* IMQRCodeRecognizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMQRCodeRecognizerViewController.h; sourceTree = "<group>"; };
 		487E1CE71AA07DA90018731C /* IMQRCodeRecognizerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMQRCodeRecognizerViewController.m; sourceTree = "<group>"; };
+		487E1CEB1AA162B00018731C /* IMQRCodeGeneratorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMQRCodeGeneratorViewController.h; sourceTree = "<group>"; };
+		487E1CEC1AA162B00018731C /* IMQRCodeGeneratorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMQRCodeGeneratorViewController.m; sourceTree = "<group>"; };
 		488CDB2C1AA0781300D24AAE /* IMTestEntranceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTestEntranceViewController.h; sourceTree = "<group>"; };
 		488CDB2D1AA0781300D24AAE /* IMTestEntranceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTestEntranceViewController.m; sourceTree = "<group>"; };
 		C6603BA03C97512DA68209BD /* Pods-iMeal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMeal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMeal/Pods-iMeal.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,9 +156,11 @@
 		487E1CE31AA07B380018731C /* QRCode */ = {
 			isa = PBXGroup;
 			children = (
+				487E1CE41AA07B4D0018731C /* QRCode.storyboard */,
 				487E1CE61AA07DA90018731C /* IMQRCodeRecognizerViewController.h */,
 				487E1CE71AA07DA90018731C /* IMQRCodeRecognizerViewController.m */,
-				487E1CE41AA07B4D0018731C /* QRCode.storyboard */,
+				487E1CEB1AA162B00018731C /* IMQRCodeGeneratorViewController.h */,
+				487E1CEC1AA162B00018731C /* IMQRCodeGeneratorViewController.m */,
 			);
 			path = QRCode;
 			sourceTree = "<group>";
@@ -312,6 +317,7 @@
 				488CDB2E1AA0781300D24AAE /* IMTestEntranceViewController.m in Sources */,
 				EBF653771AA59882003E6F05 /* IMMoney.m in Sources */,
 				EBF6536E1AA44BAC003E6F05 /* IMRestaurant.m in Sources */,
+				487E1CED1AA162B00018731C /* IMQRCodeGeneratorViewController.m in Sources */,
 				484E7C441A8868BD007CC566 /* main.m in Sources */,
 				EB695E9F1AA0C9820019B448 /* IMUser.m in Sources */,
 			);

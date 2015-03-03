@@ -8,6 +8,7 @@
 
 #import "IMTestEntranceViewController.h"
 #import "IMQRCodeRecognizerViewController.h"
+#import "IMQRCodeGeneratorViewController.h"
 #import <XXNibBridge.h>
 
 @interface IMTestEntranceViewController ()
@@ -22,6 +23,10 @@
     
     switch (indexPath.row) {
         case 0: {
+            IMQRCodeGeneratorViewController *vc = [IMQRCodeGeneratorViewController xx_instantiateFromStoryboardNamed:@"QRCode"];
+            [self.navigationController pushViewController:vc animated:YES];
+        } break;
+        case 1: {
             IMQRCodeRecognizerViewController *vc = [IMQRCodeRecognizerViewController xx_instantiateFromStoryboardNamed:@"QRCode"];
             [self.navigationController pushViewController:vc animated:YES];
         } break;

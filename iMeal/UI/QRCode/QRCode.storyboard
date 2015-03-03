@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4Jh-3m-Tbz">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Code Recognizer View Controller-->
+        <!--二维码扫描-->
         <scene sceneID="6If-uI-VYL">
             <objects>
                 <viewController storyboardIdentifier="IMQRCodeRecognizerViewController" id="EUR-xv-lPy" customClass="IMQRCodeRecognizerViewController" sceneMemberID="viewController">
@@ -17,8 +17,88 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="二维码扫描" id="qXr-JJ-HpA">
+                        <barButtonItem key="rightBarButtonItem" title="我的小组" id="2fG-aK-Tfh">
+                            <connections>
+                                <segue destination="7QZ-bl-dIb" kind="push" id="UM1-bd-fJY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ypK-l2-19A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="491" y="341"/>
+        </scene>
+        <!--当前小组二维码-->
+        <scene sceneID="T8L-Aj-BCM">
+            <objects>
+                <viewController storyboardIdentifier="IMQRCodeGeneratorViewController" id="7QZ-bl-dIb" customClass="IMQRCodeGeneratorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YN0-uA-86X"/>
+                        <viewControllerLayoutGuide type="bottom" id="HvI-QI-4nv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QOb-DO-Odl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e5c-rJ-eQX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E8k-nh-XqY">
+                                        <rect key="frame" x="35" y="159" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="70w-MM-0Y9"/>
+                                            <constraint firstAttribute="width" constant="250" id="tcq-yd-mWt"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcd-Me-PAX">
+                                        <rect key="frame" x="120" y="133" width="79" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="E8k-nh-XqY" firstAttribute="centerX" secondItem="zcd-Me-PAX" secondAttribute="centerX" id="PXg-Pc-ifV"/>
+                                    <constraint firstAttribute="centerY" secondItem="E8k-nh-XqY" secondAttribute="centerY" id="dlf-Ln-pgn"/>
+                                    <constraint firstAttribute="centerX" secondItem="E8k-nh-XqY" secondAttribute="centerX" id="fXC-J3-27m"/>
+                                    <constraint firstItem="E8k-nh-XqY" firstAttribute="top" secondItem="zcd-Me-PAX" secondAttribute="bottom" constant="8" id="sfg-az-VWp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="e5c-rJ-eQX" secondAttribute="trailing" id="ZPC-U5-1Xc"/>
+                            <constraint firstItem="HvI-QI-4nv" firstAttribute="top" secondItem="e5c-rJ-eQX" secondAttribute="bottom" id="ZRc-0I-lzl"/>
+                            <constraint firstItem="e5c-rJ-eQX" firstAttribute="leading" secondItem="QOb-DO-Odl" secondAttribute="leading" id="hzg-Dn-QUI"/>
+                            <constraint firstItem="e5c-rJ-eQX" firstAttribute="top" secondItem="QOb-DO-Odl" secondAttribute="top" id="qvn-50-JJx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="当前小组二维码" id="Bpa-bf-ZZz"/>
+                    <connections>
+                        <outlet property="codeImageView" destination="E8k-nh-XqY" id="qGd-YQ-94e"/>
+                        <outlet property="teamNameLabel" destination="zcd-Me-PAX" id="jRS-bi-UDD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hFn-Jk-rTp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895" y="341"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UNd-BJ-81B">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Jh-3m-Tbz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TfB-8i-zMx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EUR-xv-lPy" kind="relationship" relationship="rootViewController" id="rjU-OP-K5F"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2qm-VM-yLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="82" y="341"/>
         </scene>
