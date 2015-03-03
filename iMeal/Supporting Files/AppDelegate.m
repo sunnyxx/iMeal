@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "IMSetup.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [IMSetup setup];
+    
     return YES;
 }
 

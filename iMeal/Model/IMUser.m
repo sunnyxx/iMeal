@@ -9,8 +9,15 @@
 #import "IMUser.h"
 #import <SSKeychain/SSKeychain.h>
 #import "IMMarco.h"
+#import "IMTeam.h"
 
 @implementation IMUser
+
+@dynamic nickName, money, rechargeBills, costBills;
+
++ (NSString *)parseClassName {
+    return @"_User";
+}
 
 @end
 
@@ -22,9 +29,9 @@
 
 + (void)autoSingin:(void (^)(BOOL, IMUser *, NSError *))complete {
     NSArray *keychians = [SSKeychain accountsForService:@"iMeal"];
-    SSKeychainQuery *query = [keychians lastObject];
+    SSKeychainQuery *keychain = [keychians lastObject];
     
-    [IMUser logInWithUsernameInBackground:query.account
+    [IMUser logInWithUsernameInBackground:keychain.password
                                  password:nil
                                     block:^(AVUser *user, NSError *error) {
                                         if (error) {
@@ -57,9 +64,9 @@
                                         }
                                         else {
                                             //store nickName in keychain
-                                            [SSKeychain setPassword:nil
+                                            [SSKeychain setPassword:nickName
                                                          forService:@"iMeal"
-                                                            account:nickName
+                                                            account:user.objectId
                                                               error:&error];
                                             if (error) {
                                                 DebugLog(@"Store nickName >>%@<< in keychain fail:%@", nickName,error.localizedDescription);
@@ -72,6 +79,28 @@
                                             });
                                         }
                                     }];
+}
+
++ (void)teams:(void (^)(BOOL, NSArray *, NSError *))complete {
+    AVQuery *query = [AVRelation reverseQuery:NSStringFromClass([IMTeam class])
+                                  relationKey:@"users"
+                                  childObject:[IMUser currentUser]];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (error) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (complete) {
+                    complete(NO, nil, error);
+                }
+            });
+        }
+        else {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (complete) {
+                    complete(YES, objects, nil);
+                }
+            });
+        }
+    }];
 }
 
 @end

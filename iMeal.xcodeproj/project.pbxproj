@@ -17,6 +17,11 @@
 		488CDB2E1AA0781300D24AAE /* IMTestEntranceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488CDB2D1AA0781300D24AAE /* IMTestEntranceViewController.m */; };
 		9E50358693CC182458097A3E /* libPods-iMeal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F257F0EA2407A5D31FB8340C /* libPods-iMeal.a */; };
 		EB695E9F1AA0C9820019B448 /* IMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = EB695E9E1AA0C9820019B448 /* IMUser.m */; };
+		EBF6536B1AA2D5E0003E6F05 /* IMTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF6536A1AA2D5E0003E6F05 /* IMTeam.m */; };
+		EBF6536E1AA44BAC003E6F05 /* IMRestaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF6536D1AA44BAC003E6F05 /* IMRestaurant.m */; };
+		EBF653711AA464E3003E6F05 /* IMBills.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF653701AA464E3003E6F05 /* IMBills.m */; };
+		EBF653741AA467EA003E6F05 /* IMSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF653731AA467EA003E6F05 /* IMSetup.m */; };
+		EBF653771AA59882003E6F05 /* IMMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF653761AA59882003E6F05 /* IMMoney.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +56,16 @@
 		EB695E9D1AA0C9820019B448 /* IMUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMUser.h; sourceTree = "<group>"; };
 		EB695E9E1AA0C9820019B448 /* IMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMUser.m; sourceTree = "<group>"; };
 		EB695EA01AA0D33F0019B448 /* IMMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMMarco.h; sourceTree = "<group>"; };
+		EBF653691AA2D5E0003E6F05 /* IMTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTeam.h; sourceTree = "<group>"; };
+		EBF6536A1AA2D5E0003E6F05 /* IMTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTeam.m; sourceTree = "<group>"; };
+		EBF6536C1AA44BAC003E6F05 /* IMRestaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRestaurant.h; sourceTree = "<group>"; };
+		EBF6536D1AA44BAC003E6F05 /* IMRestaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRestaurant.m; sourceTree = "<group>"; };
+		EBF6536F1AA464E3003E6F05 /* IMBills.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMBills.h; sourceTree = "<group>"; };
+		EBF653701AA464E3003E6F05 /* IMBills.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMBills.m; sourceTree = "<group>"; };
+		EBF653721AA467EA003E6F05 /* IMSetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSetup.h; sourceTree = "<group>"; };
+		EBF653731AA467EA003E6F05 /* IMSetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSetup.m; sourceTree = "<group>"; };
+		EBF653751AA59882003E6F05 /* IMMoney.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMoney.h; sourceTree = "<group>"; };
+		EBF653761AA59882003E6F05 /* IMMoney.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMMoney.m; sourceTree = "<group>"; };
 		F257F0EA2407A5D31FB8340C /* libPods-iMeal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMeal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -165,8 +180,18 @@
 		EB695E9C1AA0C8FB0019B448 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EBF653721AA467EA003E6F05 /* IMSetup.h */,
+				EBF653731AA467EA003E6F05 /* IMSetup.m */,
 				EB695E9D1AA0C9820019B448 /* IMUser.h */,
 				EB695E9E1AA0C9820019B448 /* IMUser.m */,
+				EBF653691AA2D5E0003E6F05 /* IMTeam.h */,
+				EBF6536A1AA2D5E0003E6F05 /* IMTeam.m */,
+				EBF6536C1AA44BAC003E6F05 /* IMRestaurant.h */,
+				EBF6536D1AA44BAC003E6F05 /* IMRestaurant.m */,
+				EBF6536F1AA464E3003E6F05 /* IMBills.h */,
+				EBF653701AA464E3003E6F05 /* IMBills.m */,
+				EBF653751AA59882003E6F05 /* IMMoney.h */,
+				EBF653761AA59882003E6F05 /* IMMoney.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -279,9 +304,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF653711AA464E3003E6F05 /* IMBills.m in Sources */,
 				487E1CE91AA07DA90018731C /* IMQRCodeRecognizerViewController.m in Sources */,
 				484E7C421A8868BD007CC566 /* AppDelegate.m in Sources */,
+				EBF6536B1AA2D5E0003E6F05 /* IMTeam.m in Sources */,
+				EBF653741AA467EA003E6F05 /* IMSetup.m in Sources */,
 				488CDB2E1AA0781300D24AAE /* IMTestEntranceViewController.m in Sources */,
+				EBF653771AA59882003E6F05 /* IMMoney.m in Sources */,
+				EBF6536E1AA44BAC003E6F05 /* IMRestaurant.m in Sources */,
 				484E7C441A8868BD007CC566 /* main.m in Sources */,
 				EB695E9F1AA0C9820019B448 /* IMUser.m in Sources */,
 			);
